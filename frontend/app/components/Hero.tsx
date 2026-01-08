@@ -288,7 +288,7 @@ export default function Hero() {
             className="flex justify-around items-center px-3 py-2 bg-white cursor-pointer shadow-[3px_4px_0px_black] border-[3px] border-black rounded-xl relative overflow-hidden z-10 transition-all duration-250 hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[1px_2px_0px_black] active:saturate-75 before:content-[''] before:absolute before:inset-0 before:bg-gray-100 before:-z-10 before:-translate-x-full before:transition-transform before:duration-250 hover:before:translate-x-0 group">
             <div className="relative flex justify-start items-center overflow-hidden text-lg font-semibold">
               <span className="relative transition-all duration-250">
-                {isConnected ? 'Consumer Dashboard' : 'Consumer'}
+                {isConnected ? 'Consumer Dashboard' : 'For Consumer'}
               </span>
             </div>
             <div className="px-3 py-3 ml-3 border-[3px] border-black rounded-full bg-white relative overflow-hidden transition-all duration-250 z-10 group-hover:translate-x-1.5 active:translate-x-2 before:content-[''] before:absolute before:inset-0 before:rounded-full before:bg-gray-100 before:-translate-x-full before:-z-10 before:transition-transform before:duration-250 before:ease-in-out group-hover:before:translate-x-0">
@@ -304,7 +304,7 @@ export default function Hero() {
             className="flex justify-around items-center px-3 py-2 bg-white cursor-pointer shadow-[3px_4px_0px_black] border-[3px] border-black rounded-xl relative overflow-hidden z-10 transition-all duration-250 hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[1px_2px_0px_black] active:saturate-75 before:content-[''] before:absolute before:inset-0 before:bg-gray-100 before:-z-10 before:-translate-x-full before:transition-transform before:duration-250 hover:before:translate-x-0 group">
             <div className="relative flex justify-start items-center overflow-hidden text-lg font-semibold">
               <span className="relative transition-all duration-250">
-                {isConnected ? 'Business Dashboard' : 'Business'}
+                {isConnected ? 'Business Dashboard' : 'For Business'}
               </span>
             </div>
             <div className="px-3 py-3 ml-3 border-[3px] border-black rounded-full bg-white relative overflow-hidden transition-all duration-250 z-10 group-hover:translate-x-1.5 active:translate-x-2 before:content-[''] before:absolute before:inset-0 before:rounded-full before:bg-gray-100 before:-translate-x-full before:-z-10 before:transition-transform before:duration-250 before:ease-in-out group-hover:before:translate-x-0">

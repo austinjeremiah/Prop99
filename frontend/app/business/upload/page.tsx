@@ -314,6 +314,16 @@ export default function UploadPage() {
                 <li>• Legal documentation (optional)</li>
               </ul>
             </div>
+
+            {/* Create Asset Button */}
+            <div className="mt-6 flex justify-center">
+              <button
+                type="button"
+                className="px-8 py-4 bg-white text-black border-2 border-black rounded-lg hover:bg-gray-50 transition-colors font-mono font-bold text-lg shadow-[2px_2px_0px_rgba(0,0,0,0.3)]"
+              >
+                Create Asset
+              </button>
+            </div>
           </div>
 
           {/* Submit Section */}

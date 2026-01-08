@@ -1,5 +1,5 @@
 import { WagmiAdapter } from "@reown/appkit-adapter-wagmi";
-import { cookieStorage, createStorage } from "wagmi";
+import { cookieStorage } from "wagmi";
 import { mantle, mantleSepoliaTestnet } from '@reown/appkit/networks'
 
 // Get projectId from https://cloud.reown.com
@@ -11,9 +11,6 @@ if (!projectId) throw new Error("Project ID is not defined");
 
 // Set up the Wagmi Adapter (config)
 export const wagmiAdapter = new WagmiAdapter({
-  storage: createStorage({
-    storage: cookieStorage
-  }),
   ssr: true,
   networks,
   projectId

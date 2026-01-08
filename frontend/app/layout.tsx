@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Inter, JetBrains_Mono } from "next/font/google"
 import "./globals.css"
 import { headers } from "next/headers"
@@ -18,28 +18,32 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "NexoraSIM™ - AI-Driven eSIM & IoT Platform | Myanmar",
+  title: "Prop99 - RWA Oracle Intelligence Layer",
   description:
-    "GSMA-compliant eSIM and IoT connectivity platform for Myanmar. Advanced AI-powered solutions with global reach, powered by Vercel infrastructure.",
-  keywords: "eSIM, IoT, Myanmar, GSMA, AI, connectivity, telecommunications, Vercel, edge computing, SGP.22",
-  authors: [{ name: "NexoraSIM" }],
+    "Real-World Asset Oracle Intelligence Layer on Mantle. AI-powered property verification with blockchain security.",
+  keywords: "RWA, Real World Assets, Oracle, Mantle, blockchain, AI verification, property tokenization",
+  authors: [{ name: "Prop99" }],
   robots: "index, follow",
   openGraph: {
-    title: "NexoraSIM™ - AI-Driven eSIM & IoT Platform",
-    description: "GSMA-compliant eSIM and IoT connectivity platform for Myanmar",
+    title: "Prop99 - RWA Oracle Intelligence Layer",
+    description: "Real-World Asset Oracle Intelligence Layer on Mantle",
     type: "website",
     locale: "en_US",
-    siteName: "NexoraSIM",
+    siteName: "Prop99",
   },
   twitter: {
     card: "summary_large_image",
-    title: "NexoraSIM™ - AI-Driven eSIM & IoT Platform",
-    description: "GSMA-compliant eSIM and IoT connectivity platform for Myanmar",
+    title: "Prop99 - RWA Oracle Intelligence Layer",
+    description: "Real-World Asset Oracle Intelligence Layer on Mantle",
   },
-  viewport: "width=device-width, initial-scale=1",
-  themeColor: "#000000",
   manifest: "/manifest.json",
-    generator: 'v0.app'
+  generator: 'v0.app'
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#000000',
 }
 
 export default async function RootLayout({
