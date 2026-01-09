@@ -1,0 +1,42 @@
+[
+  {
+    "type": "function",
+    "name": "requestVerification",
+    "stateMutability": "payable",
+    "inputs": [
+      { "name": "_assetType", "type": "uint8" },
+      { "name": "_location", "type": "string" },
+      { "name": "_ipfsHashes", "type": "string[]" }
+    ],
+    "outputs": [ { "name": "requestId", "type": "uint256" } ]
+  },
+  {
+    "type": "function",
+    "name": "verificationFee",
+    "stateMutability": "view",
+    "inputs": [],
+    "outputs": [ { "type": "uint256" } ]
+  },
+  {
+    "type": "function",
+    "name": "getRequest",
+    "stateMutability": "view",
+    "inputs": [ { "name": "_requestId", "type": "uint256" } ],
+    "outputs": [
+      {
+        "components": [
+          { "name": "requestId", "type": "uint256" },
+          { "name": "owner", "type": "address" },
+          { "name": "assetType", "type": "uint8" },
+          { "name": "location", "type": "string" },
+          { "name": "ipfsHashes", "type": "string[]" },
+          { "name": "status", "type": "uint8" },
+          { "name": "timestamp", "type": "uint256" },
+          { "name": "valuation", "type": "uint256" },
+          { "name": "confidence", "type": "uint256" }
+        ],
+        "type": "tuple"
+      }
+    ]
+  }
+]
