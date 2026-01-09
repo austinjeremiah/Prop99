@@ -11,7 +11,7 @@ import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
  */
 contract OracleRouter is Ownable, ReentrancyGuard {
     
-    // Enums
+    // Enums   
     enum RequestStatus { PENDING, PROCESSING, VERIFIED, REJECTED }
     enum AssetType { REAL_ESTATE, INVOICE, VEHICLE, ART, COMMODITY, OTHER }
     
