@@ -16,7 +16,7 @@ offchain/
 │   └── utils/
 │       └── logger.ts       # Logging utility
 ├── agent1.py               # Groq (Llama-3.3-70B)
-├── agent2.py               # ASI Agent
+├── agent2.py               # OpenRouter Agent
 ├── agent3.py               # Google Gemini 2.0 Flash
 ├── satellite_service.py    # Google Earth Engine
 ├── package.json
@@ -49,7 +49,7 @@ Orchestrator fetches satellite data (Python)
            ↓
 Orchestrator runs 3 AI agents in parallel (Python)
     ├── Agent 1 (Groq)
-    ├── Agent 2 (ASI)
+    ├── Agent 2 (OpenRouter)
     └── Agent 3 (Gemini)
            ↓
 Consensus Engine aggregates results
@@ -83,7 +83,7 @@ Required variables:
 - `ORACLE_PRIVATE_KEY` - Your oracle wallet private key (with ETH for gas)
 - `GROQ_API_KEY` - Get free at https://console.groq.com
 - `GOOGLE_GEMINI_API_KEY` - Get free at https://makersuite.google.com/app/apikey
-- `ASI_AGENT_API_KEY` - ASI Agent credentials
+- `OPENROUTER_API_KEY` - OpenRouter API credentials
 - `GOOGLE_EARTH_ENGINE_PROJECT_ID` - Your GEE project ID
 - Contract addresses (already deployed)
 
@@ -101,8 +101,8 @@ Required variables:
 3. Create API Key
 4. Copy to `.env`
 
-#### ASI Agent
-Follow ASI Agent documentation for setup
+#### OpenRouter
+Get your API key from https://openrouter.ai/
 
 ### 4. Install Node.js Dependencies
 
@@ -168,7 +168,7 @@ When you submit an asset through the frontend:
 
 🤖 Step 2: Running 3 AI agents in parallel...
 ✅ Agent 1 (groq): $485,000 (88% confidence)
-✅ Agent 2 (asi): $465,000 (84% confidence)
+✅ Agent 2 (openrouter): $465,000 (84% confidence)
 ✅ Agent 3 (gemini): $475,000 (90% confidence)
 
 🔮 Step 3: Calculating consensus...

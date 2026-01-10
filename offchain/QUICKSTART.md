@@ -29,8 +29,8 @@ npm install
 3. Create API Key
 4. Copy the key
 
-**ASI Agent:**
-- Follow ASI Agent documentation
+**OpenRouter:**
+- Get your API key from https://openrouter.ai/
 
 ### 3. Configure Environment
 
@@ -42,7 +42,7 @@ Edit `.env` and fill in:
 - `ORACLE_PRIVATE_KEY` - Your oracle wallet private key (with MNT for gas)
 - `GROQ_API_KEY` - From step 2
 - `GOOGLE_GEMINI_API_KEY` - From step 2
-- `ASI_AGENT_API_KEY` - Your ASI key
+- `OPENROUTER_API_KEY` - Your OpenRouter key
 - Other values are already set from deployment
 
 ### 4. Test Everything

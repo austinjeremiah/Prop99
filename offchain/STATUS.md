@@ -18,7 +18,7 @@ offchain/
 │
 ├── 🤖 Python AI Agents
 │   ├── agent1.py             ✅ Groq (Llama-3.3-70B)
-│   ├── agent2.py             ✅ ASI Agent
+│   ├── agent2.py             ✅ OpenRouter Agent
 │   ├── agent3.py             ✅ Google Gemini 2.0 Flash
 │   └── satellite_service.py  ✅ Google Earth Engine
 │
@@ -67,7 +67,7 @@ await oracleRouter.requestVerification(
 │  Run All 3 Agents Simultaneously │
 ├─────────────────────────────────┤
 │  Agent 1 (Groq)   → $485,000    │
-│  Agent 2 (ASI)    → $465,000    │
+│  Agent 2 (OpenRouter)    → $465,000    │
 │  Agent 3 (Gemini) → $475,000    │
 └─────────────────────────────────┘
 ```
@@ -104,7 +104,7 @@ Compare to Ethereum: **$180+ in gas** vs **$0.06 on Mantle** 🎯
 
 ### 1. ✅ DONE: Python Agents
 - [x] agent1.py (Groq)
-- [x] agent2.py (ASI) 
+- [x] agent2.py (OpenRouter) 
 - [x] agent3.py (Gemini)
 - [x] satellite_service.py
 
@@ -117,7 +117,7 @@ Compare to Ethereum: **$180+ in gas** vs **$0.06 on Mantle** 🎯
 ### 3. ⏳ TODO: Configuration
 - [ ] Get Groq API key (https://console.groq.com)
 - [ ] Get Gemini API key (https://makersuite.google.com/app/apikey)
-- [ ] Get ASI Agent key
+- [ ] Get OpenRouter key
 - [ ] Add oracle wallet private key to .env
 - [ ] Test agents: `npm test`
 - [ ] Start oracle: `npm run dev`
@@ -198,7 +198,7 @@ Instead of relying on:
 - ❌ Price feeds only (limited context)
 
 We use:
-- ✅ 3 independent AI agents (Groq, ASI, Gemini)
+- ✅ 3 independent AI agents (Groq, OpenRouter, Gemini)
 - ✅ Real satellite imagery (Google Earth Engine)
 - ✅ Parallel processing (13s total)
 - ✅ Consensus algorithm (weighted by confidence)
@@ -221,7 +221,7 @@ We use:
 1. **API Keys Required:**
    - Groq (free): https://console.groq.com
    - Gemini (free): https://makersuite.google.com/app/apikey
-   - ASI Agent: Follow their docs
+   - OpenRouter: Get key from https://openrouter.ai/
    
 2. **Oracle Wallet:**
    - Need private key in .env

@@ -58,7 +58,7 @@ export async function processVerificationRequest(request: VerificationRequest) {
     logger.info('🤖 Step 2: Running 3 AI agents in parallel...');
     const [agent1Result, agent2Result, agent3Result] = await Promise.all([
       runAgent('agent1.py', analysisPackage, 'Groq'),
-      runAgent('agent2.py', analysisPackage, 'ASI'),
+      runAgent('agent2.py', analysisPackage, 'OpenRouter'),
       runAgent('agent3.py', analysisPackage, 'Gemini')
     ]);
     

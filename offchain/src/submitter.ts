@@ -2,39 +2,62 @@
  * Blockchain Submitter
  * Submits verification results back to smart contract
  */
-import { createWalletClient, http, parseEther } from 'viem';
+import { createWalletClient, http, parseEther, defineChain } from 'viem';
 import { privateKeyToAccount } from 'viem/accounts';
-import { mantle, mantleTestnet } from 'viem/chains';
+import { mantle } from 'viem/chains';
 import { logger } from './utils/logger';
 import axios from 'axios';
 import dotenv from 'dotenv';
 
 dotenv.config();
 
-const CONSENSUS_ENGINE_ADDRESS = process.env.CONSENSUS_ENGINE_ADDRESS as `0x${string}`;
+const ORACLE_ROUTER_ADDRESS = process.env.ORACLE_ROUTER_ADDRESS as `0x${string}`;
 const ORACLE_PRIVATE_KEY = (process.env.ORACLE_PRIVATE_KEY?.trim().startsWith('0x') 
   ? process.env.ORACLE_PRIVATE_KEY.trim() 
   : `0x${process.env.ORACLE_PRIVATE_KEY?.trim()}`) as `0x${string}`;
-const RPC_URL = process.env.MANTLE_RPC_URL || process.env.MANTLE_TESTNET_RPC_URL;
 const IS_TESTNET = process.env.NODE_ENV !== 'production';
+const RPC_URL = IS_TESTNET ? process.env.MANTLE_TESTNET_RPC_URL : process.env.MANTLE_RPC_URL;
 const PINATA_JWT = process.env.PINATA_JWT;
+
+// Define Mantle Sepolia Testnet
+const mantleSepolia = defineChain({
+  id: 5003,
+  name: 'Mantle Sepolia Testnet',
+  network: 'mantle-sepolia',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'MNT',
+    symbol: 'MNT',
+  },
+  rpcUrls: {
+    default: {
+      http: ['https://rpc.sepolia.mantle.xyz'],
+    },
+    public: {
+      http: ['https://rpc.sepolia.mantle.xyz'],
+    },
+  },
+  blockExplorers: {
+    default: { name: 'Explorer', url: 'https://explorer.sepolia.mantle.xyz' },
+  },
+  testnet: true,
+});
 
 // Create wallet client
 const account = privateKeyToAccount(ORACLE_PRIVATE_KEY);
 const walletClient = createWalletClient({
   account,
-  chain: IS_TESTNET ? mantleTestnet : mantle,
+  chain: IS_TESTNET ? mantleSepolia : mantle,
   transport: http(RPC_URL)
 });
 
-// Contract ABI
-const CONSENSUS_ENGINE_ABI = [
+// Contract ABI - OracleRouter.sol
+const ORACLE_ROUTER_ABI = [
   {
     inputs: [
-      { name: '_requestId', type: 'bytes32' },
+      { name: '_requestId', type: 'uint256' },
       { name: '_valuation', type: 'uint256' },
-      { name: '_confidence', type: 'uint8' },
-      { name: '_evidenceHash', type: 'string' }
+      { name: '_confidence', type: 'uint256' }
     ],
     name: 'submitVerification',
     outputs: [],
@@ -67,19 +90,18 @@ export async function submitVerification(
     logger.info(`✅ Evidence uploaded: ${evidenceHash}`);
     
     // Submit to blockchain
-    logger.info('📤 Submitting transaction to Mantle...');
+    logger.info('📤 Submitting transaction to Mantle Sepolia...');
     
     const hash = await walletClient.writeContract({
-      address: CONSENSUS_ENGINE_ADDRESS,
-      abi: CONSENSUS_ENGINE_ABI,
+      address: ORACLE_ROUTER_ADDRESS,
+      abi: ORACLE_ROUTER_ABI,
       functionName: 'submitVerification',
       args: [
-        requestId as `0x${string}`,
+        BigInt(requestId),
         BigInt(valuation),
-        confidence,
-        evidenceHash
-      ],
-      gas: 300000n
+        BigInt(confidence)
+      ]
+      // Let viem estimate gas automatically
     });
     
     logger.info(`⏳ Waiting for confirmation...`);
