@@ -88,7 +88,7 @@ async function main() {
     const [agent1, agent2, agent3] = await Promise.allSettled([
       testPythonScript('agent1.py', mockData, 'Agent 1 (Groq)'),
       testPythonScript('agent2.py', mockData, 'Agent 2 (OpenRouter)'),
-      testPythonScript('agent3.py', mockData, 'Agent 3 (Gemini)')
+      testPythonScript('agent3.py', mockData, 'Agent 3 (Llama 3.1)')
     ]);
     
     console.log('\n═══════════════════════════════════════════════════════════════');
@@ -97,7 +97,7 @@ async function main() {
     console.log(`Satellite Service: ${satelliteData ? '✅ PASS' : '❌ FAIL'}`);
     console.log(`Agent 1 (Groq): ${agent1.status === 'fulfilled' ? '✅ PASS' : '❌ FAIL'}`);
     console.log(`Agent 2 (OpenRouter): ${agent2.status === 'fulfilled' ? '✅ PASS' : '❌ FAIL'}`);
-    console.log(`Agent 3 (Gemini): ${agent3.status === 'fulfilled' ? '✅ PASS' : '❌ FAIL'}`);
+    console.log(`Agent 3 (Llama): ${agent3.status === 'fulfilled' ? '✅ PASS' : '❌ FAIL'}`);
     console.log('═══════════════════════════════════════════════════════════════\n');
     
     if (agent1.status === 'fulfilled' && agent2.status === 'fulfilled' && agent3.status === 'fulfilled') {
