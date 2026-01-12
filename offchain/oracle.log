@@ -1,0 +1,1872 @@
+2026-01-11 23:55:19 ═══════════════════════════════════════════════════════════════
+2026-01-11 23:55:19 🤖 RWA ORACLE STARTING
+2026-01-11 23:55:19 ═══════════════════════════════════════════════════════════════
+2026-01-11 23:55:19 Oracle Address: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-11 23:55:19 Network: Testnet
+2026-01-11 23:55:19 ═══════════════════════════════════════════════════════════════
+
+2026-01-11 23:55:19 🚀 Starting Oracle Listener...
+2026-01-11 23:55:19 📡 Network: Mantle Sepolia Testnet
+2026-01-11 23:55:19 🔗 RPC URL: https://rpc.sepolia.mantle.xyz
+2026-01-11 23:55:19 📍 Oracle Router: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-11 23:55:20 📦 Current block: 33305622
+2026-01-11 23:55:20 🔍 Scanning for pending requests from recent blocks...
+2026-01-11 23:55:20    Scanning from block 33255622 to 33305622 in 10000 block chunks...
+2026-01-11 23:55:21    ✓ Blocks 33255622-33265622: Found 2 event(s)
+2026-01-11 23:55:21    ✓ Blocks 33285625-33295625: Found 3 event(s)
+2026-01-11 23:55:22    ✓ Blocks 33295626-33305622: Found 19 event(s)
+2026-01-11 23:55:22    Total events found: 24
+2026-01-11 23:55:22 📜 Filtering pending requests from 24 event(s)...
+2026-01-11 23:55:22    ⊘ Request #6: VERIFIED - skipping
+2026-01-11 23:55:22    ⊘ Request #7: VERIFIED - skipping
+2026-01-11 23:55:22    ⊘ Request #8: VERIFIED - skipping
+2026-01-11 23:55:23    ⊘ Request #9: VERIFIED - skipping
+2026-01-11 23:55:23    ⊘ Request #10: VERIFIED - skipping
+2026-01-11 23:55:23    ⊘ Request #11: VERIFIED - skipping
+2026-01-11 23:55:23    ⊘ Request #12: VERIFIED - skipping
+2026-01-11 23:55:24    ⊘ Request #13: VERIFIED - skipping
+2026-01-11 23:55:24    ⊘ Request #14: VERIFIED - skipping
+2026-01-11 23:55:24    ⊘ Request #15: VERIFIED - skipping
+2026-01-11 23:55:24    ✓ Request #16: PENDING - will process
+2026-01-11 23:55:25    ⊘ Request #17: VERIFIED - skipping
+2026-01-11 23:55:25    ⊘ Request #18: VERIFIED - skipping
+2026-01-11 23:55:25    ⊘ Request #19: VERIFIED - skipping
+2026-01-11 23:55:25    ⊘ Request #20: VERIFIED - skipping
+2026-01-11 23:55:26    ⊘ Request #21: VERIFIED - skipping
+2026-01-11 23:55:26    ⊘ Request #22: VERIFIED - skipping
+2026-01-11 23:55:26    ⊘ Request #23: VERIFIED - skipping
+2026-01-11 23:55:26    ⊘ Request #24: VERIFIED - skipping
+2026-01-11 23:55:26    ⊘ Request #25: VERIFIED - skipping
+2026-01-11 23:55:27    ⊘ Request #26: VERIFIED - skipping
+2026-01-11 23:55:27    ⊘ Request #27: VERIFIED - skipping
+2026-01-11 23:55:27    ⊘ Request #28: VERIFIED - skipping
+2026-01-11 23:55:27    ⊘ Request #29: VERIFIED - skipping
+2026-01-11 23:55:27 
+📋 Found 1 pending request(s) to process
+
+2026-01-11 23:55:27 ═══════════════════════════════════════════════════════════════
+2026-01-11 23:55:27 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-11 23:55:27 ═══════════════════════════════════════════════════════════════
+2026-01-11 23:55:27 📝 Request ID: 16
+2026-01-11 23:55:27 👤 Owner: 0x588F6b3169F60176c1143f8BaB47bCf3DeEbECdc
+2026-01-11 23:55:27 🏠 Asset Type: 0
+2026-01-11 23:55:27 📍 Location: villupuram | 40,7525
+2026-01-11 23:55:27    Parsed Coordinates: 40, 7525
+2026-01-11 23:55:27 📄 Documents: 1 files
+2026-01-11 23:55:27 ⏰ Timestamp: 2026-01-11T15:08:39.000Z
+2026-01-11 23:55:27 📦 Block: 33299723
+2026-01-11 23:55:27 ═══════════════════════════════════════════════════════════════
+
+2026-01-11 23:55:27 🔄 Starting AI analysis pipeline...
+
+2026-01-11 23:55:27 📋 Step 0: Validating documents...
+2026-01-11 23:55:34 📄 Validating document: QmTb3yDY2mLG1wCnyAQh...
+2026-01-11 23:55:34 ✅ 1 document(s) validated
+
+2026-01-11 23:55:34 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-11 23:55:38    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-11 23:55:38    🔄 Fetching first document CID for processing...
+2026-01-11 23:55:42    📄 Parsing PDF: Qmew96XPH1GPpmEPrih4...
+2026-01-11 23:55:43    ⚠️  Failed to parse PDF, trying OCR: TypeError: pdfParse is not a function
+2026-01-11 23:55:43 🔍 Converting document to JSON via OCR.space: document.pdf
+2026-01-11 23:55:51 ❌ OCR.space API error: OCR processing error: The maximum page limit of 3 was reached and only pages upto the limit were parsed successfully - 
+2026-01-11 23:55:51 OCR failed for document.pdf, using fallback
+2026-01-11 23:55:51    📄 Document 1: 132 characters
+2026-01-11 23:55:51    Preview: [OCR ERROR: OCR processing error: The maximum page limit of 3 was reached and only pages upto the limit were parsed successfully - ]
+
+2026-01-11 23:55:51 ✅ Fetched 1 document(s) for analysis
+
+2026-01-11 23:55:51 📡 Step 1: Fetching satellite imagery...
+2026-01-11 23:55:59 ❌ Error processing request: Satellite service failed: Error: Satellite service failed: Image.normalizedDifference: Parameter 'input' is required and may not be null.
+
+2026-01-11 23:55:59 ❌ Error handling verification request: Satellite service failed: Error: Satellite service failed: Image.normalizedDifference: Parameter 'input' is required and may not be null.
+
+2026-01-11 23:55:59 👂 Now listening for new VerificationRequested events...
+2026-01-11 23:55:59 Press Ctrl+C to stop
+
+2026-01-12 00:16:52 
+🛑 Stopping oracle listener...
+2026-01-12 20:08:04 ═══════════════════════════════════════════════════════════════
+2026-01-12 20:08:04 🤖 RWA ORACLE STARTING
+2026-01-12 20:08:04 ═══════════════════════════════════════════════════════════════
+2026-01-12 20:08:04 Oracle Address: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 20:08:04 Network: Testnet
+2026-01-12 20:08:04 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 20:08:04 🚀 Starting Oracle Listener...
+2026-01-12 20:08:04 📡 Network: Mantle Sepolia Testnet
+2026-01-12 20:08:04 🔗 RPC URL: https://rpc.sepolia.mantle.xyz
+2026-01-12 20:08:04 📍 Oracle Router: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 20:08:08 📦 Current block: 33342007
+2026-01-12 20:08:08 🔍 Scanning for pending requests from recent blocks...
+2026-01-12 20:08:08    Scanning from block 33292007 to 33342007 in 10000 block chunks...
+2026-01-12 20:08:11    ✓ Blocks 33292007-33302007: Found 15 event(s)
+2026-01-12 20:08:12    ✓ Blocks 33302008-33312008: Found 6 event(s)
+2026-01-12 20:08:21    Total events found: 21
+2026-01-12 20:08:21 📜 Filtering pending requests from 21 event(s)...
+2026-01-12 20:08:22    ⊘ Request #9: VERIFIED - skipping
+2026-01-12 20:08:23    ⊘ Request #10: VERIFIED - skipping
+2026-01-12 20:08:24    ⊘ Request #11: VERIFIED - skipping
+2026-01-12 20:08:30    ⊘ Request #12: VERIFIED - skipping
+2026-01-12 20:08:33    ⊘ Request #13: VERIFIED - skipping
+2026-01-12 20:08:34    ⊘ Request #14: VERIFIED - skipping
+2026-01-12 20:08:37    ⊘ Request #15: VERIFIED - skipping
+2026-01-12 20:08:41    ✓ Request #16: PENDING - will process
+2026-01-12 20:08:46    ⊘ Request #17: VERIFIED - skipping
+2026-01-12 20:08:50    ⊘ Request #18: VERIFIED - skipping
+2026-01-12 20:08:51    ⊘ Request #19: VERIFIED - skipping
+2026-01-12 20:08:52    ⊘ Request #20: VERIFIED - skipping
+2026-01-12 20:08:53    ⊘ Request #21: VERIFIED - skipping
+2026-01-12 20:09:06    ⊘ Request #22: VERIFIED - skipping
+2026-01-12 20:09:07    ⊘ Request #23: VERIFIED - skipping
+2026-01-12 20:09:08    ⊘ Request #24: VERIFIED - skipping
+2026-01-12 20:09:09    ⊘ Request #25: VERIFIED - skipping
+2026-01-12 20:09:13    ⊘ Request #26: VERIFIED - skipping
+2026-01-12 20:09:14    ⊘ Request #27: VERIFIED - skipping
+2026-01-12 20:09:15    ⊘ Request #28: VERIFIED - skipping
+2026-01-12 20:09:15    ⊘ Request #29: VERIFIED - skipping
+2026-01-12 20:09:15 
+📋 Found 1 pending request(s) to process
+
+2026-01-12 20:09:15 ═══════════════════════════════════════════════════════════════
+2026-01-12 20:09:15 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-12 20:09:15 ═══════════════════════════════════════════════════════════════
+2026-01-12 20:09:15 📝 Request ID: 16
+2026-01-12 20:09:15 👤 Owner: 0x588F6b3169F60176c1143f8BaB47bCf3DeEbECdc
+2026-01-12 20:09:15 🏠 Asset Type: 0
+2026-01-12 20:09:15 📍 Location: villupuram | 40,7525
+2026-01-12 20:09:15    Parsed Coordinates: 40, 7525
+2026-01-12 20:09:15 📄 Documents: 1 files
+2026-01-12 20:09:15 ⏰ Timestamp: 2026-01-11T15:08:39.000Z
+2026-01-12 20:09:15 📦 Block: 33299723
+2026-01-12 20:09:15 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 20:09:15 🔄 Starting AI analysis pipeline...
+
+2026-01-12 20:09:15 📋 Step 0: Validating documents...
+2026-01-12 20:09:24 📄 Validating document: QmTb3yDY2mLG1wCnyAQh...
+2026-01-12 20:09:24 ✅ 1 document(s) validated
+
+2026-01-12 20:09:24 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-12 20:09:29    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-12 20:09:29    🔄 Fetching first document CID for processing...
+2026-01-12 20:09:36    📄 Parsing PDF: Qmew96XPH1GPpmEPrih4...
+2026-01-12 20:09:37    ⚠️  Failed to parse PDF, trying OCR: TypeError: pdfParse is not a function
+2026-01-12 20:09:37 🔍 Converting document to JSON via OCR.space: document.pdf
+2026-01-12 20:09:48 ❌ OCR.space API error: OCR processing error: The maximum page limit of 3 was reached and only pages upto the limit were parsed successfully - 
+2026-01-12 20:09:48 OCR failed for document.pdf, using fallback
+2026-01-12 20:09:48    📄 Document 1: 132 characters
+2026-01-12 20:09:48    Preview: [OCR ERROR: OCR processing error: The maximum page limit of 3 was reached and only pages upto the limit were parsed successfully - ]
+
+2026-01-12 20:09:48 ✅ Fetched 1 document(s) for analysis
+
+2026-01-12 20:09:48 📡 Step 1: Fetching satellite imagery...
+2026-01-12 20:10:00 ❌ Error processing request: Satellite service failed: Error: Satellite service failed: Image.normalizedDifference: Parameter 'input' is required and may not be null.
+
+2026-01-12 20:10:00 ❌ Error handling verification request: Satellite service failed: Error: Satellite service failed: Image.normalizedDifference: Parameter 'input' is required and may not be null.
+
+2026-01-12 20:10:00 👂 Now listening for new VerificationRequested events...
+2026-01-12 20:10:00 Press Ctrl+C to stop
+
+2026-01-12 20:13:54 ═══════════════════════════════════════════════════════════════
+2026-01-12 20:13:54 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-12 20:13:54 ═══════════════════════════════════════════════════════════════
+2026-01-12 20:13:54 📝 Request ID: 30
+2026-01-12 20:13:54 👤 Owner: 0xe01Add0c3640a8314132bAF491d101A38ffEF4f0
+2026-01-12 20:13:54 🏠 Asset Type: 0
+2026-01-12 20:13:54 📍 Location: Sai Baba Kovil Temple , Kaasi Kovil Kuppam , Ennore , Chennai - 600056 | 13.191204,440.313094
+2026-01-12 20:13:54    Parsed Coordinates: 13.191204, 440.313094
+2026-01-12 20:13:54 📄 Documents: 1 files
+2026-01-12 20:13:54 ⏰ Timestamp: 2026-01-12T14:43:47.000Z
+2026-01-12 20:13:54 📦 Block: 33342177
+2026-01-12 20:13:54 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 20:13:54 🔄 Starting AI analysis pipeline...
+
+2026-01-12 20:13:54 📋 Step 0: Validating documents...
+2026-01-12 20:14:00 📄 Validating document: Qma4E2vVaJVGP2cLH8fi...
+2026-01-12 20:14:00 ✅ 1 document(s) validated
+
+2026-01-12 20:14:00 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-12 20:14:05    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-12 20:14:05    🔄 Fetching first document CID for processing...
+2026-01-12 20:14:12    📄 Found structured document JSON: Tamil_Nadu_Sale_Deed_Mock_Filled_Sylesh_Murthi_Final.pdf
+2026-01-12 20:14:12    🔄 Fetching original file for OCR processing...
+2026-01-12 20:14:12    📥 Fetching original file: QmZFAvcZMpNZxRrFEucC...
+2026-01-12 20:14:18    📄 Processing original PDF with OCR.space API...
+2026-01-12 20:14:18    ⚠️  PDF parsing failed, using OCR: TypeError: pdfParse is not a function
+2026-01-12 20:14:18 🔍 Converting document to JSON via OCR.space: Tamil_Nadu_Sale_Deed_Mock_Filled_Sylesh_Murthi_Final.pdf
+2026-01-12 20:14:22 ✅ Page 1 parsed successfully (2142 chars)
+2026-01-12 20:14:22 ✅ Page 2 parsed successfully (238 chars)
+2026-01-12 20:14:22 ✅ OCR complete: 2382 total characters extracted
+2026-01-12 20:14:22    Pages: 2
+2026-01-12 20:14:22    Processing time: 1891ms
+2026-01-12 20:14:22 📄 Extracted 2382 characters from Tamil_Nadu_Sale_Deed_Mock_Filled_Sylesh_Murthi_Final.pdf via OCR
+2026-01-12 20:14:22    ✅ OCR extracted 2382 characters
+2026-01-12 20:14:22    📄 Document 1: 2382 characters
+2026-01-12 20:14:22    Preview: SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2026.	
+VENDOR / SELLER	
+Murthi, Son of Late Ranganathan, aged about 52 years, Hindu, Occupation: Ag...
+
+2026-01-12 20:14:22 ✅ Fetched 1 document(s) for analysis
+
+2026-01-12 20:14:22 📡 Step 1: Fetching satellite imagery...
+2026-01-12 20:14:39 ✅ Satellite data: 39779.77 sqm, NDVI 0.3448
+2026-01-12 20:14:39    Cloud coverage: 0.854373%, Resolution: 10m
+
+2026-01-12 20:14:39 🤖 Step 2: Running 3 AI agents in parallel...
+2026-01-12 20:14:39    🔍 Sending to Groq:
+2026-01-12 20:14:39       - Document count: 1
+2026-01-12 20:14:39       - Doc 1: 2382 chars - "SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2..."
+2026-01-12 20:14:39    🔍 Sending to OpenRouter:
+2026-01-12 20:14:39       - Document count: 1
+2026-01-12 20:14:39       - Doc 1: 2382 chars - "SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2..."
+2026-01-12 20:14:39    🔍 Sending to Gemini:
+2026-01-12 20:14:39       - Document count: 1
+2026-01-12 20:14:39       - Doc 1: 2382 chars - "SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2..."
+2026-01-12 20:14:41    📋 Groq document analysis:
+2026-01-12 20:14:41       - Is land document: true
+2026-01-12 20:14:41       - Authenticity score: 60
+2026-01-12 20:14:42 ✅ Agent 1 - Groq (Llama 3.3 70B): $235,000 (80% confidence)
+2026-01-12 20:14:42 ✅ Agent 2 - OpenRouter (GPT-4o-mini): $54,776,743 (75% confidence)
+2026-01-12 20:14:42 ✅ Agent 3 - Gemini (Meta Llama 3.1): $57,760,226 (70% confidence)
+2026-01-12 20:14:42 
+2026-01-12 20:14:42 📋 Step 3.5: Extracting and validating document details...
+
+2026-01-12 20:14:42 📄 DOCUMENT SUMMARY:
+2026-01-12 20:14:42 ═══════════════════════════════════════════════════════════════
+2026-01-12 20:14:42 👤 Seller/Owner: Murthi, Son of Late Ranganathan, aged about 52 years, Hindu, Occupation: Agriculture, Residing at
+2026-01-12 20:14:42 👤 Buyer/Purchaser: Sylesh, Son of Sai Kumar, aged about 27 years, Hindu, Occupation: Software Engineer, Residing at
+2026-01-12 20:14:42 📍 Survey/Plot Number: . 215
+2026-01-12 20:14:42 📏 Property Area: 39779.77 sqm
+2026-01-12 20:14:42 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 20:14:42 ✅ Document contains required Seller and Buyer information
+
+2026-01-12 20:14:42 ⚠️  Document issues noted: Area mismatch >20% with satellite data, Potential for fraudulent activity due to area discrepancy
+2026-01-12 20:14:42 📊 Document authenticity score: 60.0%
+
+2026-01-12 20:14:42 🔮 Step 4: Calculating consensus...
+2026-01-12 20:14:42 ✅ Consensus reached: $36,312,318
+2026-01-12 20:14:42    Final confidence: 23%
+2026-01-12 20:14:42    Consensus score: 30/100
+2026-01-12 20:14:42    Standard deviation: ±$26,442,505
+
+2026-01-12 20:14:42 📊 INDIVIDUAL AGENT SCORES:
+2026-01-12 20:14:42 ═══════════════════════════════════════════════════════════════
+2026-01-12 20:14:42    1. Groq (Llama 3.3 70B)
+2026-01-12 20:14:42       Valuation: $235,000
+2026-01-12 20:14:42       Confidence: 80%
+2026-01-12 20:14:42    2. OpenRouter (GPT-4o-mini)
+2026-01-12 20:14:42       Valuation: $54,776,743
+2026-01-12 20:14:42       Confidence: 75%
+2026-01-12 20:14:42    3. Gemini (Meta Llama 3.1)
+2026-01-12 20:14:42       Valuation: $57,760,226
+2026-01-12 20:14:42       Confidence: 70%
+2026-01-12 20:14:42 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 20:14:42 ⛓️  Step 5: Submitting to blockchain...
+2026-01-12 20:14:42 📦 Uploading evidence to IPFS...
+2026-01-12 20:14:45 ✅ Evidence uploaded: QmSie4AhKXoxS9jaM3e2sJRobRzGv8jjUpYVUkELhWPQW5
+2026-01-12 20:14:45 📝 Evidence mapping stored: Request 30 -> QmSie4AhKXoxS9jaM3e2sJRobRzGv8jjUpYVUkELhWPQW5
+2026-01-12 20:14:45 📤 Submitting transaction to Mantle Sepolia...
+2026-01-12 20:14:49 ⏳ Waiting for confirmation...
+2026-01-12 20:14:49 ✅ Transaction submitted: 0x04507c716fbf0c622d012f69bae020a21abe9ad6c14cd0a71ad34908cd5b3f68
+
+2026-01-12 20:14:49 ═══════════════════════════════════════════════════════════════
+2026-01-12 20:14:49 ✅ REQUEST COMPLETED IN 54.23s
+2026-01-12 20:14:49 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 20:56:04 ═══════════════════════════════════════════════════════════════
+2026-01-12 20:56:04 🤖 RWA ORACLE STARTING
+2026-01-12 20:56:04 ═══════════════════════════════════════════════════════════════
+2026-01-12 20:56:04 Oracle Address: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 20:56:04 Network: Testnet
+2026-01-12 20:56:04 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 20:56:04 🚀 Starting Oracle Listener...
+2026-01-12 20:56:04 📡 Network: Mantle Sepolia Testnet
+2026-01-12 20:56:04 🔗 RPC URL: https://rpc.sepolia.mantle.xyz
+2026-01-12 20:56:04 📍 Oracle Router: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 20:56:04 📦 Current block: 33343445
+2026-01-12 20:56:04 🔍 Scanning for pending requests from recent blocks...
+2026-01-12 20:56:04    Scanning from block 33293445 to 33343445 in 10000 block chunks...
+2026-01-12 20:56:05    ✓ Blocks 33293445-33303445: Found 13 event(s)
+2026-01-12 20:56:05    ✓ Blocks 33303446-33313446: Found 6 event(s)
+2026-01-12 20:56:05    ✓ Blocks 33333449-33343445: Found 1 event(s)
+2026-01-12 20:56:05    Total events found: 20
+2026-01-12 20:56:05 📜 Filtering pending requests from 20 event(s)...
+2026-01-12 20:56:05    ⊘ Request #11: VERIFIED - skipping
+2026-01-12 20:56:05    ⊘ Request #12: VERIFIED - skipping
+2026-01-12 20:56:06    ⊘ Request #13: VERIFIED - skipping
+2026-01-12 20:56:06    ⊘ Request #14: VERIFIED - skipping
+2026-01-12 20:56:06    ⊘ Request #15: VERIFIED - skipping
+2026-01-12 20:56:06    ✓ Request #16: PENDING - will process
+2026-01-12 20:56:06    ⊘ Request #17: VERIFIED - skipping
+2026-01-12 20:56:06    ⊘ Request #18: VERIFIED - skipping
+2026-01-12 20:56:06    ⊘ Request #19: VERIFIED - skipping
+2026-01-12 20:56:06    ⊘ Request #20: VERIFIED - skipping
+2026-01-12 20:56:06    ⊘ Request #21: VERIFIED - skipping
+2026-01-12 20:56:07    ⊘ Request #22: VERIFIED - skipping
+2026-01-12 20:56:07    ⊘ Request #23: VERIFIED - skipping
+2026-01-12 20:56:07    ⊘ Request #24: VERIFIED - skipping
+2026-01-12 20:56:07    ⊘ Request #25: VERIFIED - skipping
+2026-01-12 20:56:07    ⊘ Request #26: VERIFIED - skipping
+2026-01-12 20:56:07    ⊘ Request #27: VERIFIED - skipping
+2026-01-12 20:56:07    ⊘ Request #28: VERIFIED - skipping
+2026-01-12 20:56:08    ⊘ Request #29: VERIFIED - skipping
+2026-01-12 20:56:08    ⊘ Request #30: VERIFIED - skipping
+2026-01-12 20:56:08 
+📋 Found 1 pending request(s) to process
+
+2026-01-12 20:56:08 ═══════════════════════════════════════════════════════════════
+2026-01-12 20:56:08 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-12 20:56:08 ═══════════════════════════════════════════════════════════════
+2026-01-12 20:56:08 📝 Request ID: 16
+2026-01-12 20:56:08 👤 Owner: 0x588F6b3169F60176c1143f8BaB47bCf3DeEbECdc
+2026-01-12 20:56:08 🏠 Asset Type: 0
+2026-01-12 20:56:08 📍 Location: villupuram | 40,7525
+2026-01-12 20:56:08    Parsed Coordinates: 40, 7525
+2026-01-12 20:56:08 📄 Documents: 1 files
+2026-01-12 20:56:08 ⏰ Timestamp: 2026-01-11T15:08:39.000Z
+2026-01-12 20:56:08 📦 Block: 33299723
+2026-01-12 20:56:08 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 20:56:08 🔄 Starting AI analysis pipeline...
+
+2026-01-12 20:56:08 📋 Step 0: Validating documents...
+2026-01-12 20:56:12 📄 Validating document: QmTb3yDY2mLG1wCnyAQh...
+2026-01-12 20:56:12 ✅ 1 document(s) validated
+
+2026-01-12 20:56:12 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-12 20:56:17    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-12 20:56:17    🔄 Fetching first document CID for processing...
+2026-01-12 20:56:22    📄 Parsing PDF: Qmew96XPH1GPpmEPrih4...
+2026-01-12 20:56:29    ⚠️  Failed to parse PDF, trying OCR: TypeError: pdfParse is not a function
+2026-01-12 20:56:29 🔍 Converting document to JSON via OCR.space: document.pdf
+2026-01-12 20:56:42 ❌ OCR.space API error: OCR processing error: The maximum page limit of 3 was reached and only pages upto the limit were parsed successfully - 
+2026-01-12 20:56:42 OCR failed for document.pdf, using fallback
+2026-01-12 20:56:42    📄 Document 1: 132 characters
+2026-01-12 20:56:42    Preview: [OCR ERROR: OCR processing error: The maximum page limit of 3 was reached and only pages upto the limit were parsed successfully - ]
+
+2026-01-12 20:56:42 ✅ Fetched 1 document(s) for analysis
+
+2026-01-12 20:56:42 📡 Step 1: Fetching satellite imagery...
+2026-01-12 20:56:56 ❌ Error processing request: Satellite service failed: Error: Satellite service failed: Image.normalizedDifference: Parameter 'input' is required and may not be null.
+
+2026-01-12 20:56:56 ❌ Error handling verification request: Satellite service failed: Error: Satellite service failed: Image.normalizedDifference: Parameter 'input' is required and may not be null.
+
+2026-01-12 20:56:56 👂 Now listening for new VerificationRequested events...
+2026-01-12 20:56:56 Press Ctrl+C to stop
+
+2026-01-12 21:04:34 
+🛑 Stopping oracle listener...
+2026-01-12 21:06:49 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:06:49 🤖 RWA ORACLE STARTING
+2026-01-12 21:06:49 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:06:49 Oracle Address: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 21:06:49 Network: Testnet
+2026-01-12 21:06:49 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:06:49 🚀 Starting Oracle Listener...
+2026-01-12 21:06:49 📡 Network: Mantle Sepolia Testnet
+2026-01-12 21:06:49 🔗 RPC URL: https://rpc.sepolia.mantle.xyz
+2026-01-12 21:06:49 📍 Oracle Router: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 21:06:50 📦 Current block: 33343768
+2026-01-12 21:06:50 🔍 Scanning for pending requests from recent blocks...
+2026-01-12 21:06:50    Scanning from block 33293768 to 33343768 in 10000 block chunks...
+2026-01-12 21:06:50    ✓ Blocks 33293768-33303768: Found 14 event(s)
+2026-01-12 21:06:50    ✓ Blocks 33303769-33313769: Found 5 event(s)
+2026-01-12 21:06:51    ✓ Blocks 33333772-33343768: Found 1 event(s)
+2026-01-12 21:06:51    Total events found: 20
+2026-01-12 21:06:51 📜 Filtering pending requests from 20 event(s)...
+2026-01-12 21:06:51    ⊘ Request #11: VERIFIED - skipping
+2026-01-12 21:06:51    ⊘ Request #12: VERIFIED - skipping
+2026-01-12 21:06:51    ⊘ Request #13: VERIFIED - skipping
+2026-01-12 21:06:51    ⊘ Request #14: VERIFIED - skipping
+2026-01-12 21:06:51    ⊘ Request #15: VERIFIED - skipping
+2026-01-12 21:06:52    ✓ Request #16: PENDING - will process
+2026-01-12 21:06:52    ⊘ Request #17: VERIFIED - skipping
+2026-01-12 21:06:52    ⊘ Request #18: VERIFIED - skipping
+2026-01-12 21:06:52    ⊘ Request #19: VERIFIED - skipping
+2026-01-12 21:06:52    ⊘ Request #20: VERIFIED - skipping
+2026-01-12 21:06:52    ⊘ Request #21: VERIFIED - skipping
+2026-01-12 21:06:52    ⊘ Request #22: VERIFIED - skipping
+2026-01-12 21:06:52    ⊘ Request #23: VERIFIED - skipping
+2026-01-12 21:06:52    ⊘ Request #24: VERIFIED - skipping
+2026-01-12 21:06:53    ⊘ Request #25: VERIFIED - skipping
+2026-01-12 21:06:53    ⊘ Request #26: VERIFIED - skipping
+2026-01-12 21:06:53    ⊘ Request #27: VERIFIED - skipping
+2026-01-12 21:06:53    ⊘ Request #28: VERIFIED - skipping
+2026-01-12 21:06:53    ⊘ Request #29: VERIFIED - skipping
+2026-01-12 21:06:53    ⊘ Request #30: VERIFIED - skipping
+2026-01-12 21:06:53 
+📋 Found 1 pending request(s) to process
+
+2026-01-12 21:06:53 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:06:53 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-12 21:06:53 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:06:53 📝 Request ID: 16
+2026-01-12 21:06:53 👤 Owner: 0x588F6b3169F60176c1143f8BaB47bCf3DeEbECdc
+2026-01-12 21:06:53 🏠 Asset Type: 0
+2026-01-12 21:06:53 📍 Location: villupuram | 40,7525
+2026-01-12 21:06:53    Parsed Coordinates: 40, 7525
+2026-01-12 21:06:53 📄 Documents: 1 files
+2026-01-12 21:06:53 ⏰ Timestamp: 2026-01-11T15:08:39.000Z
+2026-01-12 21:06:53 📦 Block: 33299723
+2026-01-12 21:06:53 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:06:53 🔄 Starting AI analysis pipeline...
+
+2026-01-12 21:06:53 📋 Step 0: Validating documents...
+2026-01-12 21:06:59 📄 Validating document: QmTb3yDY2mLG1wCnyAQh...
+2026-01-12 21:06:59 ✅ 1 document(s) validated
+
+2026-01-12 21:06:59 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-12 21:07:04    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-12 21:07:04    🔄 Fetching first document CID for processing...
+2026-01-12 21:07:10    📄 Parsing PDF: Qmew96XPH1GPpmEPrih4...
+2026-01-12 21:07:11    ⚠️  Failed to parse PDF, trying OCR: TypeError: pdfParse is not a function
+2026-01-12 21:07:11 🔍 Converting document to JSON via OCR.space: document.pdf
+2026-01-12 21:07:22 ❌ OCR.space API error: OCR processing error: The maximum page limit of 3 was reached and only pages upto the limit were parsed successfully - 
+2026-01-12 21:07:22 OCR failed for document.pdf, using fallback
+2026-01-12 21:07:22    📄 Document 1: 132 characters
+2026-01-12 21:07:22    Preview: [OCR ERROR: OCR processing error: The maximum page limit of 3 was reached and only pages upto the limit were parsed successfully - ]
+
+2026-01-12 21:07:22 ✅ Fetched 1 document(s) for analysis
+
+2026-01-12 21:07:22 📡 Step 1: Fetching satellite imagery...
+2026-01-12 21:07:31 ❌ Error processing request: Satellite service failed: Error: Satellite service failed: Image.normalizedDifference: Parameter 'input' is required and may not be null.
+
+2026-01-12 21:07:31 ❌ Error handling verification request: Satellite service failed: Error: Satellite service failed: Image.normalizedDifference: Parameter 'input' is required and may not be null.
+
+2026-01-12 21:07:31 👂 Now listening for new VerificationRequested events...
+2026-01-12 21:07:31 Press Ctrl+C to stop
+
+2026-01-12 21:10:21 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:10:21 🤖 RWA ORACLE STARTING
+2026-01-12 21:10:21 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:10:21 Oracle Address: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 21:10:21 Network: Testnet
+2026-01-12 21:10:21 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:10:21 🚀 Starting Oracle Listener...
+2026-01-12 21:10:21 📡 Network: Mantle Sepolia Testnet
+2026-01-12 21:10:21 🔗 RPC URL: https://rpc.sepolia.mantle.xyz
+2026-01-12 21:10:21 📍 Oracle Router: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 21:10:22 📦 Current block: 33343874
+2026-01-12 21:10:22 🔍 Scanning for pending requests from recent blocks...
+2026-01-12 21:10:22    Scanning from block 33293874 to 33343874 in 10000 block chunks...
+2026-01-12 21:10:22    ✓ Blocks 33293874-33303874: Found 14 event(s)
+2026-01-12 21:10:22    ✓ Blocks 33303875-33313875: Found 5 event(s)
+2026-01-12 21:10:23    ✓ Blocks 33333878-33343874: Found 1 event(s)
+2026-01-12 21:10:23    Total events found: 20
+2026-01-12 21:10:23 📜 Filtering pending requests from 20 event(s)...
+2026-01-12 21:10:23    ⊘ Request #11: VERIFIED - skipping
+2026-01-12 21:10:23    ⊘ Request #12: VERIFIED - skipping
+2026-01-12 21:10:23    ⊘ Request #13: VERIFIED - skipping
+2026-01-12 21:10:23    ⊘ Request #14: VERIFIED - skipping
+2026-01-12 21:10:23    ⊘ Request #15: VERIFIED - skipping
+2026-01-12 21:10:23    ✓ Request #16: PENDING - will process
+2026-01-12 21:10:24    ⊘ Request #17: VERIFIED - skipping
+2026-01-12 21:10:24    ⊘ Request #18: VERIFIED - skipping
+2026-01-12 21:10:24    ⊘ Request #19: VERIFIED - skipping
+2026-01-12 21:10:24    ⊘ Request #20: VERIFIED - skipping
+2026-01-12 21:10:24    ⊘ Request #21: VERIFIED - skipping
+2026-01-12 21:10:25    ⊘ Request #22: VERIFIED - skipping
+2026-01-12 21:10:25    ⊘ Request #23: VERIFIED - skipping
+2026-01-12 21:10:25    ⊘ Request #24: VERIFIED - skipping
+2026-01-12 21:10:25    ⊘ Request #25: VERIFIED - skipping
+2026-01-12 21:10:25    ⊘ Request #26: VERIFIED - skipping
+2026-01-12 21:10:25    ⊘ Request #27: VERIFIED - skipping
+2026-01-12 21:10:25    ⊘ Request #28: VERIFIED - skipping
+2026-01-12 21:10:26    ⊘ Request #29: VERIFIED - skipping
+2026-01-12 21:10:26    ⊘ Request #30: VERIFIED - skipping
+2026-01-12 21:10:26 
+📋 Found 1 pending request(s) to process
+
+2026-01-12 21:10:26 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:10:26 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-12 21:10:26 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:10:26 📝 Request ID: 16
+2026-01-12 21:10:26 👤 Owner: 0x588F6b3169F60176c1143f8BaB47bCf3DeEbECdc
+2026-01-12 21:10:26 🏠 Asset Type: 0
+2026-01-12 21:10:26 📍 Location: villupuram | 40,7525
+2026-01-12 21:10:26    Parsed Coordinates: 40, 7525
+2026-01-12 21:10:26 📄 Documents: 1 files
+2026-01-12 21:10:26 ⏰ Timestamp: 2026-01-11T15:08:39.000Z
+2026-01-12 21:10:26 📦 Block: 33299723
+2026-01-12 21:10:26 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:10:26 🔄 Starting AI analysis pipeline...
+
+2026-01-12 21:10:26 📋 Step 0: Validating documents...
+2026-01-12 21:10:32 📄 Validating document: QmTb3yDY2mLG1wCnyAQh...
+2026-01-12 21:10:32 ✅ 1 document(s) validated
+
+2026-01-12 21:10:32 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-12 21:10:36    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-12 21:10:36    🔄 Fetching first document CID for processing...
+2026-01-12 21:10:43    📄 Parsing PDF: Qmew96XPH1GPpmEPrih4...
+2026-01-12 21:10:43    ⚠️  Failed to parse PDF, trying OCR: TypeError: pdfParse is not a function
+2026-01-12 21:10:43 🔍 Converting document to JSON via OCR.space: document.pdf
+2026-01-12 21:10:54 ❌ OCR.space API error: OCR processing error: The maximum page limit of 3 was reached and only pages upto the limit were parsed successfully - 
+2026-01-12 21:10:54 OCR failed for document.pdf, using fallback
+2026-01-12 21:10:54    📄 Document 1: 132 characters
+2026-01-12 21:10:54    Preview: [OCR ERROR: OCR processing error: The maximum page limit of 3 was reached and only pages upto the limit were parsed successfully - ]
+
+2026-01-12 21:10:54 ✅ Fetched 1 document(s) for analysis
+
+2026-01-12 21:10:54 📡 Step 1: Fetching satellite imagery...
+2026-01-12 21:11:05 ❌ Error processing request: Satellite service failed: Error: Satellite service failed: Image.normalizedDifference: Parameter 'input' is required and may not be null.
+
+2026-01-12 21:11:05 ❌ Error handling verification request: Satellite service failed: Error: Satellite service failed: Image.normalizedDifference: Parameter 'input' is required and may not be null.
+
+2026-01-12 21:11:05 👂 Now listening for new VerificationRequested events...
+2026-01-12 21:11:05 Press Ctrl+C to stop
+
+2026-01-12 21:11:12 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:11:12 🤖 RWA ORACLE STARTING
+2026-01-12 21:11:12 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:11:12 Oracle Address: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 21:11:12 Network: Testnet
+2026-01-12 21:11:12 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:11:12 🚀 Starting Oracle Listener...
+2026-01-12 21:11:12 📡 Network: Mantle Sepolia Testnet
+2026-01-12 21:11:12 🔗 RPC URL: https://rpc.sepolia.mantle.xyz
+2026-01-12 21:11:12 📍 Oracle Router: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 21:11:12 📦 Current block: 33343899
+2026-01-12 21:11:12 🔍 Scanning for pending requests from recent blocks...
+2026-01-12 21:11:12    Scanning from block 33293899 to 33343899 in 10000 block chunks...
+2026-01-12 21:11:12    ✓ Blocks 33293899-33303899: Found 14 event(s)
+2026-01-12 21:11:13    ✓ Blocks 33303900-33313900: Found 5 event(s)
+2026-01-12 21:11:13    ✓ Blocks 33333903-33343899: Found 1 event(s)
+2026-01-12 21:11:13    Total events found: 20
+2026-01-12 21:11:13 📜 Filtering pending requests from 20 event(s)...
+2026-01-12 21:11:13    ⊘ Request #11: VERIFIED - skipping
+2026-01-12 21:11:14    ⊘ Request #12: VERIFIED - skipping
+2026-01-12 21:11:14    ⊘ Request #13: VERIFIED - skipping
+2026-01-12 21:11:14    ⊘ Request #14: VERIFIED - skipping
+2026-01-12 21:11:14    ⊘ Request #15: VERIFIED - skipping
+2026-01-12 21:11:15    ✓ Request #16: PENDING - will process
+2026-01-12 21:11:15    ⊘ Request #17: VERIFIED - skipping
+2026-01-12 21:11:15    ⊘ Request #18: VERIFIED - skipping
+2026-01-12 21:11:15    ⊘ Request #19: VERIFIED - skipping
+2026-01-12 21:11:15    ⊘ Request #20: VERIFIED - skipping
+2026-01-12 21:11:15    ⊘ Request #21: VERIFIED - skipping
+2026-01-12 21:11:16    ⊘ Request #22: VERIFIED - skipping
+2026-01-12 21:11:16    ⊘ Request #23: VERIFIED - skipping
+2026-01-12 21:11:16    ⊘ Request #24: VERIFIED - skipping
+2026-01-12 21:11:16    ⊘ Request #25: VERIFIED - skipping
+2026-01-12 21:11:16    ⊘ Request #26: VERIFIED - skipping
+2026-01-12 21:11:16    ⊘ Request #27: VERIFIED - skipping
+2026-01-12 21:11:17    ⊘ Request #28: VERIFIED - skipping
+2026-01-12 21:11:17    ⊘ Request #29: VERIFIED - skipping
+2026-01-12 21:11:17    ⊘ Request #30: VERIFIED - skipping
+2026-01-12 21:11:17 
+📋 Found 1 pending request(s) to process
+
+2026-01-12 21:11:17 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:11:17 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-12 21:11:17 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:11:17 📝 Request ID: 16
+2026-01-12 21:11:17 👤 Owner: 0x588F6b3169F60176c1143f8BaB47bCf3DeEbECdc
+2026-01-12 21:11:17 🏠 Asset Type: 0
+2026-01-12 21:11:17 📍 Location: villupuram | 40,7525
+2026-01-12 21:11:17    Parsed Coordinates: 40, 7525
+2026-01-12 21:11:17 📄 Documents: 1 files
+2026-01-12 21:11:17 ⏰ Timestamp: 2026-01-11T15:08:39.000Z
+2026-01-12 21:11:17 📦 Block: 33299723
+2026-01-12 21:11:17 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:11:17 🔄 Starting AI analysis pipeline...
+
+2026-01-12 21:11:17 📋 Step 0: Validating documents...
+2026-01-12 21:11:22 📄 Validating document: QmTb3yDY2mLG1wCnyAQh...
+2026-01-12 21:11:22 ✅ 1 document(s) validated
+
+2026-01-12 21:11:22 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-12 21:11:26    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-12 21:11:26    🔄 Fetching first document CID for processing...
+2026-01-12 21:11:30    📄 Parsing PDF: Qmew96XPH1GPpmEPrih4...
+2026-01-12 21:11:30    ⚠️  Failed to parse PDF, trying OCR: TypeError: pdfParse is not a function
+2026-01-12 21:11:30 🔍 Converting document to JSON via OCR.space: document.pdf
+2026-01-12 21:11:41 ❌ OCR.space API error: OCR processing error: The maximum page limit of 3 was reached and only pages upto the limit were parsed successfully - 
+2026-01-12 21:11:41 OCR failed for document.pdf, using fallback
+2026-01-12 21:11:41    📄 Document 1: 132 characters
+2026-01-12 21:11:41    Preview: [OCR ERROR: OCR processing error: The maximum page limit of 3 was reached and only pages upto the limit were parsed successfully - ]
+
+2026-01-12 21:11:41 ✅ Fetched 1 document(s) for analysis
+
+2026-01-12 21:11:41 📡 Step 1: Fetching satellite imagery...
+2026-01-12 21:11:50 ❌ Error processing request: Satellite service failed: Error: Satellite service failed: Image.normalizedDifference: Parameter 'input' is required and may not be null.
+
+2026-01-12 21:11:50 ❌ Error handling verification request: Satellite service failed: Error: Satellite service failed: Image.normalizedDifference: Parameter 'input' is required and may not be null.
+
+2026-01-12 21:11:50 👂 Now listening for new VerificationRequested events...
+2026-01-12 21:11:50 Press Ctrl+C to stop
+
+2026-01-12 21:16:28 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:16:28 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-12 21:16:28 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:16:28 📝 Request ID: 31
+2026-01-12 21:16:28 👤 Owner: 0x588F6b3169F60176c1143f8BaB47bCf3DeEbECdc
+2026-01-12 21:16:28 🏠 Asset Type: 0
+2026-01-12 21:16:28 📍 Location: villupuram | 11,79
+2026-01-12 21:16:28    Parsed Coordinates: 11, 79
+2026-01-12 21:16:28 📄 Documents: 1 files
+2026-01-12 21:16:28 ⏰ Timestamp: 2026-01-12T15:46:09.000Z
+2026-01-12 21:16:28 📦 Block: 33344048
+2026-01-12 21:16:28 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:16:28 🔄 Starting AI analysis pipeline...
+
+2026-01-12 21:16:28 📋 Step 0: Validating documents...
+2026-01-12 21:16:37 📄 Validating document: Qmf8H3XjL1DdE8YzLPJj...
+2026-01-12 21:16:37 ✅ 1 document(s) validated
+
+2026-01-12 21:16:37 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-12 21:16:41    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-12 21:16:41    🔄 Fetching first document CID for processing...
+2026-01-12 21:16:46    📄 Found structured document JSON: Filled_Land_Sale_Deed (1).pdf
+2026-01-12 21:16:46    🔄 Fetching original file for OCR processing...
+2026-01-12 21:16:46    📥 Fetching original file: QmQgxrGL7Bx9c19wNhMC...
+2026-01-12 21:16:51    📄 Processing original PDF with OCR.space API...
+2026-01-12 21:16:51    ⚠️  PDF parsing failed, using OCR: TypeError: pdfParse is not a function
+2026-01-12 21:16:51 🔍 Converting document to JSON via OCR.space: Filled_Land_Sale_Deed (1).pdf
+2026-01-12 21:16:53 ✅ Page 1 parsed successfully (1404 chars)
+2026-01-12 21:16:53 ✅ OCR complete: 1404 total characters extracted
+2026-01-12 21:16:53    Pages: 1
+2026-01-12 21:16:53    Processing time: 953ms
+2026-01-12 21:16:53 📄 Extracted 1404 characters from Filled_Land_Sale_Deed (1).pdf via OCR
+2026-01-12 21:16:53    ✅ OCR extracted 1404 characters
+2026-01-12 21:16:53    📄 Document 1: 1404 characters
+2026-01-12 21:16:53    Preview: DEED OF SALE	
+This Deed of Sale made on this 15th day of January 2026	
+BETWEEN	
+SELLER:	
+Ramesh Kumar, Son of Suresh Kumar, aged about 45 years,	
+Caste: General, Religion: Hindu,	
+Occupation: Bu...
+
+2026-01-12 21:16:53 ✅ Fetched 1 document(s) for analysis
+
+2026-01-12 21:16:53 📡 Step 1: Fetching satellite imagery...
+2026-01-12 21:17:12 ✅ Satellite data: 39779.77 sqm, NDVI 0.2696
+2026-01-12 21:17:12    Cloud coverage: 0.000922%, Resolution: 10m
+
+2026-01-12 21:17:12 📸 Step 1.5: Uploading satellite images to IPFS...
+2026-01-12 21:17:16    ✅ RGB image uploaded: Qmb6nnSrWFnpd6x88i7THy8mmgL3jJkstRkHeEDqZaRoRd
+2026-01-12 21:17:16 ⚠️  Failed to upload satellite images to IPFS: Error: EPERM: operation not permitted, unlink 'C:\Users\Sugan\AppData\Local\Temp\tmpwbk8d00d.png'
+2026-01-12 21:17:16 ❌ Error processing request: EPERM: operation not permitted, unlink 'C:\Users\Sugan\AppData\Local\Temp\tmpwbk8d00d.png'
+2026-01-12 21:17:16 ❌ Error handling verification request: EPERM: operation not permitted, unlink 'C:\Users\Sugan\AppData\Local\Temp\tmpwbk8d00d.png'
+2026-01-12 21:19:18 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:19:18 🤖 RWA ORACLE STARTING
+2026-01-12 21:19:18 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:19:18 Oracle Address: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 21:19:18 Network: Testnet
+2026-01-12 21:19:18 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:19:18 🚀 Starting Oracle Listener...
+2026-01-12 21:19:18 📡 Network: Mantle Sepolia Testnet
+2026-01-12 21:19:18 🔗 RPC URL: https://rpc.sepolia.mantle.xyz
+2026-01-12 21:19:18 📍 Oracle Router: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 21:19:18 📦 Current block: 33344142
+2026-01-12 21:19:18 🔍 Scanning for pending requests from recent blocks...
+2026-01-12 21:19:18    Scanning from block 33294142 to 33344142 in 10000 block chunks...
+2026-01-12 21:19:18    ✓ Blocks 33294142-33304142: Found 15 event(s)
+2026-01-12 21:19:18    ✓ Blocks 33304143-33314143: Found 4 event(s)
+2026-01-12 21:19:19    ✓ Blocks 33334146-33344142: Found 2 event(s)
+2026-01-12 21:19:19    Total events found: 21
+2026-01-12 21:19:19 📜 Filtering pending requests from 21 event(s)...
+2026-01-12 21:19:19    ⊘ Request #11: VERIFIED - skipping
+2026-01-12 21:19:19    ⊘ Request #12: VERIFIED - skipping
+2026-01-12 21:19:19    ⊘ Request #13: VERIFIED - skipping
+2026-01-12 21:19:19    ⊘ Request #14: VERIFIED - skipping
+2026-01-12 21:19:20    ⊘ Request #15: VERIFIED - skipping
+2026-01-12 21:19:20    ✓ Request #16: PENDING - will process
+2026-01-12 21:19:20    ⊘ Request #17: VERIFIED - skipping
+2026-01-12 21:19:20    ⊘ Request #18: VERIFIED - skipping
+2026-01-12 21:19:20    ⊘ Request #19: VERIFIED - skipping
+2026-01-12 21:19:20    ⊘ Request #20: VERIFIED - skipping
+2026-01-12 21:19:20    ⊘ Request #21: VERIFIED - skipping
+2026-01-12 21:19:20    ⊘ Request #22: VERIFIED - skipping
+2026-01-12 21:19:20    ⊘ Request #23: VERIFIED - skipping
+2026-01-12 21:19:21    ⊘ Request #24: VERIFIED - skipping
+2026-01-12 21:19:21    ⊘ Request #25: VERIFIED - skipping
+2026-01-12 21:19:21    ⊘ Request #26: VERIFIED - skipping
+2026-01-12 21:19:21    ⊘ Request #27: VERIFIED - skipping
+2026-01-12 21:19:21    ⊘ Request #28: VERIFIED - skipping
+2026-01-12 21:19:21    ⊘ Request #29: VERIFIED - skipping
+2026-01-12 21:19:21    ⊘ Request #30: VERIFIED - skipping
+2026-01-12 21:19:22    ✓ Request #31: PENDING - will process
+2026-01-12 21:19:22 
+📋 Found 2 pending request(s) to process
+
+2026-01-12 21:19:22 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:19:22 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-12 21:19:22 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:19:22 📝 Request ID: 16
+2026-01-12 21:19:22 👤 Owner: 0x588F6b3169F60176c1143f8BaB47bCf3DeEbECdc
+2026-01-12 21:19:22 🏠 Asset Type: 0
+2026-01-12 21:19:22 📍 Location: villupuram | 40,7525
+2026-01-12 21:19:22    Parsed Coordinates: 40, 7525
+2026-01-12 21:19:22 📄 Documents: 1 files
+2026-01-12 21:19:22 ⏰ Timestamp: 2026-01-11T15:08:39.000Z
+2026-01-12 21:19:22 📦 Block: 33299723
+2026-01-12 21:19:22 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:19:22 🔄 Starting AI analysis pipeline...
+
+2026-01-12 21:19:22 📋 Step 0: Validating documents...
+2026-01-12 21:19:28 📄 Validating document: QmTb3yDY2mLG1wCnyAQh...
+2026-01-12 21:19:28 ✅ 1 document(s) validated
+
+2026-01-12 21:19:28 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-12 21:19:34    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-12 21:19:34    🔄 Fetching first document CID for processing...
+2026-01-12 21:19:40    📄 Parsing PDF: Qmew96XPH1GPpmEPrih4...
+2026-01-12 21:19:41    ⚠️  Failed to parse PDF, trying OCR: TypeError: pdfParse is not a function
+2026-01-12 21:19:41 🔍 Converting document to JSON via OCR.space: document.pdf
+2026-01-12 21:19:50 ❌ OCR.space API error: OCR processing error: The maximum page limit of 3 was reached and only pages upto the limit were parsed successfully - 
+2026-01-12 21:19:50 OCR failed for document.pdf, using fallback
+2026-01-12 21:19:50    📄 Document 1: 132 characters
+2026-01-12 21:19:50    Preview: [OCR ERROR: OCR processing error: The maximum page limit of 3 was reached and only pages upto the limit were parsed successfully - ]
+
+2026-01-12 21:19:50 ✅ Fetched 1 document(s) for analysis
+
+2026-01-12 21:19:50 📡 Step 1: Fetching satellite imagery...
+2026-01-12 21:19:58 ❌ Error processing request: Satellite service failed: Error: Satellite service failed: Image.normalizedDifference: Parameter 'input' is required and may not be null.
+
+2026-01-12 21:19:58 ❌ Error handling verification request: Satellite service failed: Error: Satellite service failed: Image.normalizedDifference: Parameter 'input' is required and may not be null.
+
+2026-01-12 21:19:58 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:19:58 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-12 21:19:58 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:19:58 📝 Request ID: 31
+2026-01-12 21:19:58 👤 Owner: 0x588F6b3169F60176c1143f8BaB47bCf3DeEbECdc
+2026-01-12 21:19:58 🏠 Asset Type: 0
+2026-01-12 21:19:58 📍 Location: villupuram | 11,79
+2026-01-12 21:19:58    Parsed Coordinates: 11, 79
+2026-01-12 21:19:58 📄 Documents: 1 files
+2026-01-12 21:19:58 ⏰ Timestamp: 2026-01-12T15:46:09.000Z
+2026-01-12 21:19:58 📦 Block: 33344048
+2026-01-12 21:19:58 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:19:58 🔄 Starting AI analysis pipeline...
+
+2026-01-12 21:19:58 📋 Step 0: Validating documents...
+2026-01-12 21:20:04 📄 Validating document: Qmf8H3XjL1DdE8YzLPJj...
+2026-01-12 21:20:04 ✅ 1 document(s) validated
+
+2026-01-12 21:20:04 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-12 21:20:10    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-12 21:20:10    🔄 Fetching first document CID for processing...
+2026-01-12 21:20:16    📄 Found structured document JSON: Filled_Land_Sale_Deed (1).pdf
+2026-01-12 21:20:16    🔄 Fetching original file for OCR processing...
+2026-01-12 21:20:16    📥 Fetching original file: QmQgxrGL7Bx9c19wNhMC...
+2026-01-12 21:20:22    📄 Processing original PDF with OCR.space API...
+2026-01-12 21:20:22    ⚠️  PDF parsing failed, using OCR: TypeError: pdfParse is not a function
+2026-01-12 21:20:22 🔍 Converting document to JSON via OCR.space: Filled_Land_Sale_Deed (1).pdf
+2026-01-12 21:20:24 ✅ Page 1 parsed successfully (1404 chars)
+2026-01-12 21:20:24 ✅ OCR complete: 1404 total characters extracted
+2026-01-12 21:20:24    Pages: 1
+2026-01-12 21:20:24    Processing time: 953ms
+2026-01-12 21:20:24 📄 Extracted 1404 characters from Filled_Land_Sale_Deed (1).pdf via OCR
+2026-01-12 21:20:24    ✅ OCR extracted 1404 characters
+2026-01-12 21:20:24    📄 Document 1: 1404 characters
+2026-01-12 21:20:24    Preview: DEED OF SALE	
+This Deed of Sale made on this 15th day of January 2026	
+BETWEEN	
+SELLER:	
+Ramesh Kumar, Son of Suresh Kumar, aged about 45 years,	
+Caste: General, Religion: Hindu,	
+Occupation: Bu...
+
+2026-01-12 21:20:24 ✅ Fetched 1 document(s) for analysis
+
+2026-01-12 21:20:24 📡 Step 1: Fetching satellite imagery...
+2026-01-12 21:20:40 ✅ Satellite data: 39779.77 sqm, NDVI 0.2696
+2026-01-12 21:20:40    Cloud coverage: 0.000922%, Resolution: 10m
+
+2026-01-12 21:20:40 📸 Step 1.5: Uploading satellite images to IPFS...
+2026-01-12 21:20:43    ✅ RGB image uploaded: Qmb6nnSrWFnpd6x88i7THy8mmgL3jJkstRkHeEDqZaRoRd
+2026-01-12 21:20:43    🔗 RGB Image URL: https://gateway.pinata.cloud/ipfs/Qmb6nnSrWFnpd6x88i7THy8mmgL3jJkstRkHeEDqZaRoRd
+2026-01-12 21:20:44    ✅ NDVI image uploaded: QmXnLafJ1thXiX6fPAKwdepRBEwZodAF8FtCyfH848budY
+2026-01-12 21:20:44    🔗 NDVI Image URL: https://gateway.pinata.cloud/ipfs/QmXnLafJ1thXiX6fPAKwdepRBEwZodAF8FtCyfH848budY
+2026-01-12 21:20:44 ✅ Satellite images uploaded to IPFS
+
+2026-01-12 21:20:45    🗑️  Cleaned up temp RGB file
+2026-01-12 21:20:45    🗑️  Cleaned up temp NDVI file
+2026-01-12 21:20:45 🤖 Step 2: Running 3 AI agents in parallel...
+2026-01-12 21:20:45    🔍 Sending to Groq:
+2026-01-12 21:20:45       - Document count: 1
+2026-01-12 21:20:45       - Doc 1: 1404 chars - "DEED OF SALE	
+This Deed of Sale made on this 15th day of January 2026	
+BETWEEN	
+SELLER:	
+Ramesh ..."
+2026-01-12 21:20:45    🔍 Sending to OpenRouter:
+2026-01-12 21:20:45       - Document count: 1
+2026-01-12 21:20:45       - Doc 1: 1404 chars - "DEED OF SALE	
+This Deed of Sale made on this 15th day of January 2026	
+BETWEEN	
+SELLER:	
+Ramesh ..."
+2026-01-12 21:20:45    🔍 Sending to Gemini:
+2026-01-12 21:20:45       - Document count: 1
+2026-01-12 21:20:45       - Doc 1: 1404 chars - "DEED OF SALE	
+This Deed of Sale made on this 15th day of January 2026	
+BETWEEN	
+SELLER:	
+Ramesh ..."
+2026-01-12 21:20:48    📋 Groq document analysis:
+2026-01-12 21:20:48       - Is land document: true
+2026-01-12 21:20:48       - Authenticity score: 80
+2026-01-12 21:20:48 ✅ Agent 1 - Groq (Llama 3.3 70B): $375,000 (80% confidence)
+2026-01-12 21:20:48 ✅ Agent 2 - OpenRouter (GPT-4o-mini): $54,776,743 (70% confidence)
+2026-01-12 21:20:48 ✅ Agent 3 - Gemini (Meta Llama 3.1): $49,096,192 (70% confidence)
+2026-01-12 21:20:48 
+2026-01-12 21:20:48 📋 Step 3.5: Extracting and validating document details...
+
+2026-01-12 21:20:48 📄 DOCUMENT SUMMARY:
+2026-01-12 21:20:48 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:20:48 👤 Seller/Owner: Ramesh Kumar, Son of Suresh Kumar, aged about 45 years,
+2026-01-12 21:20:48 👤 Buyer/Purchaser: Suganthan R, Son of Ravichandran, aged about 22 years,
+2026-01-12 21:20:48 📍 Survey/Plot Number: 112 | LR Plot No: 215
+2026-01-12 21:20:48 📏 Property Area: 2400 Sq.ft
+2026-01-12 21:20:48 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:20:48 ✅ Document contains required Seller and Buyer information
+
+2026-01-12 21:20:48 ⚠️  Document issues noted: Area mismatch >20% with satellite data
+2026-01-12 21:20:48 📊 Document authenticity score: 80.0%
+
+2026-01-12 21:20:48 🔮 Step 4: Calculating consensus...
+2026-01-12 21:20:48 ✅ Consensus reached: $33,186,843
+2026-01-12 21:20:48    Final confidence: 22%
+2026-01-12 21:20:48    Consensus score: 30/100
+2026-01-12 21:20:48    Standard deviation: ±$24,416,690
+
+2026-01-12 21:20:48 📊 INDIVIDUAL AGENT SCORES:
+2026-01-12 21:20:48 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:20:48    1. Groq (Llama 3.3 70B)
+2026-01-12 21:20:48       Valuation: $375,000
+2026-01-12 21:20:48       Confidence: 80%
+2026-01-12 21:20:48    2. OpenRouter (GPT-4o-mini)
+2026-01-12 21:20:48       Valuation: $54,776,743
+2026-01-12 21:20:48       Confidence: 70%
+2026-01-12 21:20:48    3. Gemini (Meta Llama 3.1)
+2026-01-12 21:20:48       Valuation: $49,096,192
+2026-01-12 21:20:48       Confidence: 70%
+2026-01-12 21:20:48 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:20:48 ⛓️  Step 5: Submitting to blockchain...
+2026-01-12 21:20:48 📦 Uploading evidence to IPFS...
+2026-01-12 21:20:49 ✅ Evidence uploaded: Qmd6nMiXZYNHswcTqyAL11qFCyqpC7vmTEPh3JUapvVLmu
+2026-01-12 21:20:49 📝 Evidence mapping stored: Request 31 -> Qmd6nMiXZYNHswcTqyAL11qFCyqpC7vmTEPh3JUapvVLmu
+2026-01-12 21:20:49 📤 Submitting transaction to Mantle Sepolia...
+2026-01-12 21:20:53 ⏳ Waiting for confirmation...
+2026-01-12 21:20:53 ✅ Transaction submitted: 0x5cf813a812a21c85c614f55c4f1b964c41bfd9ead7d841c0219d10d4a4bed188
+
+2026-01-12 21:20:53 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:20:53 ✅ REQUEST COMPLETED IN 55.55s
+2026-01-12 21:20:53 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:20:53 👂 Now listening for new VerificationRequested events...
+2026-01-12 21:20:53 Press Ctrl+C to stop
+
+2026-01-12 21:24:52 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:24:52 🤖 RWA ORACLE STARTING
+2026-01-12 21:24:52 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:24:52 Oracle Address: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 21:24:52 Network: Testnet
+2026-01-12 21:24:52 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:24:52 🚀 Starting Oracle Listener...
+2026-01-12 21:24:52 📡 Network: Mantle Sepolia Testnet
+2026-01-12 21:24:52 🔗 RPC URL: https://rpc.sepolia.mantle.xyz
+2026-01-12 21:24:52 📍 Oracle Router: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 21:24:55 📦 Current block: 33344309
+2026-01-12 21:24:55 🔍 Scanning for pending requests from recent blocks...
+2026-01-12 21:24:55    Scanning from block 33294309 to 33344309 in 10000 block chunks...
+2026-01-12 21:24:58    ✓ Blocks 33294309-33304309: Found 15 event(s)
+2026-01-12 21:24:59    ✓ Blocks 33304310-33314310: Found 4 event(s)
+2026-01-12 21:25:09    ✓ Blocks 33334313-33344309: Found 2 event(s)
+2026-01-12 21:25:09    Total events found: 21
+2026-01-12 21:25:09 📜 Filtering pending requests from 21 event(s)...
+2026-01-12 21:25:10    ⊘ Request #11: VERIFIED - skipping
+2026-01-12 21:25:12    ⊘ Request #12: VERIFIED - skipping
+2026-01-12 21:25:13    ⊘ Request #13: VERIFIED - skipping
+2026-01-12 21:25:16    ⊘ Request #14: VERIFIED - skipping
+2026-01-12 21:25:22    ⊘ Request #15: VERIFIED - skipping
+2026-01-12 21:25:24    ✓ Request #16: PENDING - will process
+2026-01-12 21:25:25    ⊘ Request #17: VERIFIED - skipping
+2026-01-12 21:25:27    ⊘ Request #18: VERIFIED - skipping
+2026-01-12 21:25:28    ⊘ Request #19: VERIFIED - skipping
+2026-01-12 21:25:29    ⊘ Request #20: VERIFIED - skipping
+2026-01-12 21:25:30    ⊘ Request #21: VERIFIED - skipping
+2026-01-12 21:25:35    ⊘ Request #22: VERIFIED - skipping
+2026-01-12 21:25:37    ⊘ Request #23: VERIFIED - skipping
+2026-01-12 21:25:41    ⊘ Request #24: VERIFIED - skipping
+2026-01-12 21:25:42    ⊘ Request #25: VERIFIED - skipping
+2026-01-12 21:25:42    ⊘ Request #26: VERIFIED - skipping
+2026-01-12 21:25:43    ⊘ Request #27: VERIFIED - skipping
+2026-01-12 21:25:46    ⊘ Request #28: VERIFIED - skipping
+2026-01-12 21:25:47    ⊘ Request #29: VERIFIED - skipping
+2026-01-12 21:25:48    ⊘ Request #30: VERIFIED - skipping
+2026-01-12 21:25:50    ⊘ Request #31: VERIFIED - skipping
+2026-01-12 21:25:50 
+📋 Found 1 pending request(s) to process
+
+2026-01-12 21:25:50 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:25:50 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-12 21:25:50 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:25:50 📝 Request ID: 16
+2026-01-12 21:25:50 👤 Owner: 0x588F6b3169F60176c1143f8BaB47bCf3DeEbECdc
+2026-01-12 21:25:50 🏠 Asset Type: 0
+2026-01-12 21:25:50 📍 Location: villupuram | 40,7525
+2026-01-12 21:25:50    Parsed Coordinates: 40, 7525
+2026-01-12 21:25:50 📄 Documents: 1 files
+2026-01-12 21:25:50 ⏰ Timestamp: 2026-01-11T15:08:39.000Z
+2026-01-12 21:25:50 📦 Block: 33299723
+2026-01-12 21:25:50 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:25:50 🔄 Starting AI analysis pipeline...
+
+2026-01-12 21:25:50 📋 Step 0: Validating documents...
+2026-01-12 21:25:56 📄 Validating document: QmTb3yDY2mLG1wCnyAQh...
+2026-01-12 21:25:56 ✅ 1 document(s) validated
+
+2026-01-12 21:25:56 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-12 21:26:03    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-12 21:26:03    🔄 Fetching first document CID for processing...
+2026-01-12 21:26:07    📄 Parsing PDF: Qmew96XPH1GPpmEPrih4...
+2026-01-12 21:26:08    ⚠️  Failed to parse PDF, trying OCR: TypeError: pdfParse is not a function
+2026-01-12 21:26:08 🔍 Converting document to JSON via OCR.space: document.pdf
+2026-01-12 21:26:18 ❌ OCR.space API error: OCR processing error: The maximum page limit of 3 was reached and only pages upto the limit were parsed successfully - 
+2026-01-12 21:26:19 OCR failed for document.pdf, using fallback
+2026-01-12 21:26:19    📄 Document 1: 132 characters
+2026-01-12 21:26:19    Preview: [OCR ERROR: OCR processing error: The maximum page limit of 3 was reached and only pages upto the limit were parsed successfully - ]
+
+2026-01-12 21:26:19 ✅ Fetched 1 document(s) for analysis
+
+2026-01-12 21:26:19 📡 Step 1: Fetching satellite imagery...
+2026-01-12 21:26:31 ❌ Error processing request: Satellite service failed: Error: Satellite service failed: Image.normalizedDifference: Parameter 'input' is required and may not be null.
+
+2026-01-12 21:26:31 ❌ Error handling verification request: Satellite service failed: Error: Satellite service failed: Image.normalizedDifference: Parameter 'input' is required and may not be null.
+
+2026-01-12 21:26:31 👂 Now listening for new VerificationRequested events...
+2026-01-12 21:26:31 Press Ctrl+C to stop
+
+2026-01-12 21:34:10 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:34:10 🤖 RWA ORACLE STARTING
+2026-01-12 21:34:10 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:34:10 Oracle Address: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 21:34:10 Network: Testnet
+2026-01-12 21:34:10 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:34:10 🚀 Starting Oracle Listener...
+2026-01-12 21:34:10 📡 Network: Mantle Sepolia Testnet
+2026-01-12 21:34:10 🔗 RPC URL: https://rpc.sepolia.mantle.xyz
+2026-01-12 21:34:10 📍 Oracle Router: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 21:34:12 📦 Current block: 33344588
+2026-01-12 21:34:12 🔍 Scanning for pending requests from recent blocks...
+2026-01-12 21:34:12    Scanning from block 33294588 to 33344588 in 10000 block chunks...
+2026-01-12 21:34:14    ✓ Blocks 33294588-33304588: Found 17 event(s)
+2026-01-12 21:34:15    ✓ Blocks 33304589-33314589: Found 2 event(s)
+2026-01-12 21:34:17    ✓ Blocks 33334592-33344588: Found 2 event(s)
+2026-01-12 21:34:17    Total events found: 21
+2026-01-12 21:34:17 📜 Filtering pending requests from 21 event(s)...
+2026-01-12 21:34:18    ⊘ Request #11: VERIFIED - skipping
+2026-01-12 21:34:19    ⊘ Request #12: VERIFIED - skipping
+2026-01-12 21:34:21    ⊘ Request #13: VERIFIED - skipping
+2026-01-12 21:34:21    ⊘ Request #14: VERIFIED - skipping
+2026-01-12 21:34:22    ⊘ Request #15: VERIFIED - skipping
+2026-01-12 21:34:24    ✓ Request #16: PENDING - will process
+2026-01-12 21:34:27    ⊘ Request #17: VERIFIED - skipping
+2026-01-12 21:34:28    ⊘ Request #18: VERIFIED - skipping
+2026-01-12 21:34:31    ⊘ Request #19: VERIFIED - skipping
+2026-01-12 21:34:31    ⊘ Request #20: VERIFIED - skipping
+2026-01-12 21:34:32    ⊘ Request #21: VERIFIED - skipping
+2026-01-12 21:34:33    ⊘ Request #22: VERIFIED - skipping
+2026-01-12 21:34:34    ⊘ Request #23: VERIFIED - skipping
+2026-01-12 21:34:34    ⊘ Request #24: VERIFIED - skipping
+2026-01-12 21:34:36    ⊘ Request #25: VERIFIED - skipping
+2026-01-12 21:34:36    ⊘ Request #26: VERIFIED - skipping
+2026-01-12 21:34:37    ⊘ Request #27: VERIFIED - skipping
+2026-01-12 21:34:38    ⊘ Request #28: VERIFIED - skipping
+2026-01-12 21:34:39    ⊘ Request #29: VERIFIED - skipping
+2026-01-12 21:34:40    ⊘ Request #30: VERIFIED - skipping
+2026-01-12 21:34:41    ⊘ Request #31: VERIFIED - skipping
+2026-01-12 21:34:41 
+📋 Found 1 pending request(s) to process
+
+2026-01-12 21:34:41 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:34:41 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-12 21:34:41 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:34:41 📝 Request ID: 16
+2026-01-12 21:34:41 👤 Owner: 0x588F6b3169F60176c1143f8BaB47bCf3DeEbECdc
+2026-01-12 21:34:41 🏠 Asset Type: 0
+2026-01-12 21:34:41 📍 Location: villupuram | 40,7525
+2026-01-12 21:34:41    Parsed Coordinates: 40, 7525
+2026-01-12 21:34:41 📄 Documents: 1 files
+2026-01-12 21:34:41 ⏰ Timestamp: 2026-01-11T15:08:39.000Z
+2026-01-12 21:34:41 📦 Block: 33299723
+2026-01-12 21:34:41 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:34:41 🔄 Starting AI analysis pipeline...
+
+2026-01-12 21:34:41 📋 Step 0: Validating documents...
+2026-01-12 21:34:45 📄 Validating document: QmTb3yDY2mLG1wCnyAQh...
+2026-01-12 21:34:45 ✅ 1 document(s) validated
+
+2026-01-12 21:34:45 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-12 21:34:51    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-12 21:34:51    🔄 Fetching first document CID for processing...
+2026-01-12 21:34:56    📄 Parsing PDF: Qmew96XPH1GPpmEPrih4...
+2026-01-12 21:34:56    ⚠️  Failed to parse PDF, trying OCR: TypeError: pdfParse is not a function
+2026-01-12 21:34:56 🔍 Converting document to JSON via OCR.space: document.pdf
+2026-01-12 21:35:06 ❌ OCR.space API error: OCR processing error: The maximum page limit of 3 was reached and only pages upto the limit were parsed successfully - 
+2026-01-12 21:35:06 OCR failed for document.pdf, using fallback
+2026-01-12 21:35:06    📄 Document 1: 132 characters
+2026-01-12 21:35:06    Preview: [OCR ERROR: OCR processing error: The maximum page limit of 3 was reached and only pages upto the limit were parsed successfully - ]
+
+2026-01-12 21:35:06 ✅ Fetched 1 document(s) for analysis
+
+2026-01-12 21:35:06 📡 Step 1: Fetching satellite imagery...
+2026-01-12 21:35:21 ❌ Error processing request: Satellite service failed: Error: Satellite service failed: Image.normalizedDifference: Parameter 'input' is required and may not be null.
+
+2026-01-12 21:35:21 ❌ Error handling verification request: Satellite service failed: Error: Satellite service failed: Image.normalizedDifference: Parameter 'input' is required and may not be null.
+
+2026-01-12 21:35:21 👂 Now listening for new VerificationRequested events...
+2026-01-12 21:35:21 Press Ctrl+C to stop
+
+2026-01-12 21:44:43 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:44:43 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-12 21:44:43 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:44:43 📝 Request ID: 32
+2026-01-12 21:44:43 👤 Owner: 0x588F6b3169F60176c1143f8BaB47bCf3DeEbECdc
+2026-01-12 21:44:43 🏠 Asset Type: 0
+2026-01-12 21:44:43 📍 Location: villupuram | 11,79
+2026-01-12 21:44:43    Parsed Coordinates: 11, 79
+2026-01-12 21:44:43 📄 Documents: 1 files
+2026-01-12 21:44:43 ⏰ Timestamp: 2026-01-12T16:14:37.000Z
+2026-01-12 21:44:43 📦 Block: 33344902
+2026-01-12 21:44:43 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:44:43 🔄 Starting AI analysis pipeline...
+
+2026-01-12 21:44:43 📋 Step 0: Validating documents...
+2026-01-12 21:44:48 📄 Validating document: QmVVMhW6eRQgy6jjN97g...
+2026-01-12 21:44:48 ✅ 1 document(s) validated
+
+2026-01-12 21:44:48 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-12 21:44:54    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-12 21:44:54    🔄 Fetching first document CID for processing...
+2026-01-12 21:45:02    📄 Found structured document JSON: Filled_Land_Sale_Deed (1).pdf
+2026-01-12 21:45:02    🔄 Fetching original file for OCR processing...
+2026-01-12 21:45:02    📥 Fetching original file: QmQgxrGL7Bx9c19wNhMC...
+2026-01-12 21:45:06    📄 Processing original PDF with OCR.space API...
+2026-01-12 21:45:06    ⚠️  PDF parsing failed, using OCR: TypeError: pdfParse is not a function
+2026-01-12 21:45:06 🔍 Converting document to JSON via OCR.space: Filled_Land_Sale_Deed (1).pdf
+2026-01-12 21:45:09 ✅ Page 1 parsed successfully (1404 chars)
+2026-01-12 21:45:09 ✅ OCR complete: 1404 total characters extracted
+2026-01-12 21:45:09    Pages: 1
+2026-01-12 21:45:09    Processing time: 1281ms
+2026-01-12 21:45:09 📄 Extracted 1404 characters from Filled_Land_Sale_Deed (1).pdf via OCR
+2026-01-12 21:45:09    ✅ OCR extracted 1404 characters
+2026-01-12 21:45:09    📄 Document 1: 1404 characters
+2026-01-12 21:45:09    Preview: DEED OF SALE	
+This Deed of Sale made on this 15th day of January 2026	
+BETWEEN	
+SELLER:	
+Ramesh Kumar, Son of Suresh Kumar, aged about 45 years,	
+Caste: General, Religion: Hindu,	
+Occupation: Bu...
+
+2026-01-12 21:45:09 ✅ Fetched 1 document(s) for analysis
+
+2026-01-12 21:45:09 📡 Step 1: Fetching satellite imagery...
+2026-01-12 21:46:09 ❌ Error processing request: Satellite service timeout
+2026-01-12 21:46:09 ❌ Error handling verification request: Satellite service timeout
+2026-01-12 21:50:42 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:50:42 🤖 RWA ORACLE STARTING
+2026-01-12 21:50:42 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:50:42 Oracle Address: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 21:50:42 Network: Testnet
+2026-01-12 21:50:42 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:50:42 🚀 Starting Oracle Listener...
+2026-01-12 21:50:42 📡 Network: Mantle Sepolia Testnet
+2026-01-12 21:50:42 🔗 RPC URL: https://rpc.sepolia.mantle.xyz
+2026-01-12 21:50:42 📍 Oracle Router: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 21:50:46 📦 Current block: 33345083
+2026-01-12 21:50:46 🔍 Scanning for pending requests from recent blocks...
+2026-01-12 21:50:46    Scanning from block 33295083 to 33345083 in 10000 block chunks...
+2026-01-12 21:50:49    ✓ Blocks 33295083-33305083: Found 19 event(s)
+2026-01-12 21:50:52    ✓ Blocks 33335087-33345083: Found 3 event(s)
+2026-01-12 21:50:52    Total events found: 22
+2026-01-12 21:50:52 📜 Filtering pending requests from 22 event(s)...
+2026-01-12 21:50:52    ⊘ Request #11: VERIFIED - skipping
+2026-01-12 21:50:53    ⊘ Request #12: VERIFIED - skipping
+2026-01-12 21:50:57    ⊘ Request #13: VERIFIED - skipping
+2026-01-12 21:50:57    ⊘ Request #14: VERIFIED - skipping
+2026-01-12 21:50:59    ⊘ Request #15: VERIFIED - skipping
+2026-01-12 21:51:00    ✓ Request #16: PENDING - will process
+2026-01-12 21:51:03 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:51:03 🤖 RWA ORACLE STARTING
+2026-01-12 21:51:03 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:51:03 Oracle Address: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 21:51:03 Network: Testnet
+2026-01-12 21:51:03 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:51:03 🚀 Starting Oracle Listener...
+2026-01-12 21:51:03 📡 Network: Mantle Sepolia Testnet
+2026-01-12 21:51:03 🔗 RPC URL: https://rpc.sepolia.mantle.xyz
+2026-01-12 21:51:03 📍 Oracle Router: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 21:51:03    ⊘ Request #17: VERIFIED - skipping
+2026-01-12 21:51:04    ⊘ Request #18: VERIFIED - skipping
+2026-01-12 21:51:04 📦 Current block: 33345094
+2026-01-12 21:51:04 🔍 Scanning for pending requests from recent blocks...
+2026-01-12 21:51:04    Scanning from block 33295094 to 33345094 in 10000 block chunks...
+2026-01-12 21:51:04    ✓ Blocks 33295094-33305094: Found 19 event(s)
+2026-01-12 21:51:05    ⊘ Request #19: VERIFIED - skipping
+2026-01-12 21:51:05    ✓ Blocks 33335098-33345094: Found 3 event(s)
+2026-01-12 21:51:05    Total events found: 22
+2026-01-12 21:51:05 📜 Filtering pending requests from 22 event(s)...
+2026-01-12 21:51:05    ⊘ Request #20: VERIFIED - skipping
+2026-01-12 21:51:05    ⊘ Request #11: VERIFIED - skipping
+2026-01-12 21:51:05    ⊘ Request #12: VERIFIED - skipping
+2026-01-12 21:51:05    ⊘ Request #13: VERIFIED - skipping
+2026-01-12 21:51:06    ⊘ Request #14: VERIFIED - skipping
+2026-01-12 21:51:06    ⊘ Request #15: VERIFIED - skipping
+2026-01-12 21:51:06    ✓ Request #16: PENDING - will process
+2026-01-12 21:51:06    ⊘ Request #17: VERIFIED - skipping
+2026-01-12 21:51:06    ⊘ Request #18: VERIFIED - skipping
+2026-01-12 21:51:06    ⊘ Request #19: VERIFIED - skipping
+2026-01-12 21:51:06    ⊘ Request #20: VERIFIED - skipping
+2026-01-12 21:51:06    ⊘ Request #21: VERIFIED - skipping
+2026-01-12 21:51:06    ⊘ Request #22: VERIFIED - skipping
+2026-01-12 21:51:07    ⊘ Request #23: VERIFIED - skipping
+2026-01-12 21:51:07    ⊘ Request #24: VERIFIED - skipping
+2026-01-12 21:51:07    ⊘ Request #25: VERIFIED - skipping
+2026-01-12 21:51:07    ⊘ Request #26: VERIFIED - skipping
+2026-01-12 21:51:07    ⊘ Request #27: VERIFIED - skipping
+2026-01-12 21:51:07    ⊘ Request #21: VERIFIED - skipping
+2026-01-12 21:51:07    ⊘ Request #28: VERIFIED - skipping
+2026-01-12 21:51:08    ⊘ Request #29: VERIFIED - skipping
+2026-01-12 21:51:08    ⊘ Request #30: VERIFIED - skipping
+2026-01-12 21:51:08    ⊘ Request #31: VERIFIED - skipping
+2026-01-12 21:51:08    ✓ Request #32: PENDING - will process
+2026-01-12 21:51:08 
+📋 Found 2 pending request(s) to process
+
+2026-01-12 21:51:08 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:51:08 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-12 21:51:08 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:51:08 📝 Request ID: 16
+2026-01-12 21:51:08 👤 Owner: 0x588F6b3169F60176c1143f8BaB47bCf3DeEbECdc
+2026-01-12 21:51:08 🏠 Asset Type: 0
+2026-01-12 21:51:08 📍 Location: villupuram | 40,7525
+2026-01-12 21:51:08    Parsed Coordinates: 40, 7525
+2026-01-12 21:51:08 📄 Documents: 1 files
+2026-01-12 21:51:08 ⏰ Timestamp: 2026-01-11T15:08:39.000Z
+2026-01-12 21:51:08 📦 Block: 33299723
+2026-01-12 21:51:08 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:51:08 🔄 Starting AI analysis pipeline...
+
+2026-01-12 21:51:08 📋 Step 0: Validating documents...
+2026-01-12 21:51:08    ⊘ Request #22: VERIFIED - skipping
+2026-01-12 21:51:09    ⊘ Request #23: VERIFIED - skipping
+2026-01-12 21:51:09    ⊘ Request #24: VERIFIED - skipping
+2026-01-12 21:51:15 📄 Validating document: QmTb3yDY2mLG1wCnyAQh...
+2026-01-12 21:51:15 ✅ 1 document(s) validated
+
+2026-01-12 21:51:15 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-12 21:51:22    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-12 21:51:22    🔄 Fetching first document CID for processing...
+2026-01-12 21:51:28    📄 Parsing PDF: Qmew96XPH1GPpmEPrih4...
+2026-01-12 21:51:28    ⚠️  Failed to parse PDF, trying OCR: TypeError: pdfParse is not a function
+2026-01-12 21:51:28 🔍 Converting document to JSON via OCR.space: document.pdf
+2026-01-12 21:51:39 ❌ OCR.space API error: OCR processing error: The maximum page limit of 3 was reached and only pages upto the limit were parsed successfully - 
+2026-01-12 21:51:39 OCR failed for document.pdf, using fallback
+2026-01-12 21:51:39    📄 Document 1: 132 characters
+2026-01-12 21:51:39    Preview: [OCR ERROR: OCR processing error: The maximum page limit of 3 was reached and only pages upto the limit were parsed successfully - ]
+
+2026-01-12 21:51:39 ✅ Fetched 1 document(s) for analysis
+
+2026-01-12 21:51:39 📡 Step 1: Fetching satellite imagery...
+2026-01-12 21:51:48 ❌ Error processing request: Satellite service failed: Error: Satellite service failed: Image.normalizedDifference: Parameter 'input' is required and may not be null.
+
+2026-01-12 21:51:48 ❌ Error handling verification request: Satellite service failed: Error: Satellite service failed: Image.normalizedDifference: Parameter 'input' is required and may not be null.
+
+2026-01-12 21:51:48 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:51:48 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-12 21:51:48 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:51:48 📝 Request ID: 32
+2026-01-12 21:51:48 👤 Owner: 0x588F6b3169F60176c1143f8BaB47bCf3DeEbECdc
+2026-01-12 21:51:48 🏠 Asset Type: 0
+2026-01-12 21:51:48 📍 Location: villupuram | 11,79
+2026-01-12 21:51:48    Parsed Coordinates: 11, 79
+2026-01-12 21:51:48 📄 Documents: 1 files
+2026-01-12 21:51:48 ⏰ Timestamp: 2026-01-12T16:14:37.000Z
+2026-01-12 21:51:48 📦 Block: 33344902
+2026-01-12 21:51:48 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:51:48 🔄 Starting AI analysis pipeline...
+
+2026-01-12 21:51:48 📋 Step 0: Validating documents...
+2026-01-12 21:51:54 📄 Validating document: QmVVMhW6eRQgy6jjN97g...
+2026-01-12 21:51:54 ✅ 1 document(s) validated
+
+2026-01-12 21:51:54 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-12 21:52:00    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-12 21:52:00    🔄 Fetching first document CID for processing...
+2026-01-12 21:52:08    📄 Found structured document JSON: Filled_Land_Sale_Deed (1).pdf
+2026-01-12 21:52:08    🔄 Fetching original file for OCR processing...
+2026-01-12 21:52:08    📥 Fetching original file: QmQgxrGL7Bx9c19wNhMC...
+2026-01-12 21:52:13    📄 Processing original PDF with OCR.space API...
+2026-01-12 21:52:13    ⚠️  PDF parsing failed, using OCR: TypeError: pdfParse is not a function
+2026-01-12 21:52:13 🔍 Converting document to JSON via OCR.space: Filled_Land_Sale_Deed (1).pdf
+2026-01-12 21:52:16 ✅ Page 1 parsed successfully (1404 chars)
+2026-01-12 21:52:16 ✅ OCR complete: 1404 total characters extracted
+2026-01-12 21:52:16    Pages: 1
+2026-01-12 21:52:16    Processing time: 1266ms
+2026-01-12 21:52:16 📄 Extracted 1404 characters from Filled_Land_Sale_Deed (1).pdf via OCR
+2026-01-12 21:52:16    ✅ OCR extracted 1404 characters
+2026-01-12 21:52:16    📄 Document 1: 1404 characters
+2026-01-12 21:52:16    Preview: DEED OF SALE	
+This Deed of Sale made on this 15th day of January 2026	
+BETWEEN	
+SELLER:	
+Ramesh Kumar, Son of Suresh Kumar, aged about 45 years,	
+Caste: General, Religion: Hindu,	
+Occupation: Bu...
+
+2026-01-12 21:52:16 ✅ Fetched 1 document(s) for analysis
+
+2026-01-12 21:52:16 📡 Step 1: Fetching satellite imagery...
+2026-01-12 21:53:49 ✅ Satellite data: 39779.77 sqm, NDVI 0.2696
+2026-01-12 21:53:49    Cloud coverage: 0%, Resolution: 10m
+
+2026-01-12 21:53:49 📸 Step 1.5: Uploading satellite images to IPFS (Ultra High Resolution - 2048x2048)...
+2026-01-12 21:54:01    ✅ RGB image uploaded: QmRoNtcUUSLAMULoJrUNVLmTFSsnJJ5E57HDNrzs6XheTb
+2026-01-12 21:54:01    🔗 RGB Image URL: https://gateway.pinata.cloud/ipfs/QmRoNtcUUSLAMULoJrUNVLmTFSsnJJ5E57HDNrzs6XheTb
+2026-01-12 21:54:05    ✅ NDVI image uploaded: QmPfAqCnjJHSkQ8c3S9BXP8uLxEtR1c2UM53rPKURywK1N
+2026-01-12 21:54:05    🔗 NDVI Image URL: https://gateway.pinata.cloud/ipfs/QmPfAqCnjJHSkQ8c3S9BXP8uLxEtR1c2UM53rPKURywK1N
+2026-01-12 21:54:09    ✅ CIR (Color Infrared) image uploaded: QmbzzTgP98naHf8E3PbU5SNPscmZM2JvFMrxreSAWWggAf
+2026-01-12 21:54:09    🔗 CIR Image URL: https://gateway.pinata.cloud/ipfs/QmbzzTgP98naHf8E3PbU5SNPscmZM2JvFMrxreSAWWggAf
+2026-01-12 21:54:13    ✅ True Color image uploaded: QmPC2qqMWn7jP8d2o2CJ2feF3WgLRBKV3F48gHmkV7rWHC
+2026-01-12 21:54:13    🔗 True Color Image URL: https://gateway.pinata.cloud/ipfs/QmPC2qqMWn7jP8d2o2CJ2feF3WgLRBKV3F48gHmkV7rWHC
+2026-01-12 21:54:13 ✅ All satellite images uploaded to IPFS (2048x2048 resolution)
+
+2026-01-12 21:54:13    🗑️  Cleaned up temp RGB file
+2026-01-12 21:54:13    🗑️  Cleaned up temp NDVI file
+2026-01-12 21:54:13    🗑️  Cleaned up temp CIR file
+2026-01-12 21:54:13    🗑️  Cleaned up temp True Color file
+2026-01-12 21:54:13 🤖 Step 2: Running 3 AI agents in parallel...
+2026-01-12 21:54:13    🔍 Sending to Groq:
+2026-01-12 21:54:13       - Document count: 1
+2026-01-12 21:54:13       - Doc 1: 1404 chars - "DEED OF SALE	
+This Deed of Sale made on this 15th day of January 2026	
+BETWEEN	
+SELLER:	
+Ramesh ..."
+2026-01-12 21:54:13    🔍 Sending to OpenRouter:
+2026-01-12 21:54:13       - Document count: 1
+2026-01-12 21:54:13       - Doc 1: 1404 chars - "DEED OF SALE	
+This Deed of Sale made on this 15th day of January 2026	
+BETWEEN	
+SELLER:	
+Ramesh ..."
+2026-01-12 21:54:13    🔍 Sending to Gemini:
+2026-01-12 21:54:13       - Document count: 1
+2026-01-12 21:54:13       - Doc 1: 1404 chars - "DEED OF SALE	
+This Deed of Sale made on this 15th day of January 2026	
+BETWEEN	
+SELLER:	
+Ramesh ..."
+2026-01-12 21:54:15    📋 Groq document analysis:
+2026-01-12 21:54:15       - Is land document: true
+2026-01-12 21:54:15       - Authenticity score: 0
+2026-01-12 21:54:16 ✅ Agent 1 - Groq (Llama 3.3 70B): $0 (0% confidence)
+2026-01-12 21:54:16 ✅ Agent 2 - OpenRouter (GPT-4o-mini): $54,776,743 (70% confidence)
+2026-01-12 21:54:16 ✅ Agent 3 - Gemini (Meta Llama 3.1): $49,096,192 (70% confidence)
+2026-01-12 21:54:16 
+2026-01-12 21:54:16 📋 Step 3.5: Extracting and validating document details...
+
+2026-01-12 21:54:16 📄 DOCUMENT SUMMARY:
+2026-01-12 21:54:16 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:54:16 👤 Seller/Owner: Ramesh Kumar, Son of Suresh Kumar, aged about 45 years,
+2026-01-12 21:54:16 👤 Buyer/Purchaser: Suganthan R, Son of Ravichandran, aged about 22 years,
+2026-01-12 21:54:16 📍 Survey/Plot Number: 112 | LR Plot No: 215
+2026-01-12 21:54:16 📏 Property Area: 2400 Sq.ft
+2026-01-12 21:54:16 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:54:16 ✅ Document contains required Seller and Buyer information
+
+2026-01-12 21:54:16 ⚠️  Document issues noted: Area mismatch >20% with satellite data, Potential discrepancy in property details
+2026-01-12 21:54:16 ✅ Proceeding with verification
+
+2026-01-12 21:54:16 🔮 Step 4: Calculating consensus...
+2026-01-12 21:54:16 ✅ Consensus reached: $51,936,468
+2026-01-12 21:54:16    Final confidence: 14%
+2026-01-12 21:54:16    Consensus score: 29/100
+2026-01-12 21:54:16    Standard deviation: ±$24,592,673
+
+2026-01-12 21:54:16 📊 INDIVIDUAL AGENT SCORES:
+2026-01-12 21:54:16 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:54:16    1. Groq (Llama 3.3 70B)
+2026-01-12 21:54:16       Valuation: $0
+2026-01-12 21:54:16       Confidence: 0%
+2026-01-12 21:54:16    2. OpenRouter (GPT-4o-mini)
+2026-01-12 21:54:16       Valuation: $54,776,743
+2026-01-12 21:54:16       Confidence: 70%
+2026-01-12 21:54:16    3. Gemini (Meta Llama 3.1)
+2026-01-12 21:54:16       Valuation: $49,096,192
+2026-01-12 21:54:16       Confidence: 70%
+2026-01-12 21:54:16 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:54:16 ⛓️  Step 5: Submitting to blockchain...
+2026-01-12 21:54:16 📦 Uploading evidence to IPFS...
+2026-01-12 21:54:17 ✅ Evidence uploaded: QmQYGFrpB7XzwxCPoA2hYpUfSzkTTSu2NUeH4Kg15zQBSk
+2026-01-12 21:54:17 📝 Evidence mapping stored: Request 32 -> QmQYGFrpB7XzwxCPoA2hYpUfSzkTTSu2NUeH4Kg15zQBSk
+2026-01-12 21:54:17 📤 Submitting transaction to Mantle Sepolia...
+2026-01-12 21:54:18 ⏳ Waiting for confirmation...
+2026-01-12 21:54:18 ✅ Transaction submitted: 0x562eeab18bb0f8528cc70b44949ddfde5b7dfe862d2955d766c89d83ef880bcb
+
+2026-01-12 21:54:18 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:54:18 ✅ REQUEST COMPLETED IN 149.56s
+2026-01-12 21:54:18 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:54:18 👂 Now listening for new VerificationRequested events...
+2026-01-12 21:54:18 Press Ctrl+C to stop
+
+2026-01-12 21:57:46 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:57:46 🤖 RWA ORACLE STARTING
+2026-01-12 21:57:46 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:57:46 Oracle Address: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 21:57:46 Network: Testnet
+2026-01-12 21:57:46 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:57:46 🚀 Starting Oracle Listener...
+2026-01-12 21:57:46 📡 Network: Mantle Sepolia Testnet
+2026-01-12 21:57:46 🔗 RPC URL: https://rpc.sepolia.mantle.xyz
+2026-01-12 21:57:46 📍 Oracle Router: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 21:58:24 ❌ Failed to start listener: HTTP request failed.
+
+URL: https://rpc.sepolia.mantle.xyz
+Request body: {"method":"eth_blockNumber"}
+
+Details: fetch failed
+Version: viem@2.44.1
+2026-01-12 21:59:04 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:59:04 🤖 RWA ORACLE STARTING
+2026-01-12 21:59:04 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:59:04 Oracle Address: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 21:59:04 Network: Testnet
+2026-01-12 21:59:04 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:59:04 🚀 Starting Oracle Listener...
+2026-01-12 21:59:04 📡 Network: Mantle Sepolia Testnet
+2026-01-12 21:59:04 🔗 RPC URL: https://rpc.sepolia.mantle.xyz
+2026-01-12 21:59:04 📍 Oracle Router: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-12 21:59:09 📦 Current block: 33345336
+2026-01-12 21:59:09 🔍 Scanning for pending requests from recent blocks...
+2026-01-12 21:59:09    Scanning from block 33295336 to 33345336 in 10000 block chunks...
+2026-01-12 21:59:16    ✓ Blocks 33295336-33305336: Found 19 event(s)
+2026-01-12 21:59:27    ✓ Blocks 33335340-33345336: Found 3 event(s)
+2026-01-12 21:59:27    Total events found: 22
+2026-01-12 21:59:27 📜 Filtering pending requests from 22 event(s)...
+2026-01-12 21:59:28    ⊘ Request #11: VERIFIED - skipping
+2026-01-12 21:59:28    ⊘ Request #12: VERIFIED - skipping
+2026-01-12 21:59:29    ⊘ Request #13: VERIFIED - skipping
+2026-01-12 21:59:30    ⊘ Request #14: VERIFIED - skipping
+2026-01-12 21:59:31    ⊘ Request #15: VERIFIED - skipping
+2026-01-12 21:59:32    ✓ Request #16: PENDING - will process
+2026-01-12 21:59:33    ⊘ Request #17: VERIFIED - skipping
+2026-01-12 21:59:34    ⊘ Request #18: VERIFIED - skipping
+2026-01-12 21:59:35    ⊘ Request #19: VERIFIED - skipping
+2026-01-12 21:59:36    ⊘ Request #20: VERIFIED - skipping
+2026-01-12 21:59:37    ⊘ Request #21: VERIFIED - skipping
+2026-01-12 21:59:38    ⊘ Request #22: VERIFIED - skipping
+2026-01-12 21:59:39    ⊘ Request #23: VERIFIED - skipping
+2026-01-12 21:59:40    ⊘ Request #24: VERIFIED - skipping
+2026-01-12 21:59:43    ⊘ Request #25: VERIFIED - skipping
+2026-01-12 21:59:45    ⊘ Request #26: VERIFIED - skipping
+2026-01-12 21:59:46    ⊘ Request #27: VERIFIED - skipping
+2026-01-12 21:59:47    ⊘ Request #28: VERIFIED - skipping
+2026-01-12 21:59:48    ⊘ Request #29: VERIFIED - skipping
+2026-01-12 21:59:49    ⊘ Request #30: VERIFIED - skipping
+2026-01-12 21:59:49    ⊘ Request #31: VERIFIED - skipping
+2026-01-12 21:59:50    ⊘ Request #32: VERIFIED - skipping
+2026-01-12 21:59:50 
+📋 Found 1 pending request(s) to process
+
+2026-01-12 21:59:50 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:59:50 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-12 21:59:50 ═══════════════════════════════════════════════════════════════
+2026-01-12 21:59:50 📝 Request ID: 16
+2026-01-12 21:59:50 👤 Owner: 0x588F6b3169F60176c1143f8BaB47bCf3DeEbECdc
+2026-01-12 21:59:50 🏠 Asset Type: 0
+2026-01-12 21:59:50 📍 Location: villupuram | 40,7525
+2026-01-12 21:59:50    Parsed Coordinates: 40, 7525
+2026-01-12 21:59:50 📄 Documents: 1 files
+2026-01-12 21:59:50 ⏰ Timestamp: 2026-01-11T15:08:39.000Z
+2026-01-12 21:59:50 📦 Block: 33299723
+2026-01-12 21:59:50 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 21:59:50 🔄 Starting AI analysis pipeline...
+
+2026-01-12 21:59:50 📋 Step 0: Validating documents...
+2026-01-12 21:59:57 📄 Validating document: QmTb3yDY2mLG1wCnyAQh...
+2026-01-12 21:59:57 ✅ 1 document(s) validated
+
+2026-01-12 21:59:57 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-12 22:00:01    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-12 22:00:01    🔄 Fetching first document CID for processing...
+2026-01-12 22:00:05    📄 Parsing PDF: Qmew96XPH1GPpmEPrih4...
+2026-01-12 22:00:06    ⚠️  Failed to parse PDF, trying OCR: TypeError: pdfParse is not a function
+2026-01-12 22:00:06 🔍 Converting document to JSON via OCR.space: document.pdf
+2026-01-12 22:00:37 ❌ OCR.space API error: OCR processing error: The maximum page limit of 3 was reached and only pages upto the limit were parsed successfully - 
+2026-01-12 22:00:37 OCR failed for document.pdf, using fallback
+2026-01-12 22:00:37    📄 Document 1: 132 characters
+2026-01-12 22:00:37    Preview: [OCR ERROR: OCR processing error: The maximum page limit of 3 was reached and only pages upto the limit were parsed successfully - ]
+
+2026-01-12 22:00:37 ✅ Fetched 1 document(s) for analysis
+
+2026-01-12 22:00:37 📡 Step 1: Fetching satellite imagery...
+2026-01-12 22:00:48 ❌ Error processing request: Satellite service failed: Error: Satellite service failed: Image.normalizedDifference: Parameter 'input' is required and may not be null.
+
+2026-01-12 22:00:48 ❌ Error handling verification request: Satellite service failed: Error: Satellite service failed: Image.normalizedDifference: Parameter 'input' is required and may not be null.
+
+2026-01-12 22:00:48 👂 Now listening for new VerificationRequested events...
+2026-01-12 22:00:48 Press Ctrl+C to stop
+
+2026-01-12 22:21:18 ═══════════════════════════════════════════════════════════════
+2026-01-12 22:21:18 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-12 22:21:18 ═══════════════════════════════════════════════════════════════
+2026-01-12 22:21:18 📝 Request ID: 33
+2026-01-12 22:21:18 👤 Owner: 0x588F6b3169F60176c1143f8BaB47bCf3DeEbECdc
+2026-01-12 22:21:18 🏠 Asset Type: 0
+2026-01-12 22:21:18 📍 Location: villupuram | 11,79
+2026-01-12 22:21:18    Parsed Coordinates: 11, 79
+2026-01-12 22:21:18 📄 Documents: 1 files
+2026-01-12 22:21:18 ⏰ Timestamp: 2026-01-12T16:51:11.000Z
+2026-01-12 22:21:18 📦 Block: 33345999
+2026-01-12 22:21:18 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 22:21:18 🔄 Starting AI analysis pipeline...
+
+2026-01-12 22:21:18 📋 Step 0: Validating documents...
+2026-01-12 22:21:25 📄 Validating document: QmVQaCj9CX6K4FH6EwY8...
+2026-01-12 22:21:25 ✅ 1 document(s) validated
+
+2026-01-12 22:21:25 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-12 22:21:32    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-12 22:21:32    🔄 Fetching first document CID for processing...
+2026-01-12 22:21:39    📄 Found structured document JSON: Filled_Land_Sale_Deed (1).pdf
+2026-01-12 22:21:39    🔄 Fetching original file for OCR processing...
+2026-01-12 22:21:39    📥 Fetching original file: QmQgxrGL7Bx9c19wNhMC...
+2026-01-12 22:21:46    📄 Processing original PDF with OCR.space API...
+2026-01-12 22:21:46    ⚠️  PDF parsing failed, using OCR: TypeError: pdfParse is not a function
+2026-01-12 22:21:46 🔍 Converting document to JSON via OCR.space: Filled_Land_Sale_Deed (1).pdf
+2026-01-12 22:21:50 ✅ Page 1 parsed successfully (1404 chars)
+2026-01-12 22:21:50 ✅ OCR complete: 1404 total characters extracted
+2026-01-12 22:21:50    Pages: 1
+2026-01-12 22:21:50    Processing time: 1265ms
+2026-01-12 22:21:50 📄 Extracted 1404 characters from Filled_Land_Sale_Deed (1).pdf via OCR
+2026-01-12 22:21:50    ✅ OCR extracted 1404 characters
+2026-01-12 22:21:50    📄 Document 1: 1404 characters
+2026-01-12 22:21:50    Preview: DEED OF SALE	
+This Deed of Sale made on this 15th day of January 2026	
+BETWEEN	
+SELLER:	
+Ramesh Kumar, Son of Suresh Kumar, aged about 45 years,	
+Caste: General, Religion: Hindu,	
+Occupation: Bu...
+
+2026-01-12 22:21:50 ✅ Fetched 1 document(s) for analysis
+
+2026-01-12 22:21:50 📡 Step 1: Fetching satellite imagery...
+2026-01-12 22:22:27 ✅ Satellite data: 39779.77 sqm, NDVI 0.2696
+2026-01-12 22:22:27    Cloud coverage: 0%, Resolution: 10m
+
+2026-01-12 22:22:27 📸 Step 1.5: Uploading satellite images to IPFS (Ultra High Resolution - 2048x2048)...
+2026-01-12 22:22:32    ✅ RGB image uploaded: Qmf2kPwC1heAtky9BMV33GKyiLKWhrWy1DoxVZYSQRp9xp
+2026-01-12 22:22:32    🔗 RGB Image URL: https://gateway.pinata.cloud/ipfs/Qmf2kPwC1heAtky9BMV33GKyiLKWhrWy1DoxVZYSQRp9xp
+2026-01-12 22:22:35    ✅ NDVI image uploaded: QmctpoCChGyVST1ctNjuuUdyDkcbWegNwYLrV8KGonHe41
+2026-01-12 22:22:35    🔗 NDVI Image URL: https://gateway.pinata.cloud/ipfs/QmctpoCChGyVST1ctNjuuUdyDkcbWegNwYLrV8KGonHe41
+2026-01-12 22:22:37    ✅ CIR (Color Infrared) image uploaded: QmVT4qY9wYaLy3cwJs5mpTdx5NwnALzcRdMdJktvDM4kmv
+2026-01-12 22:22:37    🔗 CIR Image URL: https://gateway.pinata.cloud/ipfs/QmVT4qY9wYaLy3cwJs5mpTdx5NwnALzcRdMdJktvDM4kmv
+2026-01-12 22:22:39    ✅ True Color image uploaded: QmdCeFpEuycZPLKYyg4EQrAUwdTKqGHdzBCbjpubHQueiS
+2026-01-12 22:22:39    🔗 True Color Image URL: https://gateway.pinata.cloud/ipfs/QmdCeFpEuycZPLKYyg4EQrAUwdTKqGHdzBCbjpubHQueiS
+2026-01-12 22:22:39 ✅ All satellite images uploaded to IPFS (2048x2048 resolution)
+
+2026-01-12 22:22:39    🗑️  Cleaned up temp RGB file
+2026-01-12 22:22:39    🗑️  Cleaned up temp NDVI file
+2026-01-12 22:22:39    🗑️  Cleaned up temp CIR file
+2026-01-12 22:22:39    🗑️  Cleaned up temp True Color file
+2026-01-12 22:22:39 🤖 Step 2: Running 3 AI agents in parallel...
+2026-01-12 22:22:39    🔍 Sending to Groq:
+2026-01-12 22:22:39       - Document count: 1
+2026-01-12 22:22:39       - Doc 1: 1404 chars - "DEED OF SALE	
+This Deed of Sale made on this 15th day of January 2026	
+BETWEEN	
+SELLER:	
+Ramesh ..."
+2026-01-12 22:22:39    🔍 Sending to OpenRouter:
+2026-01-12 22:22:39       - Document count: 1
+2026-01-12 22:22:39       - Doc 1: 1404 chars - "DEED OF SALE	
+This Deed of Sale made on this 15th day of January 2026	
+BETWEEN	
+SELLER:	
+Ramesh ..."
+2026-01-12 22:22:39    🔍 Sending to Gemini:
+2026-01-12 22:22:39       - Document count: 1
+2026-01-12 22:22:39       - Doc 1: 1404 chars - "DEED OF SALE	
+This Deed of Sale made on this 15th day of January 2026	
+BETWEEN	
+SELLER:	
+Ramesh ..."
+2026-01-12 22:22:42    📋 Groq document analysis:
+2026-01-12 22:22:42       - Is land document: true
+2026-01-12 22:22:42       - Authenticity score: 20
+2026-01-12 22:22:42 ✅ Agent 1 - Groq (Llama 3.3 70B): $0 (0% confidence)
+2026-01-12 22:22:42 ✅ Agent 2 - OpenRouter (GPT-4o-mini): $54,776,743 (70% confidence)
+2026-01-12 22:22:42 ✅ Agent 3 - Gemini (Meta Llama 3.1): $49,096,192 (70% confidence)
+2026-01-12 22:22:42 
+2026-01-12 22:22:42 📋 Step 3.5: Extracting and validating document details...
+
+2026-01-12 22:22:42 📄 DOCUMENT SUMMARY:
+2026-01-12 22:22:42 ═══════════════════════════════════════════════════════════════
+2026-01-12 22:22:42 👤 Seller/Owner: Ramesh Kumar, Son of Suresh Kumar, aged about 45 years,
+2026-01-12 22:22:42 👤 Buyer/Purchaser: Suganthan R, Son of Ravichandran, aged about 22 years,
+2026-01-12 22:22:42 📍 Survey/Plot Number: 112 | LR Plot No: 215
+2026-01-12 22:22:42 📏 Property Area: 2400 Sq.ft
+2026-01-12 22:22:42 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 22:22:42 ✅ Document contains required Seller and Buyer information
+
+2026-01-12 22:22:42 ⚠️  Document authenticity score is low: 20.0%
+2026-01-12 22:22:42 ⚠️  Document issues noted: Area mismatch >20% with satellite data, Potential forgery or fraud
+2026-01-12 22:22:42 📊 Document authenticity score: 20.0%
+
+2026-01-12 22:22:42 🔮 Step 4: Calculating consensus...
+2026-01-12 22:22:42 ✅ Consensus reached: $51,936,468
+2026-01-12 22:22:42    Final confidence: 14%
+2026-01-12 22:22:42    Consensus score: 29/100
+2026-01-12 22:22:42    Standard deviation: ±$24,592,673
+
+2026-01-12 22:22:42 📊 INDIVIDUAL AGENT SCORES:
+2026-01-12 22:22:42 ═══════════════════════════════════════════════════════════════
+2026-01-12 22:22:42    1. Groq (Llama 3.3 70B)
+2026-01-12 22:22:42       Valuation: $0
+2026-01-12 22:22:42       Confidence: 0%
+2026-01-12 22:22:42    2. OpenRouter (GPT-4o-mini)
+2026-01-12 22:22:42       Valuation: $54,776,743
+2026-01-12 22:22:42       Confidence: 70%
+2026-01-12 22:22:42    3. Gemini (Meta Llama 3.1)
+2026-01-12 22:22:42       Valuation: $49,096,192
+2026-01-12 22:22:42       Confidence: 70%
+2026-01-12 22:22:42 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 22:22:42 ⛓️  Step 5: Submitting to blockchain...
+2026-01-12 22:22:42 📦 Uploading evidence to IPFS...
+2026-01-12 22:22:43 ✅ Evidence uploaded: QmWV8Asa2dRFbWTuM6BpAsVn8BQussFNwz3B624moj9rVU
+2026-01-12 22:22:43 📝 Evidence mapping stored: Request 33 -> QmWV8Asa2dRFbWTuM6BpAsVn8BQussFNwz3B624moj9rVU
+2026-01-12 22:22:43 📤 Submitting transaction to Mantle Sepolia...
+2026-01-12 22:22:47 ⏳ Waiting for confirmation...
+2026-01-12 22:22:47 ✅ Transaction submitted: 0x5875ce14c916e3ca696dc4936de3b301b99d176078696ceb6b2001d8cde53960
+
+2026-01-12 22:22:47 ═══════════════════════════════════════════════════════════════
+2026-01-12 22:22:47 ✅ REQUEST COMPLETED IN 88.71s
+2026-01-12 22:22:47 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 22:30:03 ═══════════════════════════════════════════════════════════════
+2026-01-12 22:30:03 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-12 22:30:03 ═══════════════════════════════════════════════════════════════
+2026-01-12 22:30:03 📝 Request ID: 34
+2026-01-12 22:30:03 👤 Owner: 0x588F6b3169F60176c1143f8BaB47bCf3DeEbECdc
+2026-01-12 22:30:03 🏠 Asset Type: 0
+2026-01-12 22:30:03 📍 Location: vala | 11,79
+2026-01-12 22:30:03    Parsed Coordinates: 11, 79
+2026-01-12 22:30:03 📄 Documents: 1 files
+2026-01-12 22:30:03 ⏰ Timestamp: 2026-01-12T16:59:57.000Z
+2026-01-12 22:30:03 📦 Block: 33346262
+2026-01-12 22:30:03 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 22:30:03 🔄 Starting AI analysis pipeline...
+
+2026-01-12 22:30:03 📋 Step 0: Validating documents...
+2026-01-12 22:30:14 📄 Validating document: QmRBcmipni6wZ9vKV3MT...
+2026-01-12 22:30:14 ✅ 1 document(s) validated
+
+2026-01-12 22:30:14 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-12 22:30:18    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-12 22:30:18    🔄 Fetching first document CID for processing...
+2026-01-12 22:30:23    📄 Found structured document JSON: Filled_Land_Sale_Deed (1).pdf
+2026-01-12 22:30:23    🔄 Fetching original file for OCR processing...
+2026-01-12 22:30:23    📥 Fetching original file: QmQgxrGL7Bx9c19wNhMC...
+2026-01-12 22:30:27    📄 Processing original PDF with OCR.space API...
+2026-01-12 22:30:27    ⚠️  PDF parsing failed, using OCR: TypeError: pdfParse is not a function
+2026-01-12 22:30:27 🔍 Converting document to JSON via OCR.space: Filled_Land_Sale_Deed (1).pdf
+2026-01-12 22:30:31 ✅ Page 1 parsed successfully (1404 chars)
+2026-01-12 22:30:31 ✅ OCR complete: 1404 total characters extracted
+2026-01-12 22:30:31    Pages: 1
+2026-01-12 22:30:31    Processing time: 1891ms
+2026-01-12 22:30:31 📄 Extracted 1404 characters from Filled_Land_Sale_Deed (1).pdf via OCR
+2026-01-12 22:30:31    ✅ OCR extracted 1404 characters
+2026-01-12 22:30:31    📄 Document 1: 1404 characters
+2026-01-12 22:30:31    Preview: DEED OF SALE	
+This Deed of Sale made on this 15th day of January 2026	
+BETWEEN	
+SELLER:	
+Ramesh Kumar, Son of Suresh Kumar, aged about 45 years,	
+Caste: General, Religion: Hindu,	
+Occupation: Bu...
+
+2026-01-12 22:30:31 ✅ Fetched 1 document(s) for analysis
+
+2026-01-12 22:30:31 📡 Step 1: Fetching satellite imagery...
+2026-01-12 22:31:14 ✅ Satellite data: 39779.77 sqm, NDVI 0.2696
+2026-01-12 22:31:14    Cloud coverage: 0%, Resolution: 10m
+
+2026-01-12 22:31:14 📸 Step 1.5: Uploading satellite images to IPFS (Ultra High Resolution - 2048x2048)...
+2026-01-12 22:31:30    ✅ RGB image uploaded: QmRoNtcUUSLAMULoJrUNVLmTFSsnJJ5E57HDNrzs6XheTb
+2026-01-12 22:31:30    🔗 RGB Image URL: https://gateway.pinata.cloud/ipfs/QmRoNtcUUSLAMULoJrUNVLmTFSsnJJ5E57HDNrzs6XheTb
+2026-01-12 22:31:40    ✅ NDVI image uploaded: QmPfAqCnjJHSkQ8c3S9BXP8uLxEtR1c2UM53rPKURywK1N
+2026-01-12 22:31:40    🔗 NDVI Image URL: https://gateway.pinata.cloud/ipfs/QmPfAqCnjJHSkQ8c3S9BXP8uLxEtR1c2UM53rPKURywK1N
+2026-01-12 22:32:01    ✅ CIR (Color Infrared) image uploaded: QmbzzTgP98naHf8E3PbU5SNPscmZM2JvFMrxreSAWWggAf
+2026-01-12 22:32:01    🔗 CIR Image URL: https://gateway.pinata.cloud/ipfs/QmbzzTgP98naHf8E3PbU5SNPscmZM2JvFMrxreSAWWggAf
+2026-01-12 22:32:09    ✅ True Color image uploaded: QmPC2qqMWn7jP8d2o2CJ2feF3WgLRBKV3F48gHmkV7rWHC
+2026-01-12 22:32:09    🔗 True Color Image URL: https://gateway.pinata.cloud/ipfs/QmPC2qqMWn7jP8d2o2CJ2feF3WgLRBKV3F48gHmkV7rWHC
+2026-01-12 22:32:09 ✅ All satellite images uploaded to IPFS (2048x2048 resolution)
+
+2026-01-12 22:32:10    🗑️  Cleaned up temp RGB file
+2026-01-12 22:32:10    🗑️  Cleaned up temp NDVI file
+2026-01-12 22:32:10    🗑️  Cleaned up temp CIR file
+2026-01-12 22:32:10    🗑️  Cleaned up temp True Color file
+2026-01-12 22:32:10 🤖 Step 2: Running 3 AI agents in parallel...
+2026-01-12 22:32:10    🔍 Sending to Groq:
+2026-01-12 22:32:10       - Document count: 1
+2026-01-12 22:32:10       - Doc 1: 1404 chars - "DEED OF SALE	
+This Deed of Sale made on this 15th day of January 2026	
+BETWEEN	
+SELLER:	
+Ramesh ..."
+2026-01-12 22:32:10    🔍 Sending to OpenRouter:
+2026-01-12 22:32:10       - Document count: 1
+2026-01-12 22:32:10       - Doc 1: 1404 chars - "DEED OF SALE	
+This Deed of Sale made on this 15th day of January 2026	
+BETWEEN	
+SELLER:	
+Ramesh ..."
+2026-01-12 22:32:10    🔍 Sending to Gemini:
+2026-01-12 22:32:10       - Document count: 1
+2026-01-12 22:32:10       - Doc 1: 1404 chars - "DEED OF SALE	
+This Deed of Sale made on this 15th day of January 2026	
+BETWEEN	
+SELLER:	
+Ramesh ..."
+2026-01-12 22:32:12    📋 Groq document analysis:
+2026-01-12 22:32:12       - Is land document: true
+2026-01-12 22:32:12       - Authenticity score: 20
+2026-01-12 22:32:12       - Missing fields: Survey number
+2026-01-12 22:32:13 ✅ Agent 1 - Groq (Llama 3.3 70B): $0 (0% confidence)
+2026-01-12 22:32:13 ✅ Agent 2 - OpenRouter (GPT-4o-mini): $54,776,743 (70% confidence)
+2026-01-12 22:32:13 ✅ Agent 3 - Gemini (Meta Llama 3.1): $49,096,192 (70% confidence)
+2026-01-12 22:32:13 
+2026-01-12 22:32:13 📋 Step 3.5: Extracting and validating document details...
+
+2026-01-12 22:32:13 📄 DOCUMENT SUMMARY:
+2026-01-12 22:32:13 ═══════════════════════════════════════════════════════════════
+2026-01-12 22:32:13 👤 Seller/Owner: Ramesh Kumar, Son of Suresh Kumar, aged about 45 years,
+2026-01-12 22:32:13 👤 Buyer/Purchaser: Suganthan R, Son of Ravichandran, aged about 22 years,
+2026-01-12 22:32:13 📍 Survey/Plot Number: 112 | LR Plot No: 215
+2026-01-12 22:32:13 📏 Property Area: 2400 Sq.ft
+2026-01-12 22:32:13 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 22:32:13 ✅ Document contains required Seller and Buyer information
+
+2026-01-12 22:32:13 ⚠️  Document authenticity score is low: 20.0%
+2026-01-12 22:32:13 ⚠️  Document issues noted: Area mismatch >20% with satellite data, Missing survey/plot number, Missing: Survey number
+2026-01-12 22:32:13 📊 Document authenticity score: 20.0%
+
+2026-01-12 22:32:13 🔮 Step 4: Calculating consensus...
+2026-01-12 22:32:13 ✅ Consensus reached: $51,936,468
+2026-01-12 22:32:13    Final confidence: 14%
+2026-01-12 22:32:13    Consensus score: 29/100
+2026-01-12 22:32:13    Standard deviation: ±$24,592,673
+
+2026-01-12 22:32:13 📊 INDIVIDUAL AGENT SCORES:
+2026-01-12 22:32:13 ═══════════════════════════════════════════════════════════════
+2026-01-12 22:32:13    1. Groq (Llama 3.3 70B)
+2026-01-12 22:32:13       Valuation: $0
+2026-01-12 22:32:13       Confidence: 0%
+2026-01-12 22:32:13    2. OpenRouter (GPT-4o-mini)
+2026-01-12 22:32:13       Valuation: $54,776,743
+2026-01-12 22:32:13       Confidence: 70%
+2026-01-12 22:32:13    3. Gemini (Meta Llama 3.1)
+2026-01-12 22:32:13       Valuation: $49,096,192
+2026-01-12 22:32:13       Confidence: 70%
+2026-01-12 22:32:13 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 22:32:13 ⛓️  Step 5: Submitting to blockchain...
+2026-01-12 22:32:13 📦 Uploading evidence to IPFS...
+2026-01-12 22:32:14 ✅ Evidence uploaded: QmZsN3ep6n1UYEkYJxyDEWCb3zTSUtkxj1BeM5ZASFMVd9
+2026-01-12 22:32:14 📝 Evidence mapping stored: Request 34 -> QmZsN3ep6n1UYEkYJxyDEWCb3zTSUtkxj1BeM5ZASFMVd9
+2026-01-12 22:32:14 📤 Submitting transaction to Mantle Sepolia...
+2026-01-12 22:32:16 ⏳ Waiting for confirmation...
+2026-01-12 22:32:16 ✅ Transaction submitted: 0x7eb6cd76ab8ab3b74346d5f61067e0d495d58c1ace231ed8fba1855bfdd937be
+
+2026-01-12 22:32:16 ═══════════════════════════════════════════════════════════════
+2026-01-12 22:32:16 ✅ REQUEST COMPLETED IN 132.28s
+2026-01-12 22:32:16 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 22:37:50 ═══════════════════════════════════════════════════════════════
+2026-01-12 22:37:50 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-12 22:37:50 ═══════════════════════════════════════════════════════════════
+2026-01-12 22:37:50 📝 Request ID: 35
+2026-01-12 22:37:50 👤 Owner: 0x588F6b3169F60176c1143f8BaB47bCf3DeEbECdc
+2026-01-12 22:37:50 🏠 Asset Type: 0
+2026-01-12 22:37:50 📍 Location: villu0uram | 40,70
+2026-01-12 22:37:50    Parsed Coordinates: 40, 70
+2026-01-12 22:37:50 📄 Documents: 1 files
+2026-01-12 22:37:50 ⏰ Timestamp: 2026-01-12T17:07:43.000Z
+2026-01-12 22:37:50 📦 Block: 33346495
+2026-01-12 22:37:50 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 22:37:50 🔄 Starting AI analysis pipeline...
+
+2026-01-12 22:37:50 📋 Step 0: Validating documents...
+2026-01-12 22:37:57 📄 Validating document: QmUsg99DPw9sFRyiTyee...
+2026-01-12 22:37:57 ✅ 1 document(s) validated
+
+2026-01-12 22:37:57 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-12 22:38:02    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-12 22:38:02    🔄 Fetching first document CID for processing...
+2026-01-12 22:38:09    📄 Found structured document JSON: Filled_Land_Sale_Deed (1).pdf
+2026-01-12 22:38:09    🔄 Fetching original file for OCR processing...
+2026-01-12 22:38:09    📥 Fetching original file: QmQgxrGL7Bx9c19wNhMC...
+2026-01-12 22:38:14    📄 Processing original PDF with OCR.space API...
+2026-01-12 22:38:14    ⚠️  PDF parsing failed, using OCR: TypeError: pdfParse is not a function
+2026-01-12 22:38:14 🔍 Converting document to JSON via OCR.space: Filled_Land_Sale_Deed (1).pdf
+2026-01-12 22:38:16 ✅ Page 1 parsed successfully (1404 chars)
+2026-01-12 22:38:16 ✅ OCR complete: 1404 total characters extracted
+2026-01-12 22:38:16    Pages: 1
+2026-01-12 22:38:16    Processing time: 937ms
+2026-01-12 22:38:16 📄 Extracted 1404 characters from Filled_Land_Sale_Deed (1).pdf via OCR
+2026-01-12 22:38:16    ✅ OCR extracted 1404 characters
+2026-01-12 22:38:16    📄 Document 1: 1404 characters
+2026-01-12 22:38:16    Preview: DEED OF SALE	
+This Deed of Sale made on this 15th day of January 2026	
+BETWEEN	
+SELLER:	
+Ramesh Kumar, Son of Suresh Kumar, aged about 45 years,	
+Caste: General, Religion: Hindu,	
+Occupation: Bu...
+
+2026-01-12 22:38:16 ✅ Fetched 1 document(s) for analysis
+
+2026-01-12 22:38:16 📡 Step 1: Fetching satellite imagery...
+2026-01-12 22:39:17 ✅ Satellite data: 31040.61 sqm, NDVI 0.139
+2026-01-12 22:39:17    Cloud coverage: 0%, Resolution: 10m
+
+2026-01-12 22:39:17 📸 Step 1.5: Uploading satellite images to IPFS (Ultra High Resolution - 2048x2048)...
+2026-01-12 22:39:32    ✅ RGB image uploaded: QmXKnaVfjuDKR5VpEARzoKt6VMzVVDoSdZKe4P8feCzKix
+2026-01-12 22:39:32    🔗 RGB Image URL: https://gateway.pinata.cloud/ipfs/QmXKnaVfjuDKR5VpEARzoKt6VMzVVDoSdZKe4P8feCzKix
+2026-01-12 22:39:43    ✅ NDVI image uploaded: QmSuLwFmp6hdFnmK9diJryoPbEp5yd3nqwtUxcCNc6g2dL
+2026-01-12 22:39:43    🔗 NDVI Image URL: https://gateway.pinata.cloud/ipfs/QmSuLwFmp6hdFnmK9diJryoPbEp5yd3nqwtUxcCNc6g2dL
+2026-01-12 22:40:07    ✅ CIR (Color Infrared) image uploaded: QmahqpjoFuvjRrgouTV5dp3jhUhdZ6CUUTk6FRYXw1Mkfh
+2026-01-12 22:40:07    🔗 CIR Image URL: https://gateway.pinata.cloud/ipfs/QmahqpjoFuvjRrgouTV5dp3jhUhdZ6CUUTk6FRYXw1Mkfh
+2026-01-12 22:40:18    ✅ True Color image uploaded: QmdAkyiChu2hukET7rUqgssUXkZNE1jT5MMTndXJbAgfgH
+2026-01-12 22:40:18    🔗 True Color Image URL: https://gateway.pinata.cloud/ipfs/QmdAkyiChu2hukET7rUqgssUXkZNE1jT5MMTndXJbAgfgH
+2026-01-12 22:40:18 ✅ All satellite images uploaded to IPFS (2048x2048 resolution)
+
+2026-01-12 22:40:19    🗑️  Cleaned up temp RGB file
+2026-01-12 22:40:19    🗑️  Cleaned up temp NDVI file
+2026-01-12 22:40:19    🗑️  Cleaned up temp CIR file
+2026-01-12 22:40:19    🗑️  Cleaned up temp True Color file
+2026-01-12 22:40:19 🤖 Step 2: Running 3 AI agents in parallel...
+2026-01-12 22:40:19    🔍 Sending to Groq:
+2026-01-12 22:40:19       - Document count: 1
+2026-01-12 22:40:19       - Doc 1: 1404 chars - "DEED OF SALE	
+This Deed of Sale made on this 15th day of January 2026	
+BETWEEN	
+SELLER:	
+Ramesh ..."
+2026-01-12 22:40:19    🔍 Sending to OpenRouter:
+2026-01-12 22:40:19       - Document count: 1
+2026-01-12 22:40:19       - Doc 1: 1404 chars - "DEED OF SALE	
+This Deed of Sale made on this 15th day of January 2026	
+BETWEEN	
+SELLER:	
+Ramesh ..."
+2026-01-12 22:40:19    🔍 Sending to Gemini:
+2026-01-12 22:40:19       - Document count: 1
+2026-01-12 22:40:19       - Doc 1: 1404 chars - "DEED OF SALE	
+This Deed of Sale made on this 15th day of January 2026	
+BETWEEN	
+SELLER:	
+Ramesh ..."
+2026-01-12 22:40:23    📋 Groq document analysis:
+2026-01-12 22:40:23       - Is land document: true
+2026-01-12 22:40:23       - Authenticity score: 80
+2026-01-12 22:40:24 ✅ Agent 1 - Groq (Llama 3.3 70B): $375,000 (80% confidence)
+2026-01-12 22:40:24 ✅ Agent 2 - OpenRouter (GPT-4o-mini): $42,742,919 (70% confidence)
+2026-01-12 22:40:24 ✅ Agent 3 - Gemini (Meta Llama 3.1): $38,310,320 (63% confidence)
+2026-01-12 22:40:24 
+2026-01-12 22:40:24 📋 Step 3.5: Extracting and validating document details...
+
+2026-01-12 22:40:24 📄 DOCUMENT SUMMARY:
+2026-01-12 22:40:24 ═══════════════════════════════════════════════════════════════
+2026-01-12 22:40:24 👤 Seller/Owner: Ramesh Kumar, Son of Suresh Kumar, aged about 45 years,
+2026-01-12 22:40:24 👤 Buyer/Purchaser: Suganthan R, Son of Ravichandran, aged about 22 years,
+2026-01-12 22:40:24 📍 Survey/Plot Number: 112 | LR Plot No: 215
+2026-01-12 22:40:24 📏 Property Area: 2400 Sq.ft
+2026-01-12 22:40:24 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 22:40:24 ✅ Document contains required Seller and Buyer information
+
+2026-01-12 22:40:24 ⚠️  Document issues noted: Area mismatch >20% with satellite data
+2026-01-12 22:40:24 📊 Document authenticity score: 80.0%
+
+2026-01-12 22:40:24 🔮 Step 4: Calculating consensus...
+2026-01-12 22:40:24 ✅ Consensus reached: $25,519,035
+2026-01-12 22:40:24    Final confidence: 21%
+2026-01-12 22:40:24    Consensus score: 30/100
+2026-01-12 22:40:24    Standard deviation: ±$19,013,963
+
+2026-01-12 22:40:24 📊 INDIVIDUAL AGENT SCORES:
+2026-01-12 22:40:24 ═══════════════════════════════════════════════════════════════
+2026-01-12 22:40:24    1. Groq (Llama 3.3 70B)
+2026-01-12 22:40:24       Valuation: $375,000
+2026-01-12 22:40:24       Confidence: 80%
+2026-01-12 22:40:24    2. OpenRouter (GPT-4o-mini)
+2026-01-12 22:40:24       Valuation: $42,742,919
+2026-01-12 22:40:24       Confidence: 70%
+2026-01-12 22:40:24    3. Gemini (Meta Llama 3.1)
+2026-01-12 22:40:24       Valuation: $38,310,320
+2026-01-12 22:40:24       Confidence: 63%
+2026-01-12 22:40:24 ═══════════════════════════════════════════════════════════════
+
+2026-01-12 22:40:24 ⛓️  Step 5: Submitting to blockchain...
+2026-01-12 22:40:24 📦 Uploading evidence to IPFS...
+2026-01-12 22:40:27 ✅ Evidence uploaded: QmVP2YbL4UBxDR6QE1zrndnA8ymBowycvvW57KQgR6GCrV
+2026-01-12 22:40:27 📝 Evidence mapping stored: Request 35 -> QmVP2YbL4UBxDR6QE1zrndnA8ymBowycvvW57KQgR6GCrV
+2026-01-12 22:40:27 📤 Submitting transaction to Mantle Sepolia...
+2026-01-12 22:40:28 ⏳ Waiting for confirmation...
+2026-01-12 22:40:28 ✅ Transaction submitted: 0x74ed762d054c360b1a8a8946fed0bbcb4fb9f223b0a726d5abff8062039c6ad7
+
+2026-01-12 22:40:28 ═══════════════════════════════════════════════════════════════
+2026-01-12 22:40:28 ✅ REQUEST COMPLETED IN 158.66s
+2026-01-12 22:40:28 ═══════════════════════════════════════════════════════════════
+

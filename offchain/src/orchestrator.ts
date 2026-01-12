@@ -10,6 +10,9 @@ import { submitVerification, submitRejection } from './submitter';
 import path from 'path';
 import * as pdfParse from 'pdf-parse';
 import { extractTextWithOCR } from './utils/ocrService';
+import fs from 'fs';
+import FormData from 'form-data';
+import axios from 'axios';
 
 interface VerificationRequest {
   requestId: string;
@@ -253,6 +256,175 @@ export async function processVerificationRequest(request: VerificationRequest) {
     const satelliteData = await fetchSatelliteData(request.latitude, request.longitude);
     logger.info(`✅ Satellite data: ${satelliteData.area_sqm} sqm, NDVI ${satelliteData.ndvi}`);
     logger.info(`   Cloud coverage: ${satelliteData.cloud_coverage}%, Resolution: ${satelliteData.resolution_meters}m\n`);
+    
+    // Step 1.5: Upload satellite images to IPFS if available
+    if (satelliteData.rgb_image_path || satelliteData.ndvi_image_path || satelliteData.cir_image_path || satelliteData.true_color_image_path) {
+      logger.info('📸 Step 1.5: Uploading satellite images to IPFS (Ultra High Resolution - 2048x2048)...');
+      try {
+        // Upload RGB image
+        if (satelliteData.rgb_image_path && fs.existsSync(satelliteData.rgb_image_path)) {
+          const rgbFormData = new FormData();
+          rgbFormData.append('file', fs.createReadStream(satelliteData.rgb_image_path));
+          rgbFormData.append('pinataMetadata', JSON.stringify({
+            name: `satellite_rgb_${request.requestId}.png`
+          }));
+          
+          const rgbResponse = await axios.post(
+            'https://api.pinata.cloud/pinning/pinFileToIPFS',
+            rgbFormData,
+            {
+              headers: {
+                'Authorization': `Bearer ${process.env.PINATA_JWT}`,
+                ...rgbFormData.getHeaders()
+              }
+            }
+          );
+          
+          const rgbIpfsUrl = `https://gateway.pinata.cloud/ipfs/${rgbResponse.data.IpfsHash}`;
+          satelliteData.rgb_image_url = rgbIpfsUrl;
+          logger.info(`   ✅ RGB image uploaded: ${rgbResponse.data.IpfsHash}`);
+          logger.info(`   🔗 RGB Image URL: ${rgbIpfsUrl}`);
+        }
+        
+        // Upload NDVI image
+        if (satelliteData.ndvi_image_path && fs.existsSync(satelliteData.ndvi_image_path)) {
+          const ndviFormData = new FormData();
+          ndviFormData.append('file', fs.createReadStream(satelliteData.ndvi_image_path));
+          ndviFormData.append('pinataMetadata', JSON.stringify({
+            name: `satellite_ndvi_${request.requestId}.png`
+          }));
+          
+          const ndviResponse = await axios.post(
+            'https://api.pinata.cloud/pinning/pinFileToIPFS',
+            ndviFormData,
+            {
+              headers: {
+                'Authorization': `Bearer ${process.env.PINATA_JWT}`,
+                ...ndviFormData.getHeaders()
+              }
+            }
+          );
+          
+          const ndviIpfsUrl = `https://gateway.pinata.cloud/ipfs/${ndviResponse.data.IpfsHash}`;
+          satelliteData.ndvi_image_url = ndviIpfsUrl;
+          logger.info(`   ✅ NDVI image uploaded: ${ndviResponse.data.IpfsHash}`);
+          logger.info(`   🔗 NDVI Image URL: ${ndviIpfsUrl}`);
+        }
+        
+        // Upload CIR (Color Infrared) image - BEST for vegetation/land analysis
+        if (satelliteData.cir_image_path && fs.existsSync(satelliteData.cir_image_path)) {
+          const cirFormData = new FormData();
+          cirFormData.append('file', fs.createReadStream(satelliteData.cir_image_path));
+          cirFormData.append('pinataMetadata', JSON.stringify({
+            name: `satellite_cir_${request.requestId}.png`
+          }));
+          
+          const cirResponse = await axios.post(
+            'https://api.pinata.cloud/pinning/pinFileToIPFS',
+            cirFormData,
+            {
+              headers: {
+                'Authorization': `Bearer ${process.env.PINATA_JWT}`,
+                ...cirFormData.getHeaders()
+              }
+            }
+          );
+          
+          const cirIpfsUrl = `https://gateway.pinata.cloud/ipfs/${cirResponse.data.IpfsHash}`;
+          satelliteData.cir_image_url = cirIpfsUrl;
+          logger.info(`   ✅ CIR (Color Infrared) image uploaded: ${cirResponse.data.IpfsHash}`);
+          logger.info(`   🔗 CIR Image URL: ${cirIpfsUrl}`);
+        }
+        
+        // Upload True Color image
+        if (satelliteData.true_color_image_path && fs.existsSync(satelliteData.true_color_image_path)) {
+          const trueColorFormData = new FormData();
+          trueColorFormData.append('file', fs.createReadStream(satelliteData.true_color_image_path));
+          trueColorFormData.append('pinataMetadata', JSON.stringify({
+            name: `satellite_true_color_${request.requestId}.png`
+          }));
+          
+          const trueColorResponse = await axios.post(
+            'https://api.pinata.cloud/pinning/pinFileToIPFS',
+            trueColorFormData,
+            {
+              headers: {
+                'Authorization': `Bearer ${process.env.PINATA_JWT}`,
+                ...trueColorFormData.getHeaders()
+              }
+            }
+          );
+          
+          const trueColorIpfsUrl = `https://gateway.pinata.cloud/ipfs/${trueColorResponse.data.IpfsHash}`;
+          satelliteData.true_color_url = trueColorIpfsUrl;
+          logger.info(`   ✅ True Color image uploaded: ${trueColorResponse.data.IpfsHash}`);
+          logger.info(`   🔗 True Color Image URL: ${trueColorIpfsUrl}`);
+        }
+        
+        logger.info('✅ All satellite images uploaded to IPFS (2048x2048 resolution)\n');
+        
+        // Wait a bit before cleaning up temp files (Windows file handle issue)
+        await new Promise(resolve => setTimeout(resolve, 500));
+        
+        // Clean up temp files
+        try {
+          if (satelliteData.rgb_image_path && fs.existsSync(satelliteData.rgb_image_path)) {
+            fs.unlinkSync(satelliteData.rgb_image_path);
+            logger.info(`   🗑️  Cleaned up temp RGB file`);
+          }
+          if (satelliteData.ndvi_image_path && fs.existsSync(satelliteData.ndvi_image_path)) {
+            fs.unlinkSync(satelliteData.ndvi_image_path);
+            logger.info(`   🗑️  Cleaned up temp NDVI file`);
+          }
+          if (satelliteData.cir_image_path && fs.existsSync(satelliteData.cir_image_path)) {
+            fs.unlinkSync(satelliteData.cir_image_path);
+            logger.info(`   🗑️  Cleaned up temp CIR file`);
+          }
+          if (satelliteData.true_color_image_path && fs.existsSync(satelliteData.true_color_image_path)) {
+            fs.unlinkSync(satelliteData.true_color_image_path);
+            logger.info(`   🗑️  Cleaned up temp True Color file`);
+          }
+        } catch (cleanupError) {
+          logger.warn(`   ⚠️  Could not delete temp files (files will be cleaned up automatically): ${cleanupError}`);
+        }
+        
+        // Remove the temporary file paths from satelliteData before storing in evidence
+        delete satelliteData.rgb_image_path;
+        delete satelliteData.ndvi_image_path;
+        delete satelliteData.cir_image_path;
+        delete satelliteData.true_color_image_path;
+        
+      } catch (uploadError) {
+        logger.error(`❌ Failed to upload satellite images to IPFS: ${uploadError}`);
+        
+        // Try to clean up temp files even on error (but don't fail if cleanup fails)
+        try {
+          await new Promise(resolve => setTimeout(resolve, 500));
+          if (satelliteData.rgb_image_path && fs.existsSync(satelliteData.rgb_image_path)) {
+            fs.unlinkSync(satelliteData.rgb_image_path);
+          }
+          if (satelliteData.ndvi_image_path && fs.existsSync(satelliteData.ndvi_image_path)) {
+            fs.unlinkSync(satelliteData.ndvi_image_path);
+          }
+          if (satelliteData.cir_image_path && fs.existsSync(satelliteData.cir_image_path)) {
+            fs.unlinkSync(satelliteData.cir_image_path);
+          }
+          if (satelliteData.true_color_image_path && fs.existsSync(satelliteData.true_color_image_path)) {
+            fs.unlinkSync(satelliteData.true_color_image_path);
+          }
+        } catch (cleanupError) {
+          // Ignore cleanup errors
+        }
+        
+        delete satelliteData.rgb_image_path;
+        delete satelliteData.ndvi_image_path;
+        delete satelliteData.cir_image_path;
+        delete satelliteData.true_color_image_path;
+        
+        // Don't throw error - continue with verification even if image upload fails
+        logger.warn('   ⚠️  Continuing verification without satellite images in IPFS');
+      }
+    }
     
     // Step 2: Prepare analysis package with document content
     const analysisPackage = {
@@ -578,11 +750,11 @@ async function fetchSatelliteData(latitude: number, longitude: number): Promise<
     python.stdin.write(JSON.stringify({ latitude, longitude }));
     python.stdin.end();
     
-    // Timeout after 60 seconds
+    // Timeout after 180 seconds (3 minutes) - downloading 4x 2048x2048 images takes time
     setTimeout(() => {
       python.kill();
-      reject(new Error('Satellite service timeout'));
-    }, 60000);
+      reject(new Error('Satellite service timeout (3 min limit)'));
+    }, 180000);
   });
 }
 
