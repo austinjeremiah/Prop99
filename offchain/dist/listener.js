@@ -243,6 +243,11 @@ async function handleVerificationRequest(log) {
         logger_1.logger.info(`⏰ Timestamp: ${new Date(Number(args.timestamp) * 1000).toISOString()}`);
         logger_1.logger.info(`📦 Block: ${log.blockNumber}`);
         logger_1.logger.info('═══════════════════════════════════════════════════════════════\n');
+        // Skip Request #16 (already processed/rejected)
+        if (args.requestId.toString() === '16') {
+            logger_1.logger.warn('⏭️  Skipping Request #16 (already processed)\n');
+            return;
+        }
         // Process the request
         await (0, orchestrator_1.processVerificationRequest)({
             requestId: args.requestId.toString(),

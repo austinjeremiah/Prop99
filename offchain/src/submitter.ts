@@ -354,3 +354,69 @@ export async function submitToConsensusEngine(
     return '';
   }
 }
+
+/**
+ * Submit tokenization request after verification consensus
+ * This is called when confidence >= 70% to create ERC-20 tokens
+ */
+export async function submitTokenization(
+  requestId: string,
+  assetId: bigint,
+  valuation: number,
+  owner: string,
+  assetName: string,
+  confidence: number
+): Promise<{ success: boolean; tokenAddress?: string; error?: string }> {
+  try {
+    logger.info('\n🎫 ═══════════════════════════════════════════════════════');
+    logger.info('🎫 SUBMITTING TOKENIZATION REQUEST');
+    logger.info('🎫 ═══════════════════════════════════════════════════════\n');
+    
+    logger.info(`   📋 Request Details:`);
+    logger.info(`      Request ID: ${requestId}`);
+    logger.info(`      Asset ID: ${assetId}`);
+    logger.info(`      Valuation: $${Number(valuation).toLocaleString()}`);
+    logger.info(`      Confidence: ${confidence}%`);
+    logger.info(`      Owner: ${owner}`);
+    logger.info(`      Asset Name: ${assetName}\n`);
+
+    // Dynamically import tokenization service to avoid circular dependencies
+    const { tokenizeVerifiedAsset } = await import('./services/tokenization');
+
+    const result = await tokenizeVerifiedAsset({
+      requestId,
+      assetId,
+      assetName,
+      valuation,
+      confidence,
+      owner,
+    });
+
+    if (result.success) {
+      logger.info(`✅ Tokenization completed successfully`);
+      logger.info(`   Token Address: ${result.tokenAddress}\n`);
+      
+      return {
+        success: true,
+        tokenAddress: result.tokenAddress,
+      };
+    } else {
+      logger.error(`❌ Tokenization failed: ${result.error}`);
+      logger.info('\n🎫 ═══════════════════════════════════════════════════════');
+      logger.info('🎫 TOKENIZATION FAILED ❌');
+      logger.info('🎫 ═══════════════════════════════════════════════════════\n');
+      
+      return {
+        success: false,
+        error: result.error,
+      };
+    }
+  } catch (error: any) {
+    logger.error(`❌ Error submitting tokenization: ${error.message}`);
+    
+    return {
+      success: false,
+      error: error.message,
+    };
+  }
+}

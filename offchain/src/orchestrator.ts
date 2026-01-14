@@ -6,7 +6,7 @@
 import { spawn } from 'child_process';
 import { logger } from './utils/logger';
 import { calculateConsensus } from './consensus';
-import { submitVerification, submitRejection, submitToConsensusEngine } from './submitter';
+import { submitVerification, submitRejection, submitToConsensusEngine, submitTokenization } from './submitter';
 import path from 'path';
 import * as pdfParse from 'pdf-parse';
 import { extractTextWithOCR } from './utils/ocrService';
@@ -700,7 +700,35 @@ export async function processVerificationRequest(request: VerificationRequest) {
       logger.warn('   Skipping ConsensusEngine submission (requires ≥70% confidence)\n');
     }
     
-    logger.info(`\n✅ All blockchain submissions completed\n`);
+    // Step 6: Tokenization (if confidence >= 70%)
+    if (consensus.finalConfidence >= 70) {
+      logger.info(`\n🎫 Step 6: Creating ERC-20 token for verified asset...\n`);
+      
+      // Generate asset name from location
+      const assetName = `RWA-Property-${request.latitude.toFixed(4)}-${request.longitude.toFixed(4)}`;
+      
+      // Submit tokenization request
+      const tokenizationResult = await submitTokenization(
+        request.requestId,
+        BigInt(request.requestId),  // Use request ID as asset ID
+        consensus.finalValuation,
+        request.requester,  // Asset owner is the requester
+        assetName,
+        consensus.finalConfidence
+      );
+      
+      if (tokenizationResult.success) {
+        logger.info(`✅ Token created successfully: ${tokenizationResult.tokenAddress}\n`);
+      } else {
+        // Non-blocking: log warning but continue
+        logger.warn(`⚠️  Tokenization failed (non-blocking): ${tokenizationResult.error}`);
+        logger.warn(`   Asset verification complete, but token creation unsuccessful\n`);
+      }
+    } else {
+      logger.info(`\n⚠️  Step 6: Skipping tokenization (confidence ${consensus.finalConfidence}% < 70% threshold)\n`);
+    }
+    
+    logger.info(`\n✅ All blockchain submissions and tokenization completed\n`);
     
     const duration = ((Date.now() - startTime) / 1000).toFixed(2);
     logger.info('═══════════════════════════════════════════════════════════════');
