@@ -177,6 +177,14 @@ export default function Navigation({ variant = 'default' }: NavigationProps) {
 
           <div className="hidden sm:flex items-center space-x-4 shrink-0">
             <a
+              href="https://youtu.be/oLXkth10SJQ?si=kzUvpN4ALUPEnVST"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-black text-white text-xs font-mono rounded border-2 border-black hover:bg-white hover:text-black transition-all duration-200"
+            >
+              DEMO
+            </a>
+            <a
               href="https://github.com/austinjeremiah/Prop99/blob/main/Readme.md"
               target="_blank"
               rel="noopener noreferrer"
