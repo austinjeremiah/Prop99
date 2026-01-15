@@ -1,4 +1,5 @@
-<img width="672" height="181" alt="Prop999" src="https://github.com/user-attachments/assets/dd12a5df-843b-40f9-a9b4-6325da6cfbc0" />
+<img width="941" height="218" alt="Full view" src="https://github.com/user-attachments/assets/52980684-1359-4f50-b84e-871f5c735cc6" />
+
 
 ## AI-DRIVEN RWA VERIFICATION & TOKENIZATION ON MANTLE L2
 
