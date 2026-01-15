@@ -9,56 +9,62 @@ export default function Features() {
 
   const features = [
     {
-      title: "ICCID SEARCH",
+      title: "SATELLITE VERIFICATION",
       description:
-        "Real-time ICCID validation and lookup system with global database integration and instant verification protocols",
-      code: "SEARCH_001",
-      metrics: { accuracy: "99.9%", speed: "<100ms", coverage: "Global", database: "Real-time" },
+        "Ultra-high resolution satellite imagery analysis using Google Earth Engine Sentinel-2 with multiple spectral bands (CIR, RGB, NDVI) for comprehensive property verification",
+      code: "SAT_001",
+      metrics: { resolution: "2048x2048", bands: "Multi-spectral", accuracy: "99.9%", source: "Sentinel-2" },
       status: "ACTIVE",
       icon: Search,
       schematic: (
         <svg width="100%" height="60" viewBox="0 0 200 60">
-          <rect x="10" y="20" width="60" height="20" fill="none" stroke="#000" strokeWidth="1" />
-          <line x1="70" y1="30" x2="90" y2="30" stroke="#000" strokeWidth="1" />
-          <circle cx="100" cy="30" r="8" fill="none" stroke="#000" strokeWidth="1" />
-          <line x1="108" y1="30" x2="130" y2="30" stroke="#000" strokeWidth="1" />
-          <rect x="130" y="20" width="60" height="20" fill="none" stroke="#000" strokeWidth="1" />
+          <circle cx="40" cy="30" r="15" fill="none" stroke="#000" strokeWidth="1" />
+          <path d="M40 15 L40 10 M40 50 L40 45 M25 30 L20 30 M55 30 L60 30" stroke="#000" strokeWidth="1" />
+          <line x1="60" y1="30" x2="90" y2="30" stroke="#000" strokeWidth="1" strokeDasharray="3,3" />
+          <rect x="90" y="20" width="40" height="20" fill="none" stroke="#000" strokeWidth="1" />
+          <line x1="130" y1="30" x2="160" y2="30" stroke="#000" strokeWidth="1" />
+          <rect x="160" y="20" width="30" height="20" fill="none" stroke="#000" strokeWidth="1" />
         </svg>
       ),
     },
     {
-      title: "SM-DP+ INTEGRATION",
+      title: "TRI-AGENT CONSENSUS",
       description:
-        "Seamless subscription manager integration for profile management with GSMA-compliant protocols and security",
-      code: "SMDP_002",
-      metrics: { compliance: "SGP.22", security: "TLS 1.3", availability: "24/7", profiles: "Unlimited" },
+        "Three independent AI agents (Groq Llama 3.3, OpenRouter GPT-4o, Gemini Pro) analyze assets simultaneously with weighted consensus and automatic outlier detection",
+      code: "AI_002",
+      metrics: { agents: "3 Models", consensus: "Weighted", confidence: ">85%", validation: "Cross-check" },
       status: "OPERATIONAL",
       icon: Cpu,
       schematic: (
         <svg width="100%" height="60" viewBox="0 0 200 60">
-          <rect x="20" y="15" width="40" height="30" fill="none" stroke="#000" strokeWidth="1" />
-          <path d="M60 30 Q80 20 100 30 Q120 40 140 30" fill="none" stroke="#000" strokeWidth="1" />
-          <rect x="140" y="15" width="40" height="30" fill="none" stroke="#000" strokeWidth="1" />
-          <circle cx="100" cy="30" r="3" fill="#000" />
+          <circle cx="40" cy="30" r="8" fill="none" stroke="#000" strokeWidth="1" />
+          <circle cx="100" cy="15" r="8" fill="none" stroke="#000" strokeWidth="1" />
+          <circle cx="100" cy="45" r="8" fill="none" stroke="#000" strokeWidth="1" />
+          <circle cx="160" cy="30" r="8" fill="none" stroke="#000" strokeWidth="1" />
+          <line x1="48" y1="30" x2="92" y2="20" stroke="#000" strokeWidth="1" />
+          <line x1="48" y1="30" x2="92" y2="40" stroke="#000" strokeWidth="1" />
+          <line x1="108" y1="15" x2="152" y2="30" stroke="#000" strokeWidth="1" />
+          <line x1="108" y1="45" x2="152" y2="30" stroke="#000" strokeWidth="1" />
         </svg>
       ),
     },
     {
-      title: "QR CODE ACTIVATION",
+      title: "BLOCKCHAIN TOKENIZATION",
       description:
-        "Instant eSIM activation through secure QR code generation with encrypted profile delivery and validation",
-      code: "QR_003",
-      metrics: { generation: "Instant", encryption: "AES-256", success: "99.8%", delivery: "Secure" },
+        "Automatic ERC-20 token creation on Mantle Network with instant minting, fractional ownership, and on-chain asset registry for seamless trading",
+      code: "CHAIN_003",
+      metrics: { network: "Mantle", standard: "ERC-20", gas: "<$0.35", speed: "~2 seconds" },
       status: "READY",
       icon: QrCode,
       schematic: (
         <svg width="100%" height="60" viewBox="0 0 200 60">
-          <rect x="30" y="10" width="40" height="40" fill="none" stroke="#000" strokeWidth="1" />
-          <rect x="35" y="15" width="10" height="10" fill="#000" />
-          <rect x="50" y="15" width="10" height="10" fill="#000" />
-          <rect x="35" y="35" width="10" height="10" fill="#000" />
-          <line x1="70" y1="30" x2="130" y2="30" stroke="#000" strokeWidth="1" />
-          <rect x="130" y="20" width="40" height="20" fill="none" stroke="#000" strokeWidth="1" />
+          <rect x="20" y="20" width="30" height="20" fill="none" stroke="#000" strokeWidth="1" />
+          <rect x="60" y="20" width="30" height="20" fill="none" stroke="#000" strokeWidth="1" />
+          <rect x="100" y="20" width="30" height="20" fill="none" stroke="#000" strokeWidth="1" />
+          <rect x="140" y="20" width="30" height="20" fill="none" stroke="#000" strokeWidth="1" />
+          <line x1="50" y1="30" x2="60" y2="30" stroke="#000" strokeWidth="1" />
+          <line x1="90" y1="30" x2="100" y2="30" stroke="#000" strokeWidth="1" />
+          <line x1="130" y1="30" x2="140" y2="30" stroke="#000" strokeWidth="1" />
         </svg>
       ),
     },
@@ -112,7 +118,7 @@ export default function Features() {
           <h2 className="text-5xl font-light tracking-wider mb-6 font-mono">CORE FEATURES</h2>
           <div className="w-32 h-px bg-black mx-auto mb-8"></div>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-            Advanced eSIM management capabilities powered by AI and GSMA compliance standards
+            AI-powered real-world asset verification with satellite imagery and multi-agent consensus on Mantle blockchain
           </p>
         </div>
 
@@ -205,14 +211,14 @@ export default function Features() {
         </div>
 
         <div className="mt-20 bg-white border-2 border-gray-200 p-8">
-          <h3 className="font-mono font-bold text-xl mb-8 text-center">REAL-TIME DATA FLOW</h3>
-          <div className="flex justify-center items-center space-x-12">
+          <h3 className="font-mono font-bold text-xl mb-8 text-center">VERIFICATION FLOW</h3>
+          <div className="flex justify-center items-center space-x-8">
             <div className="text-center">
               <div className="w-16 h-16 border-2 border-black flex items-center justify-center mb-3 relative">
-                <span className="text-sm font-mono">REQ</span>
+                <span className="text-xs font-mono">IPFS</span>
                 <div className="absolute -top-1 -right-1 w-4 h-4 bg-black animate-ping"></div>
               </div>
-              <span className="text-xs text-gray-500 font-mono">REQUEST</span>
+              <span className="text-xs text-gray-500 font-mono">UPLOAD</span>
             </div>
 
             <div className="flex-1 h-px bg-gray-300 relative">
@@ -222,9 +228,21 @@ export default function Features() {
 
             <div className="text-center">
               <div className="w-16 h-16 border-2 border-black flex items-center justify-center mb-3">
-                <span className="text-sm font-mono">AI</span>
+                <span className="text-xs font-mono">🛰️</span>
               </div>
-              <span className="text-xs text-gray-500 font-mono">PROCESS</span>
+              <span className="text-xs text-gray-500 font-mono">SATELLITE</span>
+            </div>
+
+            <div className="flex-1 h-px bg-gray-300 relative">
+              <div className="absolute top-0 left-0 h-full bg-black animate-pulse" style={{ width: "100%" }}></div>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-black animate-bounce"></div>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 border-2 border-black flex items-center justify-center mb-3">
+                <span className="text-xs font-mono">3 AI</span>
+              </div>
+              <span className="text-xs text-gray-500 font-mono">AGENTS</span>
             </div>
 
             <div className="flex-1 h-px bg-gray-300 relative">
@@ -234,10 +252,10 @@ export default function Features() {
 
             <div className="text-center">
               <div className="w-16 h-16 border-2 border-black flex items-center justify-center mb-3 relative">
-                <span className="text-sm font-mono">RES</span>
+                <span className="text-xs font-mono">⛓️</span>
                 <div className="absolute -top-1 -right-1 w-4 h-4 bg-black animate-ping"></div>
               </div>
-              <span className="text-xs text-gray-500 font-mono">RESPONSE</span>
+              <span className="text-xs text-gray-500 font-mono">MANTLE</span>
             </div>
           </div>
         </div>

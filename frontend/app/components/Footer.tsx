@@ -5,8 +5,8 @@ import { Mail, Phone, MapPin } from "lucide-react"
 
 export default function Footer() {
   const [systemStatus, setSystemStatus] = useState({
-    api: "OPERATIONAL",
-    database: "HEALTHY",
+    api: "OPTIMAL",
+    database: "OPTIMAL",
     network: "OPTIMAL",
     security: "SECURE",
   })
@@ -76,43 +76,42 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="md:col-span-2">
             <h3 className="font-mono font-bold text-4xl mb-8 tracking-wider">
-              NEXORA<span className="font-light">SIM</span>
+              PROP<span className="font-light">99</span>
               <sup className="text-lg">™</sup>
             </h3>
             <p className="text-gray-600 mb-10 leading-relaxed text-lg">
-              Advanced eSIM and IoT connectivity platform designed for Myanmar's digital infrastructure. GSMA-compliant
-              solutions powered by artificial intelligence and deployed on Vercel's cutting-edge infrastructure.
+              Real-World Asset Oracle Intelligence Layer on Mantle Network. AI-powered property verification with satellite imagery, tri-agent consensus, and blockchain tokenization.
             </p>
 
             <div className="border-2 border-gray-300 p-8 inline-block hover:border-black transition-colors duration-300 mb-8">
               <div className="flex items-center space-x-6">
                 <div className="w-16 h-16 border-2 border-black flex items-center justify-center">
-                  <span className="text-2xl font-mono font-bold">G</span>
+                  <span className="text-2xl font-mono font-bold">M</span>
                 </div>
                 <div>
-                  <div className="text-xl font-mono font-bold">GSMA CERTIFIED</div>
-                  <div className="text-sm text-gray-500 font-mono">SGP.22 COMPLIANT • SECURITY ASSURED</div>
-                  <div className="text-xs text-gray-400 font-mono mt-1">CERTIFICATE ID: GSMA-SGP22-2024-001</div>
+                  <div className="text-xl font-mono font-bold">MANTLE NETWORK</div>
+                  <div className="text-sm text-gray-500 font-mono">ERC-20 TOKENS • LAYER 2 SCALING</div>
+                  <div className="text-xs text-gray-400 font-mono mt-1">CHAIN ID: 5000 • TESTNET: 5003</div>
                 </div>
               </div>
             </div>
 
             <div className="grid grid-cols-2 gap-6 text-sm">
               <div>
-                <div className="text-gray-500 text-xs font-mono mb-2">API VERSION</div>
-                <div className="font-mono font-bold text-lg">v2.1.0</div>
+                <div className="text-gray-500 text-xs font-mono mb-2">BLOCKCHAIN</div>
+                <div className="font-mono font-bold text-lg">MANTLE</div>
               </div>
               <div>
-                <div className="text-gray-500 text-xs font-mono mb-2">PROTOCOL</div>
-                <div className="font-mono font-bold text-lg">SGP.22</div>
+                <div className="text-gray-500 text-xs font-mono mb-2">TOKEN STANDARD</div>
+                <div className="font-mono font-bold text-lg">ERC-20</div>
               </div>
               <div>
-                <div className="text-gray-500 text-xs font-mono mb-2">ENCRYPTION</div>
-                <div className="font-mono font-bold text-lg">AES-256</div>
+                <div className="text-gray-500 text-xs font-mono mb-2">AI AGENTS</div>
+                <div className="font-mono font-bold text-lg">3 MODELS</div>
               </div>
               <div>
-                <div className="text-gray-500 text-xs font-mono mb-2">COMPLIANCE</div>
-                <div className="font-mono font-bold text-lg">GSMA</div>
+                <div className="text-gray-500 text-xs font-mono mb-2">SATELLITE</div>
+                <div className="font-mono font-bold text-lg">SENTINEL-2</div>
               </div>
             </div>
           </div>
@@ -126,11 +125,11 @@ export default function Footer() {
                   <div className="text-gray-500 text-xs font-mono">HEADQUARTERS</div>
                 </div>
                 <div className="group-hover:text-gray-600 transition-colors pl-7">
-                  Yangon, Myanmar
+                  Global
                   <br />
-                  Digital Innovation District
+                  Decentralized Network
                   <br />
-                  Building 7, Floor 12
+                  Mantle Ecosystem
                 </div>
               </div>
               <div className="group">
@@ -139,9 +138,9 @@ export default function Footer() {
                   <div className="text-gray-500 text-xs font-mono">EMAIL</div>
                 </div>
                 <div className="font-mono group-hover:text-gray-600 transition-colors pl-7">
-                  contact@nexorasim.com
+                  contact@prop99.io
                   <br />
-                  support@nexorasim.com
+                  support@prop99.io
                 </div>
               </div>
               <div className="group">
@@ -150,11 +149,11 @@ export default function Footer() {
                   <div className="text-gray-500 text-xs font-mono">SUPPORT</div>
                 </div>
                 <div className="font-mono group-hover:text-gray-600 transition-colors pl-7">
-                  24/7 TECHNICAL
+                  24/7 ORACLE NETWORK
                   <br />
-                  +95-1-NEXORA-1
+                  Discord Community
                   <br />
-                  Emergency: +95-1-NEXORA-911
+                  Telegram: @prop99
                 </div>
               </div>
             </div>
@@ -186,7 +185,7 @@ export default function Footer() {
               <div>
                 <div className="text-gray-500 text-xs font-mono mb-2">SCALING</div>
                 <div className="font-mono font-bold text-2xl">AUTO</div>
-                <div className="text-xs text-gray-400">Vercel Edge</div>
+                <div className="text-xs text-gray-400">Mantle L2</div>
               </div>
             </div>
           </div>
@@ -195,40 +194,40 @@ export default function Footer() {
         <div className="mt-20 pt-10 border-t-2 border-gray-300">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-sm text-gray-500 font-mono mb-6 md:mb-0">
-              © 2024 NEXORASIM™. ALL RIGHTS RESERVED. • MYANMAR DIGITAL INFRASTRUCTURE
+              © 2024 PROP99™. ALL RIGHTS RESERVED. • REAL-WORLD ASSET ORACLE
             </div>
 
             <div className="flex items-center space-x-8 text-sm font-mono">
               <span className="flex items-center space-x-2 group">
                 <div className="w-2 h-2 bg-black animate-pulse"></div>
-                <span className="group-hover:text-gray-600 transition-colors">POWERED BY VERCEL</span>
+                <span className="group-hover:text-gray-600 transition-colors">POWERED BY MANTLE</span>
               </span>
               <span className="flex items-center space-x-2 group">
                 <div className="w-2 h-2 bg-gray-400"></div>
-                <span className="group-hover:text-gray-600 transition-colors">AI-DRIVEN</span>
+                <span className="group-hover:text-gray-600 transition-colors">AI-VERIFIED</span>
               </span>
               <span className="flex items-center space-x-2 group">
                 <div className="w-2 h-2 bg-black"></div>
-                <span className="group-hover:text-gray-600 transition-colors">MYANMAR READY</span>
+                <span className="group-hover:text-gray-600 transition-colors">SATELLITE DATA</span>
               </span>
               <span className="flex items-center space-x-2 group">
                 <div className="w-2 h-2 bg-gray-600"></div>
-                <span className="group-hover:text-gray-600 transition-colors">GSMA COMPLIANT</span>
+                <span className="group-hover:text-gray-600 transition-colors">ERC-20 TOKENS</span>
               </span>
             </div>
           </div>
 
           <div className="mt-10 pt-6 border-t border-gray-200 text-center">
             <div className="text-xs font-mono text-gray-400 space-x-6">
-              <span>BUILT WITH NEXT.JS 15</span>
+              <span>BUILT WITH NEXT.JS 16</span>
               <span>•</span>
-              <span>DEPLOYED ON VERCEL EDGE</span>
+              <span>DEPLOYED ON MANTLE NETWORK</span>
               <span>•</span>
-              <span>SECURED WITH TLS 1.3</span>
+              <span>SECURED WITH IPFS</span>
               <span>•</span>
               <span>MONITORED 24/7</span>
               <span>•</span>
-              <span>GSMA SGP.22 CERTIFIED</span>
+              <span>SENTINEL-2 SATELLITE</span>
             </div>
           </div>
         </div>

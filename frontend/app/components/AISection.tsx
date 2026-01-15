@@ -15,24 +15,24 @@ export default function AISection() {
 
   const panels = [
     {
-      title: "WORKFLOW AUTOMATION",
-      description: "Intelligent process optimization and task scheduling with machine learning algorithms",
-      metrics: ["99.9% Uptime", "< 50ms Response", "Auto-scaling", "ML-powered"],
-      processes: ["Data Ingestion", "Pattern Recognition", "Decision Making", "Action Execution"],
+      title: "SATELLITE ANALYSIS",
+      description: "Google Earth Engine integration with Sentinel-2 imagery providing CIR, RGB, NDVI, and True Color composites at 2048x2048 ultra-HD resolution",
+      metrics: ["2048x2048 HD", "4 Band Types", "10m Resolution", "Real-time"],
+      processes: ["GPS Extraction", "Image Retrieval", "Band Composition", "Quality Analysis"],
       icon: Settings,
     },
     {
-      title: "PREDICTIVE ANALYTICS",
-      description: "Advanced pattern recognition and usage forecasting using deep learning models",
-      metrics: ["Real-time Analysis", "95% Accuracy", "Data-driven", "Trend Prediction"],
-      processes: ["Data Collection", "Feature Extraction", "Model Training", "Prediction Output"],
+      title: "TRI-AGENT VERIFICATION",
+      description: "Three independent AI models (Groq Llama 3.3 70B, OpenRouter GPT-4o-mini, Gemini Pro) analyze documents, satellite data, and market comparables",
+      metrics: ["3 AI Models", "85%+ Confidence", "Cross-validation", "Consensus Engine"],
+      processes: ["Document OCR", "Satellite Analysis", "Market Data", "Weighted Consensus"],
       icon: Brain,
     },
     {
-      title: "SMART PROVISIONING",
-      description: "Automated eSIM deployment and configuration management with zero-touch operations",
-      metrics: ["Zero-touch Deploy", "Bulk Operations", "Error Recovery", "Auto-healing"],
-      processes: ["Profile Creation", "Validation", "Deployment", "Monitoring"],
+      title: "MANTLE TOKENIZATION",
+      description: "Automatic ERC-20 token deployment on Mantle Network with sub-$0.35 gas fees, 2-second finality, and fractional ownership support",
+      metrics: ["ERC-20 Standard", "<$0.35 Gas", "2s Finality", "Auto-mint"],
+      processes: ["Verification Complete", "Token Factory", "Mint & Transfer", "Registry Update"],
       icon: Zap,
     },
   ]
@@ -63,11 +63,11 @@ export default function AISection() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-5xl font-light tracking-wider mb-6 font-mono">
-            ONE<span className="font-bold">X</span>™ AI ENGINE
+            RWA ORACLE <span className="font-bold">INTELLIGENCE</span>
           </h2>
           <div className="w-32 h-px bg-black mx-auto mb-8"></div>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-            Advanced artificial intelligence powering next-generation eSIM management and automation
+            Hybrid on-chain/off-chain architecture combining satellite imagery, multi-LLM consensus, and blockchain security
           </p>
         </div>
 
@@ -132,7 +132,7 @@ export default function AISection() {
 
           <div className="space-y-8">
             <div className="relative h-96 border-2 border-gray-200 bg-gray-50 p-8">
-              <h4 className="font-mono font-bold text-lg mb-6">NEURAL NETWORK ACTIVITY</h4>
+              <h4 className="font-mono font-bold text-lg mb-6">TRI-AGENT CONSENSUS FLOW</h4>
               <div className="relative h-full">
                 <svg width="100%" height="100%" className="absolute inset-0">
                   <g>
@@ -268,34 +268,34 @@ export default function AISection() {
                 </svg>
 
                 <div className="absolute bottom-4 left-0 right-0 flex justify-between text-xs font-mono text-gray-500">
-                  <span>INPUT</span>
-                  <span>HIDDEN</span>
-                  <span>HIDDEN</span>
-                  <span>OUTPUT</span>
+                  <span>ASSET</span>
+                  <span>AGENT 1</span>
+                  <span>AGENT 2</span>
+                  <span>CONSENSUS</span>
                 </div>
               </div>
             </div>
 
             <div className="grid grid-cols-2 gap-6">
               <div className="border-2 border-gray-200 p-6 bg-white">
-                <div className="text-xs font-mono text-gray-500 mb-2">THROUGHPUT</div>
+                <div className="text-xs font-mono text-gray-500 mb-2">VERIFICATIONS</div>
                 <div className="text-3xl font-mono font-bold">{metrics.throughput.toLocaleString()}</div>
-                <div className="text-xs text-gray-500">req/sec</div>
+                <div className="text-xs text-gray-500">total processed</div>
               </div>
               <div className="border-2 border-gray-200 p-6 bg-white">
-                <div className="text-xs font-mono text-gray-500 mb-2">ACCURACY</div>
+                <div className="text-xs font-mono text-gray-500 mb-2">CONSENSUS</div>
                 <div className="text-3xl font-mono font-bold">{metrics.accuracy.toFixed(1)}%</div>
-                <div className="text-xs text-gray-500">prediction</div>
+                <div className="text-xs text-gray-500">avg confidence</div>
               </div>
               <div className="border-2 border-gray-200 p-6 bg-white">
-                <div className="text-xs font-mono text-gray-500 mb-2">LATENCY</div>
-                <div className="text-3xl font-mono font-bold">{metrics.latency}ms</div>
-                <div className="text-xs text-gray-500">avg response</div>
+                <div className="text-xs font-mono text-gray-500 mb-2">PROCESSING</div>
+                <div className="text-3xl font-mono font-bold">{metrics.latency}s</div>
+                <div className="text-xs text-gray-500">avg time</div>
               </div>
               <div className="border-2 border-gray-200 p-6 bg-white">
-                <div className="text-xs font-mono text-gray-500 mb-2">EFFICIENCY</div>
-                <div className="text-3xl font-mono font-bold">{metrics.efficiency.toFixed(1)}%</div>
-                <div className="text-xs text-gray-500">resource util</div>
+                <div className="text-xs font-mono text-gray-500 mb-2">GAS COST</div>
+                <div className="text-3xl font-mono font-bold">$0.{metrics.efficiency.toFixed(0)}</div>
+                <div className="text-xs text-gray-500">per verification</div>
               </div>
             </div>
           </div>
