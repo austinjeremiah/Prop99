@@ -10,6 +10,14 @@ Prop99 bridges off-chain asset data with on-chain execution by combining **multi
 
 ---
 
+## LINKs
+
+* **Vercel:** https://prop99.vercel.app/
+* **Pitch Link:** (https://www.youtube.com/watch?v=gwcSH2R9sw0)
+* **Demo Link:** (https://www.youtube.com/watch?v=oLXkth10SJQ)
+
+---
+
 ## PROBLEM
 
 * Real-world assets cannot be verified natively by blockchains.
@@ -421,13 +429,6 @@ npx hardhat run scripts/deploy.js --network mantleTestnet
 ## LICENSE
 
 MIT License
-
----
-
-## LINKS
-
-* **Vercel:** https://prop99.vercel.app/
-* **Pitch Link:** (https://youtu.be/gwcSH2R9sw0?si=zmorJsxG9ty0pR5N)
 
 ---
 
