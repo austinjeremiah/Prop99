@@ -6,7 +6,7 @@
 import { spawn } from 'child_process';
 import { logger } from './utils/logger';
 import { calculateConsensus } from './consensus';
-import { submitVerification, submitRejection, submitToConsensusEngine, submitTokenization } from './submitter';
+import { submitVerification, submitRejection, submitToConsensusEngine, submitTokenization, anchorToEthereumL1, publicClient } from './submitter';
 import path from 'path';
 import * as pdfParse from 'pdf-parse';
 import { extractTextWithOCR } from './utils/ocrService';
@@ -66,148 +66,187 @@ async function validateLandDocument(documentHash: string): Promise<{ valid: bool
 }
 
 /**
- * Fetch document content from IPFS for AI analysis
+ * Fetch document content from IPFS for AI analysis with retry logic
  */
 async function fetchDocumentContent(documentHash: string): Promise<string> {
-  try {
-    const cleanHash = documentHash.replace('ipfs://', '');
-    const response = await fetch(`https://gateway.pinata.cloud/ipfs/${cleanHash}`);
-    
-    if (!response.ok) {
-      throw new Error('Document not accessible');
-    }
-
-    // Try to get text content (works for JSON, text files)
-    const contentType = response.headers.get('content-type') || '';
-    
-    // First, try to parse as JSON (our new document format)
-    if (contentType.includes('json') || contentType.includes('application/json')) {
-      const json = await response.json() as any;
+  const IPFS_GATEWAYS = [
+    'https://gateway.pinata.cloud/ipfs/',
+    'https://ipfs.io/ipfs/',
+    'https://cloudflare-ipfs.com/ipfs/'
+  ];
+  
+  const cleanHash = documentHash.replace('ipfs://', '');
+  
+  for (const gateway of IPFS_GATEWAYS) {
+    try {
+      const url = `${gateway}${cleanHash}`;
+      logger.info(`   📥 Attempting to fetch from: ${gateway.replace('https://', '')}`);
       
-      // If it's our structured document JSON with original_file_cid, ALWAYS fetch and OCR the original
-      if (json.document_type === 'land_document' && json.original_file_cid) {
-        logger.info(`   📄 Found structured document JSON: ${json.file_name}`);
-        logger.info(`   🔄 Fetching original file for OCR processing...`);
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 30000);
+      
+      const response = await fetch(url, { 
+        signal: controller.signal
+      });
+      clearTimeout(timeout);
+      
+      if (!response.ok) {
+        logger.warn(`   ⚠️  Gateway returned ${response.status}, trying next gateway...`);
+        continue;
+      }
+
+      // Try to get text content (works for JSON, text files)
+      const contentType = response.headers.get('content-type') || '';
+      
+      // First, try to parse as JSON (our new document format)
+      if (contentType.includes('json') || contentType.includes('application/json')) {
+        const json = await response.json() as any;
         
-        // Fetch the original file using the stored CID
-        const originalCid = json.original_file_cid.replace('ipfs://', '');
-        logger.info(`   📥 Fetching original file: ${originalCid.substring(0, 20)}...`);
-        
-        const originalResponse = await fetch(`https://gateway.pinata.cloud/ipfs/${originalCid}`);
-        if (!originalResponse.ok) {
-          logger.warn(`   ⚠️  Could not fetch original file from IPFS`);
+        // If it's our structured document JSON with original_file_cid, ALWAYS fetch and OCR the original
+        if (json.document_type === 'land_document' && json.original_file_cid) {
+          logger.info(`   📄 Found structured document JSON: ${json.file_name}`);
+          logger.info(`   🔄 Fetching original file for OCR processing...`);
+          
+          // Fetch the original file using the stored CID
+          const originalCid = json.original_file_cid.replace('ipfs://', '');
+          logger.info(`   📥 Fetching original file: ${originalCid.substring(0, 20)}...`);
+          
+          // Try gateways for original file too
+          for (const origGateway of IPFS_GATEWAYS) {
+            try {
+              const origController = new AbortController();
+              const origTimeout = setTimeout(() => origController.abort(), 30000);
+              
+              const originalResponse = await fetch(`${origGateway}${originalCid}`, { 
+                signal: origController.signal
+              });
+              clearTimeout(origTimeout);
+              if (!originalResponse.ok) {
+                logger.warn(`   ⚠️  Original file gateway ${origGateway} returned ${originalResponse.status}`);
+                continue;
+              }
+              
+              const originalBuffer = Buffer.from(await originalResponse.arrayBuffer());
+              const originalContentType = originalResponse.headers.get('content-type') || '';
+              
+              // Process the original file with OCR
+              if (originalContentType.includes('pdf') || json.file_name.toLowerCase().endsWith('.pdf')) {
+                logger.info(`   📄 Processing original PDF with OCR.space API...`);
+                try {
+                  // First try extracting text layer
+                  const pdfData = await (pdfParse as any)(originalBuffer);
+                  const pdfText = pdfData.text.trim();
+                  
+                  if (pdfText.length > 100) {
+                    logger.info(`   ✅ Extracted ${pdfText.length} characters from PDF text layer`);
+                    return pdfText;
+                  } else {
+                    // PDF has no text layer or minimal text - use OCR
+                    logger.info(`   📄 PDF has minimal text, using OCR.space API...`);
+                    const ocrText = await extractTextWithOCR(originalBuffer, json.file_name, "application/pdf");
+                    if (ocrText && ocrText.length > 0) {
+                      logger.info(`   ✅ OCR extracted ${ocrText.length} characters from PDF`);
+                      return ocrText;
+                    }
+                  }
+                } catch (pdfErr) {
+                  logger.warn(`   ⚠️  PDF parsing failed, using OCR: ${pdfErr}`);
+                  const ocrText = await extractTextWithOCR(originalBuffer, json.file_name, "application/pdf");
+                  if (ocrText && ocrText.length > 0) {
+                    logger.info(`   ✅ OCR extracted ${ocrText.length} characters`);
+                    return ocrText;
+                  }
+                }
+              } else if (originalContentType.includes('image')) {
+                logger.info(`   🖼️  Processing original image with OCR...`);
+                const ocrText = await extractTextWithOCR(originalBuffer, json.file_name, originalContentType);
+                if (ocrText && ocrText.length > 0) {
+                  logger.info(`   ✅ OCR extracted ${ocrText.length} characters from image`);
+                  return ocrText;
+                }
+              }
+              
+              logger.warn(`   ⚠️  Could not extract text from original file, using JSON metadata`);
+              return JSON.stringify(json, null, 2);
+            } catch (fetchErr) {
+              logger.warn(`   ⚠️  Failed to fetch original from ${origGateway}: ${fetchErr}`);
+            }
+          }
+          
+          // If all gateways failed for original file, return JSON
+          logger.warn(`   ⚠️  Could not fetch original file from any gateway`);
           return JSON.stringify(json, null, 2);
         }
         
-        const originalBuffer = Buffer.from(await originalResponse.arrayBuffer());
-        const originalContentType = originalResponse.headers.get('content-type') || '';
-        
-        // Process the original file with OCR
-        if (originalContentType.includes('pdf') || json.file_name.toLowerCase().endsWith('.pdf')) {
-          logger.info(`   📄 Processing original PDF with OCR.space API...`);
-          try {
-            // First try extracting text layer
-            const pdfData = await (pdfParse as any)(originalBuffer);
-            const pdfText = pdfData.text.trim();
-            
-            if (pdfText.length > 100) {
-              logger.info(`   ✅ Extracted ${pdfText.length} characters from PDF text layer`);
-              return pdfText;
-            } else {
-              // PDF has no text layer or minimal text - use OCR
-              logger.info(`   📄 PDF has minimal text, using OCR.space API...`);
-              const ocrText = await extractTextWithOCR(originalBuffer, json.file_name, "application/pdf");
-              if (ocrText && ocrText.length > 0) {
-                logger.info(`   ✅ OCR extracted ${ocrText.length} characters from PDF`);
-                return ocrText;
-              }
-            }
-          } catch (pdfErr) {
-            logger.warn(`   ⚠️  PDF parsing failed, using OCR: ${pdfErr}`);
-            const ocrText = await extractTextWithOCR(originalBuffer, json.file_name, "application/pdf");
-            if (ocrText && ocrText.length > 0) {
-              logger.info(`   ✅ OCR extracted ${ocrText.length} characters`);
-              return ocrText;
-            }
-          }
-        } else if (originalContentType.includes('image')) {
-          logger.info(`   🖼️  Processing original image with OCR...`);
-          const ocrText = await extractTextWithOCR(originalBuffer, json.file_name, originalContentType);
-          if (ocrText && ocrText.length > 0) {
-            logger.info(`   ✅ OCR extracted ${ocrText.length} characters from image`);
-            return ocrText;
-          }
-        }
-        
-        logger.warn(`   ⚠️  Could not extract text from original file, using JSON metadata`);
-        return JSON.stringify(json, null, 2);
-      }
-      
-      // If it's metadata JSON from frontend upload (no document_type field)
-      if (json.files && json.files.documents && json.files.documents.length > 0) {
-        logger.info(`   📄 Found frontend metadata JSON with ${json.files.documents.length} document(s)`);
-        logger.info(`   🔄 Fetching first document CID for processing...`);
-        
-        // Recursively fetch the first document
-        const firstDocCid = json.files.documents[0].replace('ipfs://', '');
-        return await fetchDocumentContent(`ipfs://${firstDocCid}`);
-      }
-      
-      // Otherwise return the whole JSON
-      return JSON.stringify(json, null, 2);
-    } else if (contentType.includes('text')) {
-      return await response.text();
-    } else if (contentType.includes('image/')) {
-      // Handle images with OCR
-      logger.info(`   📄 Processing image with OCR: ${cleanHash.substring(0, 20)}...`);
-      const arrayBuffer = await response.arrayBuffer();
-      const buffer = Buffer.from(arrayBuffer);
-      
-      const ocrText = await extractTextWithOCR(buffer, "document.pdf", contentType);
-      if (ocrText.length > 0) {
-        return ocrText;
-      } else {
-        return `Image document (${cleanHash}) - No text extracted via OCR`;
-      }
-    } else if (contentType.includes('pdf') || cleanHash.toLowerCase().endsWith('.pdf')) {
-      // Parse PDF to extract text (legacy support for direct PDF uploads)
-      logger.info(`   📄 Parsing PDF: ${cleanHash.substring(0, 20)}...`);
-      const arrayBuffer = await response.arrayBuffer();
-      const buffer = Buffer.from(arrayBuffer);
-      
-      try {
-        const pdfData = await (pdfParse as any)(buffer);
-        const text = pdfData.text.trim();
-        
-        if (text.length > 50) {
-          logger.info(`   ✅ Extracted ${text.length} characters from PDF text layer`);
-          return text;
-        } else {
-          // Try OCR on scanned PDF
-          logger.info(`   📄 PDF appears scanned, attempting OCR...`);
-          const ocrText = await extractTextWithOCR(buffer, "document.pdf", contentType);
+        // If it's metadata JSON from frontend upload (no document_type field)
+        if (json.files && json.files.documents && json.files.documents.length > 0) {
+          logger.info(`   📄 Found frontend metadata JSON with ${json.files.documents.length} document(s)`);
+          logger.info(`   🔄 Fetching first document CID for processing...`);
           
-          if (ocrText.length > 0) {
-            logger.info(`   ✅ OCR extracted ${ocrText.length} characters from scanned PDF`);
-            return ocrText;
-          } else {
-            logger.warn(`   ⚠️  PDF appears to be empty or image-based with no OCR text`);
-            return text || `PDF document (${cleanHash}) - No text content extracted`;
-          }
+          // Recursively fetch the first document
+          const firstDocCid = json.files.documents[0].replace('ipfs://', '');
+          return await fetchDocumentContent(`ipfs://${firstDocCid}`);
         }
-      } catch (pdfError) {
-        logger.warn(`   ⚠️  Failed to parse PDF, trying OCR: ${pdfError}`);
+        
+        // Otherwise return the whole JSON
+        return JSON.stringify(json, null, 2);
+      } else if (contentType.includes('text')) {
+        return await response.text();
+      } else if (contentType.includes('image/')) {
+        // Handle images with OCR
+        logger.info(`   📄 Processing image with OCR: ${cleanHash.substring(0, 20)}...`);
+        const arrayBuffer = await response.arrayBuffer();
+        const buffer = Buffer.from(arrayBuffer);
+        
         const ocrText = await extractTextWithOCR(buffer, "document.pdf", contentType);
-        return ocrText || `PDF document (${cleanHash}) - Failed to extract text`;
+        if (ocrText.length > 0) {
+          return ocrText;
+        } else {
+          return `Image document (${cleanHash}) - No text extracted via OCR`;
+        }
+      } else if (contentType.includes('pdf') || cleanHash.toLowerCase().endsWith('.pdf')) {
+        // Parse PDF to extract text (legacy support for direct PDF uploads)
+        logger.info(`   📄 Parsing PDF: ${cleanHash.substring(0, 20)}...`);
+        const arrayBuffer = await response.arrayBuffer();
+        const buffer = Buffer.from(arrayBuffer);
+        
+        try {
+          const pdfData = await (pdfParse as any)(buffer);
+          const text = pdfData.text.trim();
+          
+          if (text.length > 50) {
+            logger.info(`   ✅ Extracted ${text.length} characters from PDF text layer`);
+            return text;
+          } else {
+            // Try OCR on scanned PDF
+            logger.info(`   📄 PDF appears scanned, attempting OCR...`);
+            const ocrText = await extractTextWithOCR(buffer, "document.pdf", contentType);
+            
+            if (ocrText.length > 0) {
+              logger.info(`   ✅ OCR extracted ${ocrText.length} characters from scanned PDF`);
+              return ocrText;
+            } else {
+              logger.warn(`   ⚠️  PDF appears to be empty or image-based with no OCR text`);
+              return text || `PDF document (${cleanHash}) - No text content extracted`;
+            }
+          }
+        } catch (pdfError) {
+          logger.warn(`   ⚠️  Failed to parse PDF, trying OCR: ${pdfError}`);
+          const ocrText = await extractTextWithOCR(buffer, "document.pdf", contentType);
+          return ocrText || `PDF document (${cleanHash}) - Failed to extract text`;
+        }
+      } else {
+        // For other binary files, return metadata only
+        return `Binary document (${contentType}) - ${cleanHash}`;
       }
-    } else {
-      // For other binary files, return metadata only
-      return `Binary document (${contentType}) - ${cleanHash}`;
+    } catch (fetchErr) {
+      logger.warn(`   ⚠️  Error fetching from ${gateway}: ${fetchErr}`);
     }
-  } catch (error) {
-    logger.warn(`⚠️  Could not fetch document content: ${error}`);
-    return 'Document content not available';
   }
+  
+  // All gateways failed
+  logger.error(`⚠️  Could not fetch document content from any gateway: ${cleanHash}`);
+  return 'Document content not available';
 }
 
 /**
@@ -695,6 +734,10 @@ export async function processVerificationRequest(request: VerificationRequest) {
         boostedConfidence,  // Use boosted confidence
         evidenceHash  // Use actual IPFS hash
       );
+      
+      // NOTE: L1 anchoring happens automatically via ConsensusEngine._anchorToL1()
+      // when the oracle response is submitted above
+      logger.info(`\n🔗 L1 Anchoring initiated automatically by ConsensusEngine\n`);
     } else {
       logger.warn(`\n⚠️  Confidence ${consensus.finalConfidence}% below 70% threshold`);
       logger.warn('   Skipping ConsensusEngine submission (requires ≥70% confidence)\n');

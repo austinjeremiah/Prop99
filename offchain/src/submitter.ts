@@ -14,6 +14,8 @@ import path from 'path';
 dotenv.config();
 
 const ORACLE_ROUTER_ADDRESS = process.env.ORACLE_ROUTER_ADDRESS as `0x${string}`;
+const CONSENSUS_ENGINE_ADDRESS = process.env.CONSENSUS_ENGINE_ADDRESS as `0x${string}` || '0x0000000000000000000000000000000000000000' as `0x${string}`;
+const VERIFICATION_ANCHOR_ADDRESS = process.env.VERIFICATION_ANCHOR_ADDRESS as `0x${string}` || '0x0000000000000000000000000000000000000000' as `0x${string}`;
 const ORACLE_PRIVATE_KEY = (process.env.ORACLE_PRIVATE_KEY?.trim().startsWith('0x') 
   ? process.env.ORACLE_PRIVATE_KEY.trim() 
   : `0x${process.env.ORACLE_PRIVATE_KEY?.trim()}`) as `0x${string}`;
@@ -98,6 +100,8 @@ const publicClient = createPublicClient({
   transport: http(RPC_URL)
 });
 
+export { publicClient };
+
 // Contract ABI - OracleRouter.sol
 const ORACLE_ROUTER_ABI = [
   {
@@ -129,7 +133,20 @@ const CONSENSUS_ENGINE_ABI = [
   }
 ] as const;
 
-const CONSENSUS_ENGINE_ADDRESS = process.env.CONSENSUS_ENGINE_ADDRESS as `0x${string}` || '0x0000000000000000000000000000000000000000' as `0x${string}`;
+// VerificationAnchor ABI - Rollup Anchoring
+const VERIFICATION_ANCHOR_ABI = [
+  {
+    inputs: [
+      { name: '_requestId', type: 'uint256' },
+      { name: '_verificationHash', type: 'bytes32' },
+      { name: '_l1BlockNumber', type: 'uint256' }
+    ],
+    name: 'anchorVerification',
+    outputs: [],
+    stateMutability: 'nonpayable',
+    type: 'function'
+  }
+] as const;
 
 /**
  * Submit rejection to blockchain
@@ -281,52 +298,45 @@ export async function submitToConsensusEngine(
   confidence: number,
   evidenceHash: string
 ): Promise<string> {
-  try {
-    if (!CONSENSUS_ENGINE_ADDRESS || CONSENSUS_ENGINE_ADDRESS === '0x0000000000000000000000000000000000000000') {
-      logger.warn('⚠️  ConsensusEngine address not configured, skipping consensus submission');
-      return '';
-    }
+  if (!CONSENSUS_ENGINE_ADDRESS || CONSENSUS_ENGINE_ADDRESS === '0x0000000000000000000000000000000000000000') {
+    logger.warn('⚠️  ConsensusEngine address not configured, skipping consensus submission');
+    return '';
+  }
 
-    // Convert IPFS hash (CID) to bytes32
-    // IPFS v0 CIDs start with "Qm" and are base58 encoded
-    // For Solidity bytes32, we'll use the keccak256 hash of the full IPFS hash
-    // This is a common pattern for storing IPFS references on-chain
-    let evidenceBytes32: `0x${string}`;
+  // Convert IPFS hash (CID) to bytes32
+  // IPFS v0 CIDs start with "Qm" and are base58 encoded
+  // For Solidity bytes32, we'll use the keccak256 hash of the full IPFS hash
+  // This is a common pattern for storing IPFS references on-chain
+  let evidenceBytes32: `0x${string}`;
+  
+  if (evidenceHash.startsWith('Qm')) {
+    // Remove "Qm" prefix and hash the remaining string
+    // Alternatively, we can just hash the full CID
+    const encoder = new TextEncoder();
+    const data = encoder.encode(evidenceHash);
     
-    if (evidenceHash.startsWith('Qm')) {
-      // Remove "Qm" prefix and hash the remaining string
-      // Alternatively, we can just hash the full CID
-      const encoder = new TextEncoder();
-      const data = encoder.encode(evidenceHash);
-      
-      // Simple approach: Take first 32 bytes of the hash string as hex
-      // More robust: Use keccak256 hash of the CID
-      const hashBuffer = Buffer.from(evidenceHash);
-      const hex = hashBuffer.toString('hex').slice(0, 64).padEnd(64, '0');
-      evidenceBytes32 = `0x${hex}`;
-    } else {
-      // Already in hex format or other format
-      evidenceBytes32 = `0x${evidenceHash.replace('0x', '').slice(0, 64).padEnd(64, '0')}`;
-    }
-    
+    // Simple approach: Take first 32 bytes of the hash string as hex
+    // More robust: Use keccak256 hash of the CID
+    const hashBuffer = Buffer.from(evidenceHash);
+    const hex = hashBuffer.toString('hex').slice(0, 64).padEnd(64, '0');
+    evidenceBytes32 = `0x${hex}`;
+  } else {
+    // Already in hex format or other format
+    evidenceBytes32 = `0x${evidenceHash.replace('0x', '').slice(0, 64).padEnd(64, '0')}`;
+  }
+
+  try {
     logger.info('📊 Submitting to ConsensusEngine.sol...');
     logger.info(`   Contract: ${CONSENSUS_ENGINE_ADDRESS}`);
     logger.info(`   IPFS Evidence: ${evidenceHash}`);
     logger.info(`   Bytes32: ${evidenceBytes32}`);
     logger.info(`   Confidence: ${confidence}% (meets 70% threshold)`);
     
-    // Get current gas prices from the network
-    const feeData = await publicClient.estimateFeesPerGas();
+    logger.info(`   📤 Submitting transaction...`);
     
-    // Add 50% buffer to ensure transaction goes through even with pending transactions
-    const maxPriorityFeePerGas = feeData.maxPriorityFeePerGas 
-      ? (feeData.maxPriorityFeePerGas * 150n) / 100n 
-      : undefined;
-    const maxFeePerGas = feeData.maxFeePerGas 
-      ? (feeData.maxFeePerGas * 150n) / 100n 
-      : undefined;
-    
-    logger.info(`   Gas: maxFee=${maxFeePerGas ? (Number(maxFeePerGas) / 1e9).toFixed(4) : 'auto'} gwei, maxPriorityFee=${maxPriorityFeePerGas ? (Number(maxPriorityFeePerGas) / 1e9).toFixed(4) : 'auto'} gwei (50% buffer)`);
+    // Get current gas price to ensure we're above any stuck transactions
+    const gasPrice = await publicClient.getGasPrice();
+    logger.info(`   Current gas price: ${(gasPrice / 1_000_000_000n)} gwei`);
     
     const hash = await walletClient.writeContract({
       address: CONSENSUS_ENGINE_ADDRESS,
@@ -338,8 +348,8 @@ export async function submitToConsensusEngine(
         BigInt(confidence),
         evidenceBytes32
       ],
-      maxFeePerGas,
-      maxPriorityFeePerGas
+      gasPrice: gasPrice // Use current gas price, not estimate
+      // Let viem manage nonce automatically
     });
     
     logger.info(`✅ ConsensusEngine submission successful: ${hash}`);
@@ -349,8 +359,101 @@ export async function submitToConsensusEngine(
     
   } catch (error: any) {
     // Don't fail the entire process if consensus submission fails
+    const errorMsg = error.message || '';
+    
+    if (errorMsg.includes('replacement transaction underpriced')) {
+      logger.warn(`⚠️  Transaction stuck in mempool (nonce conflict). Waiting 5 seconds before retry...`);
+      // Wait and let the previous transaction clear
+      await new Promise(resolve => setTimeout(resolve, 5000));
+      
+      try {
+        // Retry with fresh gas price
+        const gasPrice = await publicClient.getGasPrice();
+        const newPrice = (gasPrice * 110n) / 100n; // 10% higher
+        logger.info(`   Retrying with higher gas price: ${(newPrice / 1_000_000_000n)} gwei`);
+        
+        const retryHash = await walletClient.writeContract({
+          address: CONSENSUS_ENGINE_ADDRESS,
+          abi: CONSENSUS_ENGINE_ABI,
+          functionName: 'submitOracleResponse',
+          args: [
+            BigInt(requestId),
+            BigInt(valuation),
+            BigInt(confidence),
+            evidenceBytes32
+          ],
+          gasPrice: newPrice
+        });
+        
+        logger.info(`✅ ConsensusEngine retry successful: ${retryHash}`);
+        return retryHash;
+      } catch (retryError: any) {
+        logger.warn(`⚠️  ConsensusEngine retry also failed: ${retryError.message}`);
+      }
+    }
+    
     logger.warn(`⚠️  ConsensusEngine submission failed: ${error.message}`);
     logger.warn(`   Continuing with standard OracleRouter submission...`);
+    return '';
+  }
+}
+
+/**
+ * Anchor verification to Ethereum L1 via Mantle's rollup system
+ * STEP 7.5: Called after consensus validation
+ */
+export async function anchorToEthereumL1(
+  requestId: string,
+  valuation: number,
+  confidence: number,
+  l1BlockNumber: number
+): Promise<string> {
+  try {
+    if (!VERIFICATION_ANCHOR_ADDRESS || VERIFICATION_ANCHOR_ADDRESS === '0x0000000000000000000000000000000000000000') {
+      logger.warn('⚠️  VerificationAnchor address not configured, skipping L1 anchoring');
+      return '';
+    }
+
+    // Create verification hash (same as ConsensusEngine does)
+    const encoder = new TextEncoder();
+    const data = encoder.encode(
+      JSON.stringify({
+        requestId,
+        valuation,
+        confidence,
+        l1BlockNumber,
+        timestamp: Math.floor(Date.now() / 1000)
+      })
+    );
+    
+    const hashBuffer = Buffer.from(data);
+    const hex = hashBuffer.toString('hex').slice(0, 64).padEnd(64, '0');
+    const verificationHash = `0x${hex}` as `0x${string}`;
+    
+    logger.info('🔗 Anchoring verification to Ethereum L1...');
+    logger.info(`   VerificationAnchor: ${VERIFICATION_ANCHOR_ADDRESS}`);
+    logger.info(`   L1 Block Number: ${l1BlockNumber}`);
+    logger.info(`   Verification Hash: ${verificationHash}`);
+    
+    const hash = await walletClient.writeContract({
+      address: VERIFICATION_ANCHOR_ADDRESS,
+      abi: VERIFICATION_ANCHOR_ABI,
+      functionName: 'anchorVerification',
+      args: [
+        BigInt(requestId),
+        verificationHash,
+        BigInt(l1BlockNumber)
+      ]
+    });
+    
+    logger.info(`✅ L1 Anchoring successful: ${hash}`);
+    logger.info(`   Verification hash is now stored on Ethereum L1 via Mantle rollup`);
+    
+    return hash;
+    
+  } catch (error: any) {
+    logger.warn(`⚠️  L1 Anchoring failed: ${error.message}`);
+    logger.warn(`   Continuing with tokenization...`);
     return '';
   }
 }

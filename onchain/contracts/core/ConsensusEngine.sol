@@ -4,9 +4,17 @@ pragma solidity ^0.8.20;
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 /**
+ * @title IL1Block
+ * @notice Interface to read Ethereum L1 block data from Mantle L2
+ */
+interface IL1Block {
+    function number() external view returns (uint256);
+}
+
+/**
  * @title ConsensusEngine
- * @notice Validates oracle responses and triggers tokenization
- * @dev Implements 2-of-3 consensus mechanism
+ * @notice Validates oracle responses and triggers tokenization with L1 anchoring
+ * @dev Implements 2-of-3 consensus mechanism + rollup anchoring to Ethereum
  */
 contract ConsensusEngine is Ownable {
     
@@ -24,6 +32,8 @@ contract ConsensusEngine is Ownable {
         uint256 responseCount;
         bool consensusReached;
         uint256 timestamp;
+        uint256 l1BlockNumber;
+        bytes32 verificationHash;
     }
     
     // State variables
@@ -33,6 +43,10 @@ contract ConsensusEngine is Ownable {
     
     address public tokenFactory;
     address public assetRegistry;
+    address public verificationAnchor;
+    
+    // Mantle L1Block address
+    address constant L1_BLOCK_ADDRESS = 0x4200000000000000000000000000000000000015;
     
     uint256 public minConfidenceThreshold = 80;
     uint256 public consensusThreshold = 2;
@@ -56,6 +70,12 @@ contract ConsensusEngine is Ownable {
         uint256 indexed requestId,
         address indexed tokenAddress,
         uint256 valuation
+    );
+    
+    event VerificationAnchored(
+        uint256 indexed requestId,
+        bytes32 verificationHash,
+        uint256 l1BlockNumber
     );
     
     constructor() Ownable(msg.sender) {}
@@ -96,7 +116,7 @@ contract ConsensusEngine is Ownable {
     }
     
     /**
-     * @notice Check and calculate consensus
+     * @notice Check and calculate consensus + anchor to L1
      */
     function _checkConsensus(uint256 _requestId) internal {
         OracleResponse[] storage responses = requestResponses[_requestId];
@@ -114,18 +134,55 @@ contract ConsensusEngine is Ownable {
         uint256 finalValuation = totalWeightedValuation / totalConfidence;
         uint256 avgConfidence = totalConfidence / responses.length;
         
+        // Read Ethereum L1 block number
+        uint256 l1BlockNumber = IL1Block(L1_BLOCK_ADDRESS).number();
+        
+        // Create verification hash
+        bytes32 verificationHash = keccak256(
+            abi.encode(_requestId, finalValuation, avgConfidence, l1BlockNumber, block.timestamp)
+        );
+        
         consensusResults[_requestId] = ConsensusResult({
             finalValuation: finalValuation,
             avgConfidence: avgConfidence,
             responseCount: responses.length,
             consensusReached: true,
-            timestamp: block.timestamp
+            timestamp: block.timestamp,
+            l1BlockNumber: l1BlockNumber,
+            verificationHash: verificationHash
         });
         
         emit ConsensusReached(_requestId, finalValuation, avgConfidence, responses.length);
         
-        // Trigger tokenization
+        // STEP 7.5: Anchor verification to Ethereum L1
+        if (verificationAnchor != address(0)) {
+            _anchorToL1(_requestId, verificationHash, l1BlockNumber);
+        }
+        
+        // STEP 8: Trigger tokenization
         _tokenizeAsset(_requestId, finalValuation);
+    }
+    
+    /**
+     * @notice Anchor verification to Ethereum L1 via VerificationAnchor
+     */
+    function _anchorToL1(
+        uint256 _requestId,
+        bytes32 _verificationHash,
+        uint256 _l1BlockNumber
+    ) internal {
+        // Call VerificationAnchor to send message to Ethereum
+        (bool success, ) = verificationAnchor.call(
+            abi.encodeWithSignature(
+                "anchorVerification(uint256,bytes32,uint256)",
+                _requestId,
+                _verificationHash,
+                _l1BlockNumber
+            )
+        );
+        
+        require(success, "Failed to anchor verification");
+        emit VerificationAnchored(_requestId, _verificationHash, _l1BlockNumber);
     }
     
     /**
@@ -177,6 +234,13 @@ contract ConsensusEngine is Ownable {
      */
     function setAssetRegistry(address _assetRegistry) external onlyOwner {
         assetRegistry = _assetRegistry;
+    }
+    
+    /**
+     * @notice Set verification anchor address
+     */
+    function setVerificationAnchor(address _verificationAnchor) external onlyOwner {
+        verificationAnchor = _verificationAnchor;
     }
     
     /**
