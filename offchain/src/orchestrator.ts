@@ -707,6 +707,55 @@ export async function processVerificationRequest(request: VerificationRequest) {
     // Step 6: Submit to blockchain
     logger.info('⛓️  Step 5: Submitting to blockchain...');
     
+    // Check if request is still pending before submission
+    try {
+      const ORACLE_ROUTER_ADDRESS = process.env.ORACLE_ROUTER_ADDRESS as `0x${string}`;
+      const ORACLE_ROUTER_ABI = [
+        {
+          inputs: [{ name: '_requestId', type: 'uint256' }],
+          name: 'getRequest',
+          outputs: [
+            {
+              components: [
+                { name: 'requestId', type: 'uint256' },
+                { name: 'owner', type: 'address' },
+                { name: 'assetType', type: 'uint8' },
+                { name: 'location', type: 'string' },
+                { name: 'ipfsHashes', type: 'string[]' },
+                { name: 'status', type: 'uint8' },
+                { name: 'timestamp', type: 'uint256' },
+                { name: 'valuation', type: 'uint256' },
+                { name: 'confidence', type: 'uint256' }
+              ],
+              type: 'tuple'
+            }
+          ],
+          stateMutability: 'view',
+          type: 'function'
+        }
+      ] as const;
+
+      const requestData = await publicClient.readContract({
+        address: ORACLE_ROUTER_ADDRESS,
+        abi: ORACLE_ROUTER_ABI,
+        functionName: 'getRequest',
+        args: [BigInt(request.requestId)]
+      });
+
+      // Status: 0=PENDING, 1=PROCESSING, 2=VERIFIED, 3=REJECTED
+      if (requestData.status !== 0) {
+        const statusNames = ['PENDING', 'PROCESSING', 'VERIFIED', 'REJECTED'];
+        logger.warn(`⚠️  Request #${request.requestId} is no longer PENDING (status: ${statusNames[requestData.status]})`);
+        logger.warn(`   Skipping submission - another oracle may have already processed this request\n`);
+        return;
+      }
+      
+      logger.info(`✅ Request #${request.requestId} confirmed PENDING - proceeding with submission\n`);
+    } catch (error: any) {
+      logger.warn(`⚠️  Could not verify request status: ${error.message}`);
+      logger.warn(`   Attempting submission anyway...\n`);
+    }
+    
     // First submit to standard OracleRouter
     const { txHash, evidenceHash } = await submitVerification(
       request.requestId,

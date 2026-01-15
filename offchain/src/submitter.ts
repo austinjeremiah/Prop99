@@ -351,11 +351,15 @@ export async function submitToConsensusEngine(
     
     logger.info(`   📤 Submitting transaction...`);
     
+    // Small delay to ensure previous transactions are processed
+    await new Promise(resolve => setTimeout(resolve, 2000));
+    
     // Get current gas price to ensure we're above any stuck transactions
     const gasPrice = await publicClient.getGasPrice();
     logger.info(`   Current gas price: ${(gasPrice / 1_000_000_000n)} gwei`);
     
     // Get the current nonce explicitly to avoid conflicts
+    // Fetch it right before sending to minimize chance of stale nonce
     const nonce = await publicClient.getTransactionCount({
       address: account.address,
       blockTag: 'pending',
@@ -386,23 +390,23 @@ export async function submitToConsensusEngine(
     // Don't fail the entire process if consensus submission fails
     const errorMsg = error.message || '';
     
-    if (errorMsg.includes('replacement transaction underpriced')) {
-      logger.warn(`⚠️  Transaction stuck in mempool (nonce conflict). Waiting 5 seconds before retry...`);
+    if (errorMsg.includes('nonce too low') || errorMsg.includes('replacement transaction underpriced')) {
+      logger.warn(`⚠️  Transaction stuck in mempool (nonce conflict). Waiting 3 seconds before retry...`);
       // Wait and let the previous transaction clear
-      await new Promise(resolve => setTimeout(resolve, 5000));
+      await new Promise(resolve => setTimeout(resolve, 3000));
       
       try {
-        // Retry with fresh gas price and nonce
+        // Retry with fresh nonce and gas price
         const gasPrice = await publicClient.getGasPrice();
-        const newPrice = (gasPrice * 110n) / 100n; // 10% higher
-        logger.info(`   Retrying with higher gas price: ${(newPrice / 1_000_000_000n)} gwei`);
+        const newPrice = (gasPrice * 120n) / 100n; // 20% higher
         
-        // Get fresh nonce for retry
+        // Get fresh nonce
         const retryNonce = await publicClient.getTransactionCount({
           address: account.address,
           blockTag: 'pending',
         });
-        logger.info(`   🔢 Retry nonce: ${retryNonce}`);
+        
+        logger.info(`   Retrying with nonce ${retryNonce} and higher gas price: ${(newPrice / 1_000_000_000n)} gwei`);
         
         const retryHash = await walletClient.writeContract({
           address: CONSENSUS_ENGINE_ADDRESS,

@@ -1,0 +1,905 @@
+2026-01-15 17:43:39 ═══════════════════════════════════════════════════════════════
+2026-01-15 17:43:39 🤖 RWA ORACLE STARTING
+2026-01-15 17:43:39 ═══════════════════════════════════════════════════════════════
+2026-01-15 17:43:39 Oracle Address: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-15 17:43:39 Network: Testnet
+2026-01-15 17:43:39 ═══════════════════════════════════════════════════════════════
+
+2026-01-15 17:43:39 🚀 Starting Oracle Listener...
+2026-01-15 17:43:39 📡 Network: Mantle Sepolia Testnet
+2026-01-15 17:43:39 🔗 RPC URL: https://rpc.sepolia.mantle.xyz
+2026-01-15 17:43:39 📍 Oracle Router: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-15 18:03:58 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:03:58 🤖 RWA ORACLE STARTING
+2026-01-15 18:03:58 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:03:58 Oracle Address: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-15 18:03:58 Network: Testnet
+2026-01-15 18:03:58 ═══════════════════════════════════════════════════════════════
+
+2026-01-15 18:03:58 🚀 Starting Oracle Listener...
+2026-01-15 18:03:58 📡 Network: Mantle Sepolia Testnet
+2026-01-15 18:03:58 🔗 RPC URL: https://rpc.sepolia.mantle.xyz
+2026-01-15 18:03:58 📍 Oracle Router: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-15 18:03:59 📦 Current block: 33467882
+2026-01-15 18:03:59 🔍 Scanning for pending requests from recent blocks...
+2026-01-15 18:03:59    Scanning from block 33417882 to 33467882 in 10000 block chunks...
+2026-01-15 18:03:59    ✓ Blocks 33417882-33427882: Found 7 event(s)
+2026-01-15 18:04:00    ✓ Blocks 33427883-33437883: Found 6 event(s)
+2026-01-15 18:04:00    ✓ Blocks 33437884-33447884: Found 4 event(s)
+2026-01-15 18:04:00    ✓ Blocks 33447885-33457885: Found 3 event(s)
+2026-01-15 18:04:00    ✓ Blocks 33457886-33467882: Found 8 event(s)
+2026-01-15 18:04:00    Total events found: 28
+2026-01-15 18:04:00 📜 Filtering pending requests from 28 event(s)...
+2026-01-15 18:04:01    ⊘ Request #60: VERIFIED - skipping
+2026-01-15 18:04:01    ⊘ Request #61: VERIFIED - skipping
+2026-01-15 18:04:01    ⊘ Request #62: VERIFIED - skipping
+2026-01-15 18:04:01    ⊘ Request #63: VERIFIED - skipping
+2026-01-15 18:04:02    ⊘ Request #64: VERIFIED - skipping
+2026-01-15 18:04:02    ⊘ Request #65: VERIFIED - skipping
+2026-01-15 18:04:02    ⊘ Request #66: VERIFIED - skipping
+2026-01-15 18:04:02    ⊘ Request #67: VERIFIED - skipping
+2026-01-15 18:04:02    ⊘ Request #68: VERIFIED - skipping
+2026-01-15 18:04:02    ⊘ Request #69: VERIFIED - skipping
+2026-01-15 18:04:02    ⊘ Request #70: VERIFIED - skipping
+2026-01-15 18:04:03    ⊘ Request #71: VERIFIED - skipping
+2026-01-15 18:04:03    ⊘ Request #72: VERIFIED - skipping
+2026-01-15 18:04:03    ⊘ Request #73: VERIFIED - skipping
+2026-01-15 18:04:03    ⊘ Request #74: VERIFIED - skipping
+2026-01-15 18:04:03    ⊘ Request #75: VERIFIED - skipping
+2026-01-15 18:04:03    ⊘ Request #76: VERIFIED - skipping
+2026-01-15 18:04:04    ⊘ Request #77: VERIFIED - skipping
+2026-01-15 18:04:04    ⊘ Request #78: VERIFIED - skipping
+2026-01-15 18:04:04    ⊘ Request #79: VERIFIED - skipping
+2026-01-15 18:04:04    ⊘ Request #80: VERIFIED - skipping
+2026-01-15 18:04:04    ⊘ Request #81: VERIFIED - skipping
+2026-01-15 18:04:04    ⊘ Request #82: VERIFIED - skipping
+2026-01-15 18:04:05    ⊘ Request #83: VERIFIED - skipping
+2026-01-15 18:04:05    ⊘ Request #84: VERIFIED - skipping
+2026-01-15 18:04:05    ⊘ Request #85: VERIFIED - skipping
+2026-01-15 18:04:05    ⊘ Request #86: VERIFIED - skipping
+2026-01-15 18:04:05    ⊘ Request #87: VERIFIED - skipping
+2026-01-15 18:04:05 
+📋 Found 0 pending request(s) to process
+
+2026-01-15 18:04:05 👂 Now listening for new VerificationRequested events...
+2026-01-15 18:04:05 Press Ctrl+C to stop
+
+2026-01-15 18:06:59 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:06:59 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-15 18:06:59 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:06:59 📝 Request ID: 88
+2026-01-15 18:06:59 👤 Owner: 0xe01Add0c3640a8314132bAF491d101A38ffEF4f0
+2026-01-15 18:06:59 🏠 Asset Type: 0
+2026-01-15 18:06:59 📍 Location: Sai Baba Kovil Temple , Kaasi Kovil Kuppam , Ennore , Chennai - 600056 | 13.191204,440.313094
+2026-01-15 18:06:59    Parsed Coordinates: 13.191204, 440.313094
+2026-01-15 18:06:59 📄 Documents: 1 files
+2026-01-15 18:06:59 ⏰ Timestamp: 2026-01-15T12:36:57.000Z
+2026-01-15 18:06:59 📦 Block: 33467972
+2026-01-15 18:06:59 ═══════════════════════════════════════════════════════════════
+
+2026-01-15 18:06:59 🔄 Starting AI analysis pipeline...
+
+2026-01-15 18:06:59 📋 Step 0: Validating documents...
+2026-01-15 18:07:03 📄 Validating document: Qma8CBqUzsdMDzDVMRjJ...
+2026-01-15 18:07:03 ✅ 1 document(s) validated
+
+2026-01-15 18:07:03 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-15 18:07:03    📥 Attempting to fetch from: gateway.pinata.cloud/ipfs/
+2026-01-15 18:07:09    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-15 18:07:09    🔄 Fetching first document CID for processing...
+2026-01-15 18:07:09    📥 Attempting to fetch from: gateway.pinata.cloud/ipfs/
+2026-01-15 18:07:15    📄 Found structured document JSON: Tamil_Nadu_Sale_Deed_Mock_Filled_Sylesh_Murthi.pdf
+2026-01-15 18:07:15    🔄 Fetching original file for OCR processing...
+2026-01-15 18:07:15    📥 Fetching original file: QmVYvoyR9TRo5AzBFMff...
+2026-01-15 18:07:24    📄 Processing original PDF with OCR.space API...
+2026-01-15 18:07:24    ⚠️  PDF parsing failed, using OCR: TypeError: pdfParse is not a function
+2026-01-15 18:07:24 🔍 Converting document to JSON via OCR.space: Tamil_Nadu_Sale_Deed_Mock_Filled_Sylesh_Murthi.pdf
+2026-01-15 18:07:29 ✅ Page 1 parsed successfully (2164 chars)
+2026-01-15 18:07:29 ✅ Page 2 parsed successfully (228 chars)
+2026-01-15 18:07:29 ✅ OCR complete: 2394 total characters extracted
+2026-01-15 18:07:29    Pages: 2
+2026-01-15 18:07:29    Processing time: 1891ms
+2026-01-15 18:07:29 📄 Extracted 2394 characters from Tamil_Nadu_Sale_Deed_Mock_Filled_Sylesh_Murthi.pdf via OCR
+2026-01-15 18:07:29    ✅ OCR extracted 2394 characters
+2026-01-15 18:07:29    📄 Document 1: 2394 characters
+2026-01-15 18:07:29    Preview: SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2026.	
+VENDOR / SELLER	
+Murthi, Son of Late Ranganathan, aged about 52 years, Hindu, Occupation: Ag...
+
+2026-01-15 18:07:29 ✅ Fetched 1 document(s) for analysis
+
+2026-01-15 18:07:29 📡 Step 1: Fetching satellite imagery...
+2026-01-15 18:08:45 ✅ Satellite data: 31040.61 sqm, NDVI 0.3141
+2026-01-15 18:08:45    Cloud coverage: 0.85%, Resolution: 10m
+
+2026-01-15 18:08:45 📸 Step 1.5: Uploading satellite images to IPFS (Ultra High Resolution - 2048x2048)...
+2026-01-15 18:09:08    ✅ RGB image uploaded: QmWYKZBUDNWZBNACao4QY9iBWz3VDPbppyDPHSLm7RMx6M
+2026-01-15 18:09:08    🔗 RGB Image URL: https://gateway.pinata.cloud/ipfs/QmWYKZBUDNWZBNACao4QY9iBWz3VDPbppyDPHSLm7RMx6M
+2026-01-15 18:09:15    ✅ NDVI image uploaded: QmNTJid4avB7LBtzqLCAYsEMFwJQFKxXhURQv2TaPUVx24
+2026-01-15 18:09:15    🔗 NDVI Image URL: https://gateway.pinata.cloud/ipfs/QmNTJid4avB7LBtzqLCAYsEMFwJQFKxXhURQv2TaPUVx24
+2026-01-15 18:10:01    ✅ CIR (Color Infrared) image uploaded: QmWeWEhMtBPiZCkRTg6v9VG6dsHBb2ARGaqQBMk3E1dhWH
+2026-01-15 18:10:01    🔗 CIR Image URL: https://gateway.pinata.cloud/ipfs/QmWeWEhMtBPiZCkRTg6v9VG6dsHBb2ARGaqQBMk3E1dhWH
+2026-01-15 18:10:23    ✅ True Color image uploaded: QmTLVKfo5FDZ4x3G6Mrc1CffmeoJDWhTcaLRuKwhHY9J6r
+2026-01-15 18:10:23    🔗 True Color Image URL: https://gateway.pinata.cloud/ipfs/QmTLVKfo5FDZ4x3G6Mrc1CffmeoJDWhTcaLRuKwhHY9J6r
+2026-01-15 18:10:23 ✅ All satellite images uploaded to IPFS (2048x2048 resolution)
+
+2026-01-15 18:10:24    🗑️  Cleaned up temp RGB file
+2026-01-15 18:10:24    🗑️  Cleaned up temp NDVI file
+2026-01-15 18:10:24    🗑️  Cleaned up temp CIR file
+2026-01-15 18:10:24    🗑️  Cleaned up temp True Color file
+2026-01-15 18:10:24 🤖 Step 2: Running 3 AI agents in parallel...
+2026-01-15 18:10:24    🔍 Sending to Groq:
+2026-01-15 18:10:24       - Document count: 1
+2026-01-15 18:10:24       - Doc 1: 2394 chars - "SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2..."
+2026-01-15 18:10:24    🔍 Sending to OpenRouter:
+2026-01-15 18:10:24       - Document count: 1
+2026-01-15 18:10:24       - Doc 1: 2394 chars - "SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2..."
+2026-01-15 18:10:24    🔍 Sending to Gemini:
+2026-01-15 18:10:24       - Document count: 1
+2026-01-15 18:10:24       - Doc 1: 2394 chars - "SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2..."
+2026-01-15 18:10:30    📋 Groq document analysis:
+2026-01-15 18:10:30       - Is land document: true
+2026-01-15 18:10:30       - Authenticity score: 20
+2026-01-15 18:10:34 ✅ Agent 1 - Groq (Llama 3.3 70B): $0 (10% confidence)
+2026-01-15 18:10:34 ✅ Agent 2 - OpenRouter (GPT-4o-mini): $4,27,42,919 (75% confidence)
+2026-01-15 18:10:34 ✅ Agent 3 - Gemini (Meta Llama 3.1): $4,50,70,965 (70% confidence)
+2026-01-15 18:10:34 
+2026-01-15 18:10:34 📋 Step 3.5: Extracting and validating document details...
+
+2026-01-15 18:10:34 📄 DOCUMENT SUMMARY:
+2026-01-15 18:10:34 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:10:34 👤 Seller/Owner: Murthi, Son of Late Ranganathan, aged about 52 years, Hindu, Occupation: Agriculture, Residing at
+2026-01-15 18:10:34 👤 Buyer/Purchaser: Sylesh, Son of Sai Kumar, aged about 27 years, Hindu, Occupation: Software Engineer, Residing at
+2026-01-15 18:10:34 📍 Survey/Plot Number: . 215
+2026-01-15 18:10:34 📏 Property Area: 31040.61 sqm
+2026-01-15 18:10:34 ═══════════════════════════════════════════════════════════════
+
+2026-01-15 18:10:34 ✅ Document contains required Seller and Buyer information
+
+2026-01-15 18:10:34 ⚠️  Document authenticity score is low: 20.0%
+2026-01-15 18:10:34 ⚠️  Document issues noted: Area mismatch >20% with satellite data, Potential forgery or fraudulent activity due to inconsistencies
+2026-01-15 18:10:34 📊 Document authenticity score: 20.0%
+
+2026-01-15 18:10:34 🔮 Step 4: Calculating consensus...
+2026-01-15 18:10:34 ✅ Consensus reached: $4,10,36,687
+2026-01-15 18:10:34    Final confidence: 52%
+2026-01-15 18:10:34    Consensus score: 29/100
+2026-01-15 18:10:34    Standard deviation: ±$2,07,19,740
+
+2026-01-15 18:10:34 📊 INDIVIDUAL AGENT SCORES:
+2026-01-15 18:10:34 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:10:34    1. Groq (Llama 3.3 70B)
+2026-01-15 18:10:34       Valuation: $0
+2026-01-15 18:10:34       Confidence: 10%
+2026-01-15 18:10:34    2. OpenRouter (GPT-4o-mini)
+2026-01-15 18:10:34       Valuation: $4,27,42,919
+2026-01-15 18:10:34       Confidence: 75%
+2026-01-15 18:10:34    3. Gemini (Meta Llama 3.1)
+2026-01-15 18:10:34       Valuation: $4,50,70,965
+2026-01-15 18:10:34       Confidence: 70%
+2026-01-15 18:10:34 ═══════════════════════════════════════════════════════════════
+
+2026-01-15 18:10:34 ⛓️  Step 5: Submitting to blockchain...
+2026-01-15 18:10:34 📦 Uploading evidence to IPFS...
+2026-01-15 18:10:38 ✅ Evidence uploaded: QmZoF9M7irCt3oYXb8aV6mEsX7YSa8evZwJi3SniouVzeP
+2026-01-15 18:10:38 📝 Evidence mapping stored: Request 88 -> QmZoF9M7irCt3oYXb8aV6mEsX7YSa8evZwJi3SniouVzeP
+2026-01-15 18:10:38 📤 Submitting transaction to Mantle Sepolia...
+2026-01-15 18:10:39    🔢 Using nonce: 97
+2026-01-15 18:10:41 ❌ Failed to submit verification: The contract function "submitVerification" reverted with the following reason:
+Request not pending
+
+Contract Call:
+  address:   0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+  function:  submitVerification(uint256 _requestId, uint256 _valuation, uint256 _confidence)
+  args:                        (88, 41036687, 52)
+  sender:    0xe01Add0c3640a8314132bAF491d101A38ffEF4f0
+
+Docs: https://viem.sh/docs/contract/writeContract
+Version: viem@2.44.1
+2026-01-15 18:10:41 ❌ Error processing request: The contract function "submitVerification" reverted with the following reason:
+Request not pending
+
+Contract Call:
+  address:   0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+  function:  submitVerification(uint256 _requestId, uint256 _valuation, uint256 _confidence)
+  args:                        (88, 41036687, 52)
+  sender:    0xe01Add0c3640a8314132bAF491d101A38ffEF4f0
+
+Docs: https://viem.sh/docs/contract/writeContract
+Version: viem@2.44.1
+2026-01-15 18:10:41 ❌ Error handling verification request: The contract function "submitVerification" reverted with the following reason:
+Request not pending
+
+Contract Call:
+  address:   0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+  function:  submitVerification(uint256 _requestId, uint256 _valuation, uint256 _confidence)
+  args:                        (88, 41036687, 52)
+  sender:    0xe01Add0c3640a8314132bAF491d101A38ffEF4f0
+
+Docs: https://viem.sh/docs/contract/writeContract
+Version: viem@2.44.1
+2026-01-15 18:10:59 
+🛑 Stopping oracle listener...
+2026-01-15 18:16:30 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:16:30 🤖 RWA ORACLE STARTING
+2026-01-15 18:16:30 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:16:30 Oracle Address: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-15 18:16:30 Network: Testnet
+2026-01-15 18:16:30 ═══════════════════════════════════════════════════════════════
+
+2026-01-15 18:16:30 🚀 Starting Oracle Listener...
+2026-01-15 18:16:30 📡 Network: Mantle Sepolia Testnet
+2026-01-15 18:16:30 🔗 RPC URL: https://rpc.sepolia.mantle.xyz
+2026-01-15 18:16:30 📍 Oracle Router: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-15 18:16:32 📦 Current block: 33468258
+2026-01-15 18:16:32 🔍 Scanning for pending requests from recent blocks...
+2026-01-15 18:16:32    Scanning from block 33418258 to 33468258 in 10000 block chunks...
+2026-01-15 18:16:33    ✓ Blocks 33418258-33428258: Found 7 event(s)
+2026-01-15 18:16:33    ✓ Blocks 33428259-33438259: Found 6 event(s)
+2026-01-15 18:16:34    ✓ Blocks 33438260-33448260: Found 4 event(s)
+2026-01-15 18:16:34    ✓ Blocks 33448261-33458261: Found 3 event(s)
+2026-01-15 18:16:35    ✓ Blocks 33458262-33468258: Found 9 event(s)
+2026-01-15 18:16:35    Total events found: 29
+2026-01-15 18:16:35 📜 Filtering pending requests from 29 event(s)...
+2026-01-15 18:16:35    ⊘ Request #60: VERIFIED - skipping
+2026-01-15 18:16:35    ⊘ Request #61: VERIFIED - skipping
+2026-01-15 18:16:36    ⊘ Request #62: VERIFIED - skipping
+2026-01-15 18:16:36    ⊘ Request #63: VERIFIED - skipping
+2026-01-15 18:16:36    ⊘ Request #64: VERIFIED - skipping
+2026-01-15 18:16:37    ⊘ Request #65: VERIFIED - skipping
+2026-01-15 18:16:37    ⊘ Request #66: VERIFIED - skipping
+2026-01-15 18:16:38    ⊘ Request #67: VERIFIED - skipping
+2026-01-15 18:16:38    ⊘ Request #68: VERIFIED - skipping
+2026-01-15 18:16:38    ⊘ Request #69: VERIFIED - skipping
+2026-01-15 18:16:39    ⊘ Request #70: VERIFIED - skipping
+2026-01-15 18:16:39    ⊘ Request #71: VERIFIED - skipping
+2026-01-15 18:16:39    ⊘ Request #72: VERIFIED - skipping
+2026-01-15 18:16:40    ⊘ Request #73: VERIFIED - skipping
+2026-01-15 18:16:40    ⊘ Request #74: VERIFIED - skipping
+2026-01-15 18:16:41    ⊘ Request #75: VERIFIED - skipping
+2026-01-15 18:16:41    ⊘ Request #76: VERIFIED - skipping
+2026-01-15 18:16:41    ⊘ Request #77: VERIFIED - skipping
+2026-01-15 18:16:42    ⊘ Request #78: VERIFIED - skipping
+2026-01-15 18:16:42    ⊘ Request #79: VERIFIED - skipping
+2026-01-15 18:16:43    ⊘ Request #80: VERIFIED - skipping
+2026-01-15 18:16:43    ⊘ Request #81: VERIFIED - skipping
+2026-01-15 18:16:44    ⊘ Request #82: VERIFIED - skipping
+2026-01-15 18:16:44    ⊘ Request #83: VERIFIED - skipping
+2026-01-15 18:16:44    ⊘ Request #84: VERIFIED - skipping
+2026-01-15 18:16:45    ⊘ Request #85: VERIFIED - skipping
+2026-01-15 18:16:46    ⊘ Request #86: VERIFIED - skipping
+2026-01-15 18:16:46    ⊘ Request #87: VERIFIED - skipping
+2026-01-15 18:16:47    ⊘ Request #88: VERIFIED - skipping
+2026-01-15 18:16:47 
+📋 Found 0 pending request(s) to process
+
+2026-01-15 18:16:47 👂 Now listening for new VerificationRequested events...
+2026-01-15 18:16:47 Press Ctrl+C to stop
+
+2026-01-15 18:17:35 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:17:35 🤖 RWA ORACLE STARTING
+2026-01-15 18:17:35 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:17:35 Oracle Address: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-15 18:17:35 Network: Testnet
+2026-01-15 18:17:35 ═══════════════════════════════════════════════════════════════
+
+2026-01-15 18:17:35 🚀 Starting Oracle Listener...
+2026-01-15 18:17:35 📡 Network: Mantle Sepolia Testnet
+2026-01-15 18:17:35 🔗 RPC URL: https://rpc.sepolia.mantle.xyz
+2026-01-15 18:17:35 📍 Oracle Router: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-15 18:17:38 📦 Current block: 33468291
+2026-01-15 18:17:38 🔍 Scanning for pending requests from recent blocks...
+2026-01-15 18:17:38    Scanning from block 33418291 to 33468291 in 10000 block chunks...
+2026-01-15 18:17:39    ✓ Blocks 33418291-33428291: Found 7 event(s)
+2026-01-15 18:17:40    ✓ Blocks 33428292-33438292: Found 7 event(s)
+2026-01-15 18:17:40    ✓ Blocks 33438293-33448293: Found 3 event(s)
+2026-01-15 18:17:41    ✓ Blocks 33448294-33458294: Found 3 event(s)
+2026-01-15 18:17:41    ✓ Blocks 33458295-33468291: Found 9 event(s)
+2026-01-15 18:17:41    Total events found: 29
+2026-01-15 18:17:41 📜 Filtering pending requests from 29 event(s)...
+2026-01-15 18:17:42    ⊘ Request #60: VERIFIED - skipping
+2026-01-15 18:17:42    ⊘ Request #61: VERIFIED - skipping
+2026-01-15 18:17:45    ⊘ Request #62: VERIFIED - skipping
+2026-01-15 18:17:45    ⊘ Request #63: VERIFIED - skipping
+2026-01-15 18:17:46    ⊘ Request #64: VERIFIED - skipping
+2026-01-15 18:17:46    ⊘ Request #65: VERIFIED - skipping
+2026-01-15 18:17:46    ⊘ Request #66: VERIFIED - skipping
+2026-01-15 18:17:47    ⊘ Request #67: VERIFIED - skipping
+2026-01-15 18:17:47    ⊘ Request #68: VERIFIED - skipping
+2026-01-15 18:17:47    ⊘ Request #69: VERIFIED - skipping
+2026-01-15 18:17:47    ⊘ Request #70: VERIFIED - skipping
+2026-01-15 18:17:48    ⊘ Request #71: VERIFIED - skipping
+2026-01-15 18:17:48    ⊘ Request #72: VERIFIED - skipping
+2026-01-15 18:17:48    ⊘ Request #73: VERIFIED - skipping
+2026-01-15 18:17:49    ⊘ Request #74: VERIFIED - skipping
+2026-01-15 18:17:49    ⊘ Request #75: VERIFIED - skipping
+2026-01-15 18:17:49    ⊘ Request #76: VERIFIED - skipping
+2026-01-15 18:17:49    ⊘ Request #77: VERIFIED - skipping
+2026-01-15 18:17:50    ⊘ Request #78: VERIFIED - skipping
+2026-01-15 18:17:50    ⊘ Request #79: VERIFIED - skipping
+2026-01-15 18:17:51    ⊘ Request #80: VERIFIED - skipping
+2026-01-15 18:17:51    ⊘ Request #81: VERIFIED - skipping
+2026-01-15 18:17:51    ⊘ Request #82: VERIFIED - skipping
+2026-01-15 18:17:51    ⊘ Request #83: VERIFIED - skipping
+2026-01-15 18:17:53    ⊘ Request #84: VERIFIED - skipping
+2026-01-15 18:17:53    ⊘ Request #85: VERIFIED - skipping
+2026-01-15 18:17:54    ⊘ Request #86: VERIFIED - skipping
+2026-01-15 18:17:54    ⊘ Request #87: VERIFIED - skipping
+2026-01-15 18:17:55    ⊘ Request #88: VERIFIED - skipping
+2026-01-15 18:17:55 
+📋 Found 0 pending request(s) to process
+
+2026-01-15 18:17:55 👂 Now listening for new VerificationRequested events...
+2026-01-15 18:17:55 Press Ctrl+C to stop
+
+2026-01-15 18:24:56 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:24:56 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-15 18:24:56 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:24:56 📝 Request ID: 89
+2026-01-15 18:24:56 👤 Owner: 0xe01Add0c3640a8314132bAF491d101A38ffEF4f0
+2026-01-15 18:24:56 🏠 Asset Type: 0
+2026-01-15 18:24:56 📍 Location: Sai Baba Kovil Temple , Kaasi Kovil Kuppam , Ennore , Chennai - 600056 | 13.191204,440.313094
+2026-01-15 18:24:56    Parsed Coordinates: 13.191204, 440.313094
+2026-01-15 18:24:56 📄 Documents: 1 files
+2026-01-15 18:24:56 ⏰ Timestamp: 2026-01-15T12:54:47.000Z
+2026-01-15 18:24:56 📦 Block: 33468507
+2026-01-15 18:24:56 ═══════════════════════════════════════════════════════════════
+
+2026-01-15 18:24:56 🔄 Starting AI analysis pipeline...
+
+2026-01-15 18:24:56 📋 Step 0: Validating documents...
+2026-01-15 18:25:05 📄 Validating document: QmU4jamzbfwuQXKgPZVJ...
+2026-01-15 18:25:05 ✅ 1 document(s) validated
+
+2026-01-15 18:25:05 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-15 18:25:05    📥 Attempting to fetch from: gateway.pinata.cloud/ipfs/
+2026-01-15 18:25:13    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-15 18:25:13    🔄 Fetching first document CID for processing...
+2026-01-15 18:25:13    📥 Attempting to fetch from: gateway.pinata.cloud/ipfs/
+2026-01-15 18:25:23    📄 Found structured document JSON: Tamil_Nadu_Sale_Deed_Mock_Filled_Sylesh_Murthi.pdf
+2026-01-15 18:25:23    🔄 Fetching original file for OCR processing...
+2026-01-15 18:25:23    📥 Fetching original file: QmVYvoyR9TRo5AzBFMff...
+2026-01-15 18:25:30    📄 Processing original PDF with OCR.space API...
+2026-01-15 18:25:30    ⚠️  PDF parsing failed, using OCR: TypeError: pdfParse is not a function
+2026-01-15 18:25:30 🔍 Converting document to JSON via OCR.space: Tamil_Nadu_Sale_Deed_Mock_Filled_Sylesh_Murthi.pdf
+2026-01-15 18:25:36 ✅ Page 1 parsed successfully (2164 chars)
+2026-01-15 18:25:36 ✅ Page 2 parsed successfully (228 chars)
+2026-01-15 18:25:36 ✅ OCR complete: 2394 total characters extracted
+2026-01-15 18:25:36    Pages: 2
+2026-01-15 18:25:36    Processing time: 1875ms
+2026-01-15 18:25:36 📄 Extracted 2394 characters from Tamil_Nadu_Sale_Deed_Mock_Filled_Sylesh_Murthi.pdf via OCR
+2026-01-15 18:25:36    ✅ OCR extracted 2394 characters
+2026-01-15 18:25:36    📄 Document 1: 2394 characters
+2026-01-15 18:25:36    Preview: SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2026.	
+VENDOR / SELLER	
+Murthi, Son of Late Ranganathan, aged about 52 years, Hindu, Occupation: Ag...
+
+2026-01-15 18:25:36 ✅ Fetched 1 document(s) for analysis
+
+2026-01-15 18:25:36 📡 Step 1: Fetching satellite imagery...
+2026-01-15 18:25:43 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:25:43 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-15 18:25:43 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:25:43 📝 Request ID: 90
+2026-01-15 18:25:43 👤 Owner: 0xe01Add0c3640a8314132bAF491d101A38ffEF4f0
+2026-01-15 18:25:43 🏠 Asset Type: 0
+2026-01-15 18:25:43 📍 Location: Sai Baba Kovil Temple , Kaasi Kovil Kuppam , Ennore , Chennai - 600056 | 13.191204,440.313094
+2026-01-15 18:25:43    Parsed Coordinates: 13.191204, 440.313094
+2026-01-15 18:25:43 📄 Documents: 1 files
+2026-01-15 18:25:43 ⏰ Timestamp: 2026-01-15T12:55:39.000Z
+2026-01-15 18:25:43 📦 Block: 33468533
+2026-01-15 18:25:43 ═══════════════════════════════════════════════════════════════
+
+2026-01-15 18:25:43 🔄 Starting AI analysis pipeline...
+
+2026-01-15 18:25:43 📋 Step 0: Validating documents...
+2026-01-15 18:25:48 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:25:48 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-15 18:25:48 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:25:48 📝 Request ID: 91
+2026-01-15 18:25:48 👤 Owner: 0xe01Add0c3640a8314132bAF491d101A38ffEF4f0
+2026-01-15 18:25:48 🏠 Asset Type: 0
+2026-01-15 18:25:48 📍 Location: Sai Baba Kovil Temple , Kaasi Kovil Kuppam , Ennore , Chennai - 600056 | 13.191204,440.313094
+2026-01-15 18:25:48    Parsed Coordinates: 13.191204, 440.313094
+2026-01-15 18:25:48 📄 Documents: 1 files
+2026-01-15 18:25:48 ⏰ Timestamp: 2026-01-15T12:55:43.000Z
+2026-01-15 18:25:48 📦 Block: 33468535
+2026-01-15 18:25:48 ═══════════════════════════════════════════════════════════════
+
+2026-01-15 18:25:48 🔄 Starting AI analysis pipeline...
+
+2026-01-15 18:25:48 📋 Step 0: Validating documents...
+2026-01-15 18:25:48 📄 Validating document: QmVuxqoiSxZV4aiUHNip...
+2026-01-15 18:25:48 ✅ 1 document(s) validated
+
+2026-01-15 18:25:48 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-15 18:25:48    📥 Attempting to fetch from: gateway.pinata.cloud/ipfs/
+2026-01-15 18:25:53 📄 Validating document: QmXAdqDTRgbSFsgibGRs...
+2026-01-15 18:25:53 ✅ 1 document(s) validated
+
+2026-01-15 18:25:53 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-15 18:25:53    📥 Attempting to fetch from: gateway.pinata.cloud/ipfs/
+2026-01-15 18:25:53    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-15 18:25:53    🔄 Fetching first document CID for processing...
+2026-01-15 18:25:53    📥 Attempting to fetch from: gateway.pinata.cloud/ipfs/
+2026-01-15 18:25:57    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-15 18:25:57    🔄 Fetching first document CID for processing...
+2026-01-15 18:25:57    📥 Attempting to fetch from: gateway.pinata.cloud/ipfs/
+2026-01-15 18:25:58    📄 Found structured document JSON: Tamil_Nadu_Sale_Deed_Mock_Filled_Sylesh_Murthi.pdf
+2026-01-15 18:25:58    🔄 Fetching original file for OCR processing...
+2026-01-15 18:25:58    📥 Fetching original file: QmVYvoyR9TRo5AzBFMff...
+2026-01-15 18:26:03    📄 Processing original PDF with OCR.space API...
+2026-01-15 18:26:03    ⚠️  PDF parsing failed, using OCR: TypeError: pdfParse is not a function
+2026-01-15 18:26:03 🔍 Converting document to JSON via OCR.space: Tamil_Nadu_Sale_Deed_Mock_Filled_Sylesh_Murthi.pdf
+2026-01-15 18:26:05    📄 Found structured document JSON: Tamil_Nadu_Sale_Deed_Mock_Filled_Sylesh_Murthi.pdf
+2026-01-15 18:26:05    🔄 Fetching original file for OCR processing...
+2026-01-15 18:26:05    📥 Fetching original file: QmVYvoyR9TRo5AzBFMff...
+2026-01-15 18:26:10 ✅ Page 1 parsed successfully (2164 chars)
+2026-01-15 18:26:10 ✅ Page 2 parsed successfully (228 chars)
+2026-01-15 18:26:10 ✅ OCR complete: 2394 total characters extracted
+2026-01-15 18:26:10    Pages: 2
+2026-01-15 18:26:10    Processing time: 1578ms
+2026-01-15 18:26:10 📄 Extracted 2394 characters from Tamil_Nadu_Sale_Deed_Mock_Filled_Sylesh_Murthi.pdf via OCR
+2026-01-15 18:26:10    ✅ OCR extracted 2394 characters
+2026-01-15 18:26:10    📄 Document 1: 2394 characters
+2026-01-15 18:26:10    Preview: SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2026.	
+VENDOR / SELLER	
+Murthi, Son of Late Ranganathan, aged about 52 years, Hindu, Occupation: Ag...
+
+2026-01-15 18:26:10 ✅ Fetched 1 document(s) for analysis
+
+2026-01-15 18:26:10 📡 Step 1: Fetching satellite imagery...
+2026-01-15 18:26:11    📄 Processing original PDF with OCR.space API...
+2026-01-15 18:26:11    ⚠️  PDF parsing failed, using OCR: TypeError: pdfParse is not a function
+2026-01-15 18:26:11 🔍 Converting document to JSON via OCR.space: Tamil_Nadu_Sale_Deed_Mock_Filled_Sylesh_Murthi.pdf
+2026-01-15 18:26:15 ✅ Page 1 parsed successfully (2164 chars)
+2026-01-15 18:26:15 ✅ Page 2 parsed successfully (228 chars)
+2026-01-15 18:26:15 ✅ OCR complete: 2394 total characters extracted
+2026-01-15 18:26:15    Pages: 2
+2026-01-15 18:26:15    Processing time: 1578ms
+2026-01-15 18:26:15 📄 Extracted 2394 characters from Tamil_Nadu_Sale_Deed_Mock_Filled_Sylesh_Murthi.pdf via OCR
+2026-01-15 18:26:15    ✅ OCR extracted 2394 characters
+2026-01-15 18:26:15    📄 Document 1: 2394 characters
+2026-01-15 18:26:15    Preview: SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2026.	
+VENDOR / SELLER	
+Murthi, Son of Late Ranganathan, aged about 52 years, Hindu, Occupation: Ag...
+
+2026-01-15 18:26:15 ✅ Fetched 1 document(s) for analysis
+
+2026-01-15 18:26:15 📡 Step 1: Fetching satellite imagery...
+2026-01-15 18:27:59 ✅ Satellite data: 31040.61 sqm, NDVI 0.3141
+2026-01-15 18:27:59    Cloud coverage: 0.85%, Resolution: 10m
+
+2026-01-15 18:27:59 📸 Step 1.5: Uploading satellite images to IPFS (Ultra High Resolution - 2048x2048)...
+2026-01-15 18:28:20 ✅ Satellite data: 31040.61 sqm, NDVI 0.3141
+2026-01-15 18:28:20    Cloud coverage: 0.85%, Resolution: 10m
+
+2026-01-15 18:28:20 📸 Step 1.5: Uploading satellite images to IPFS (Ultra High Resolution - 2048x2048)...
+2026-01-15 18:28:23 ✅ Satellite data: 31040.61 sqm, NDVI 0.3141
+2026-01-15 18:28:23    Cloud coverage: 0.85%, Resolution: 10m
+
+2026-01-15 18:28:23 📸 Step 1.5: Uploading satellite images to IPFS (Ultra High Resolution - 2048x2048)...
+2026-01-15 18:29:35    ✅ RGB image uploaded: QmWYKZBUDNWZBNACao4QY9iBWz3VDPbppyDPHSLm7RMx6M
+2026-01-15 18:29:35    🔗 RGB Image URL: https://gateway.pinata.cloud/ipfs/QmWYKZBUDNWZBNACao4QY9iBWz3VDPbppyDPHSLm7RMx6M
+2026-01-15 18:29:46    ✅ NDVI image uploaded: QmNTJid4avB7LBtzqLCAYsEMFwJQFKxXhURQv2TaPUVx24
+2026-01-15 18:29:46    🔗 NDVI Image URL: https://gateway.pinata.cloud/ipfs/QmNTJid4avB7LBtzqLCAYsEMFwJQFKxXhURQv2TaPUVx24
+2026-01-15 18:29:46 ✅ All satellite images uploaded to IPFS (2048x2048 resolution)
+
+2026-01-15 18:29:47    🗑️  Cleaned up temp RGB file
+2026-01-15 18:29:47    🗑️  Cleaned up temp NDVI file
+2026-01-15 18:29:47 🤖 Step 2: Running 3 AI agents in parallel...
+2026-01-15 18:29:47    🔍 Sending to Groq:
+2026-01-15 18:29:47       - Document count: 1
+2026-01-15 18:29:47       - Doc 1: 2394 chars - "SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2..."
+2026-01-15 18:29:47    🔍 Sending to OpenRouter:
+2026-01-15 18:29:47       - Document count: 1
+2026-01-15 18:29:47       - Doc 1: 2394 chars - "SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2..."
+2026-01-15 18:29:47    🔍 Sending to Gemini:
+2026-01-15 18:29:47       - Document count: 1
+2026-01-15 18:29:47       - Doc 1: 2394 chars - "SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2..."
+2026-01-15 18:29:48    ✅ RGB image uploaded: QmWYKZBUDNWZBNACao4QY9iBWz3VDPbppyDPHSLm7RMx6M
+2026-01-15 18:29:48    🔗 RGB Image URL: https://gateway.pinata.cloud/ipfs/QmWYKZBUDNWZBNACao4QY9iBWz3VDPbppyDPHSLm7RMx6M
+2026-01-15 18:29:54    ✅ NDVI image uploaded: QmNTJid4avB7LBtzqLCAYsEMFwJQFKxXhURQv2TaPUVx24
+2026-01-15 18:29:54    🔗 NDVI Image URL: https://gateway.pinata.cloud/ipfs/QmNTJid4avB7LBtzqLCAYsEMFwJQFKxXhURQv2TaPUVx24
+2026-01-15 18:29:54    📋 Groq document analysis:
+2026-01-15 18:29:54       - Is land document: true
+2026-01-15 18:29:54       - Authenticity score: 70
+2026-01-15 18:29:55 ✅ Agent 1 - Groq (Llama 3.3 70B): $2,75,000 (80% confidence)
+2026-01-15 18:29:55 ✅ Agent 2 - OpenRouter (GPT-4o-mini): $4,27,42,919 (75% confidence)
+2026-01-15 18:29:55 ✅ Agent 3 - Gemini (Meta Llama 3.1): $4,50,70,965 (70% confidence)
+2026-01-15 18:29:55 
+2026-01-15 18:29:55 📋 Step 3.5: Extracting and validating document details...
+
+2026-01-15 18:29:55 📄 DOCUMENT SUMMARY:
+2026-01-15 18:29:55 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:29:55 👤 Seller/Owner: Murthi, Son of Late Ranganathan, aged about 52 years, Hindu, Occupation: Agriculture, Residing at
+2026-01-15 18:29:55 👤 Buyer/Purchaser: Sylesh, Son of Sai Kumar, aged about 27 years, Hindu, Occupation: Software Engineer, Residing at
+2026-01-15 18:29:55 📍 Survey/Plot Number: . 215
+2026-01-15 18:29:55 📏 Property Area: 31040.61 sqm
+2026-01-15 18:29:55 ═══════════════════════════════════════════════════════════════
+
+2026-01-15 18:29:55 ✅ Document contains required Seller and Buyer information
+
+2026-01-15 18:29:55 ⚠️  Document issues noted: Area mismatch >20% with satellite data
+2026-01-15 18:29:55 📊 Document authenticity score: 70.0%
+
+2026-01-15 18:29:55 🔮 Step 4: Calculating consensus...
+2026-01-15 18:29:55 ✅ Consensus reached: $2,83,67,495
+2026-01-15 18:29:55    Final confidence: 75%
+2026-01-15 18:29:55    Consensus score: 30/100
+2026-01-15 18:29:55    Standard deviation: ±$2,05,90,242
+
+2026-01-15 18:29:55 📊 INDIVIDUAL AGENT SCORES:
+2026-01-15 18:29:55 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:29:55    1. Groq (Llama 3.3 70B)
+2026-01-15 18:29:55       Valuation: $2,75,000
+2026-01-15 18:29:55       Confidence: 80%
+2026-01-15 18:29:55    2. OpenRouter (GPT-4o-mini)
+2026-01-15 18:29:55       Valuation: $4,27,42,919
+2026-01-15 18:29:55       Confidence: 75%
+2026-01-15 18:29:55    3. Gemini (Meta Llama 3.1)
+2026-01-15 18:29:55       Valuation: $4,50,70,965
+2026-01-15 18:29:55       Confidence: 70%
+2026-01-15 18:29:55 ═══════════════════════════════════════════════════════════════
+
+2026-01-15 18:29:55 ⛓️  Step 5: Submitting to blockchain...
+2026-01-15 18:29:56 ⚠️  Request #91 is no longer PENDING (status: VERIFIED)
+2026-01-15 18:29:56    Skipping submission - another oracle may have already processed this request
+
+2026-01-15 18:30:09    ✅ RGB image uploaded: QmWYKZBUDNWZBNACao4QY9iBWz3VDPbppyDPHSLm7RMx6M
+2026-01-15 18:30:09    🔗 RGB Image URL: https://gateway.pinata.cloud/ipfs/QmWYKZBUDNWZBNACao4QY9iBWz3VDPbppyDPHSLm7RMx6M
+2026-01-15 18:30:23    ✅ CIR (Color Infrared) image uploaded: QmWeWEhMtBPiZCkRTg6v9VG6dsHBb2ARGaqQBMk3E1dhWH
+2026-01-15 18:30:23    🔗 CIR Image URL: https://gateway.pinata.cloud/ipfs/QmWeWEhMtBPiZCkRTg6v9VG6dsHBb2ARGaqQBMk3E1dhWH
+2026-01-15 18:30:43    ✅ True Color image uploaded: QmTLVKfo5FDZ4x3G6Mrc1CffmeoJDWhTcaLRuKwhHY9J6r
+2026-01-15 18:30:43    🔗 True Color Image URL: https://gateway.pinata.cloud/ipfs/QmTLVKfo5FDZ4x3G6Mrc1CffmeoJDWhTcaLRuKwhHY9J6r
+2026-01-15 18:30:43 ✅ All satellite images uploaded to IPFS (2048x2048 resolution)
+
+2026-01-15 18:30:43    ✅ NDVI image uploaded: QmNTJid4avB7LBtzqLCAYsEMFwJQFKxXhURQv2TaPUVx24
+2026-01-15 18:30:43    🔗 NDVI Image URL: https://gateway.pinata.cloud/ipfs/QmNTJid4avB7LBtzqLCAYsEMFwJQFKxXhURQv2TaPUVx24
+2026-01-15 18:30:43    🗑️  Cleaned up temp RGB file
+2026-01-15 18:30:43    🗑️  Cleaned up temp NDVI file
+2026-01-15 18:30:43    🗑️  Cleaned up temp CIR file
+2026-01-15 18:30:43    🗑️  Cleaned up temp True Color file
+2026-01-15 18:30:43 🤖 Step 2: Running 3 AI agents in parallel...
+2026-01-15 18:30:43    🔍 Sending to Groq:
+2026-01-15 18:30:43       - Document count: 1
+2026-01-15 18:30:43       - Doc 1: 2394 chars - "SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2..."
+2026-01-15 18:30:43    🔍 Sending to OpenRouter:
+2026-01-15 18:30:43       - Document count: 1
+2026-01-15 18:30:43       - Doc 1: 2394 chars - "SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2..."
+2026-01-15 18:30:44    🔍 Sending to Gemini:
+2026-01-15 18:30:44       - Document count: 1
+2026-01-15 18:30:44       - Doc 1: 2394 chars - "SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2..."
+2026-01-15 18:30:50    📋 Groq document analysis:
+2026-01-15 18:30:50       - Is land document: true
+2026-01-15 18:30:50       - Authenticity score: 80
+2026-01-15 18:30:51 ✅ Agent 1 - Groq (Llama 3.3 70B): $2,75,000 (80% confidence)
+2026-01-15 18:30:51 ✅ Agent 2 - OpenRouter (GPT-4o-mini): $4,27,42,919 (75% confidence)
+2026-01-15 18:30:51 ✅ Agent 3 - Gemini (Meta Llama 3.1): $4,50,70,965 (70% confidence)
+2026-01-15 18:30:51 
+2026-01-15 18:30:51 📋 Step 3.5: Extracting and validating document details...
+
+2026-01-15 18:30:51 📄 DOCUMENT SUMMARY:
+2026-01-15 18:30:51 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:30:51 👤 Seller/Owner: Murthi, Son of Late Ranganathan, aged about 52 years, Hindu, Occupation: Agriculture, Residing at
+2026-01-15 18:30:51 👤 Buyer/Purchaser: Sylesh, Son of Sai Kumar, aged about 27 years, Hindu, Occupation: Software Engineer, Residing at
+2026-01-15 18:30:51 📍 Survey/Plot Number: . 215
+2026-01-15 18:30:51 📏 Property Area: 222.97 sqm
+2026-01-15 18:30:51 ═══════════════════════════════════════════════════════════════
+
+2026-01-15 18:30:51 ✅ Document contains required Seller and Buyer information
+
+2026-01-15 18:30:51 ⚠️  Document issues noted: Area mismatch >20% with satellite data
+2026-01-15 18:30:51 📊 Document authenticity score: 80.0%
+
+2026-01-15 18:30:51 🔮 Step 4: Calculating consensus...
+2026-01-15 18:30:51 ✅ Consensus reached: $2,83,67,495
+2026-01-15 18:30:51    Final confidence: 75%
+2026-01-15 18:30:51    Consensus score: 30/100
+2026-01-15 18:30:51    Standard deviation: ±$2,05,90,242
+
+2026-01-15 18:30:51 📊 INDIVIDUAL AGENT SCORES:
+2026-01-15 18:30:51 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:30:51    1. Groq (Llama 3.3 70B)
+2026-01-15 18:30:51       Valuation: $2,75,000
+2026-01-15 18:30:51       Confidence: 80%
+2026-01-15 18:30:51    2. OpenRouter (GPT-4o-mini)
+2026-01-15 18:30:51       Valuation: $4,27,42,919
+2026-01-15 18:30:51       Confidence: 75%
+2026-01-15 18:30:51    3. Gemini (Meta Llama 3.1)
+2026-01-15 18:30:51       Valuation: $4,50,70,965
+2026-01-15 18:30:51       Confidence: 70%
+2026-01-15 18:30:51 ═══════════════════════════════════════════════════════════════
+
+2026-01-15 18:30:51 ⛓️  Step 5: Submitting to blockchain...
+2026-01-15 18:30:52 ⚠️  Request #89 is no longer PENDING (status: VERIFIED)
+2026-01-15 18:30:52    Skipping submission - another oracle may have already processed this request
+
+2026-01-15 18:31:08    ✅ CIR (Color Infrared) image uploaded: QmWeWEhMtBPiZCkRTg6v9VG6dsHBb2ARGaqQBMk3E1dhWH
+2026-01-15 18:31:08    🔗 CIR Image URL: https://gateway.pinata.cloud/ipfs/QmWeWEhMtBPiZCkRTg6v9VG6dsHBb2ARGaqQBMk3E1dhWH
+2026-01-15 18:31:39    ✅ True Color image uploaded: QmTLVKfo5FDZ4x3G6Mrc1CffmeoJDWhTcaLRuKwhHY9J6r
+2026-01-15 18:31:39    🔗 True Color Image URL: https://gateway.pinata.cloud/ipfs/QmTLVKfo5FDZ4x3G6Mrc1CffmeoJDWhTcaLRuKwhHY9J6r
+2026-01-15 18:31:39 ✅ All satellite images uploaded to IPFS (2048x2048 resolution)
+
+2026-01-15 18:31:40    🗑️  Cleaned up temp RGB file
+2026-01-15 18:31:40    🗑️  Cleaned up temp NDVI file
+2026-01-15 18:31:40    🗑️  Cleaned up temp CIR file
+2026-01-15 18:31:40    🗑️  Cleaned up temp True Color file
+2026-01-15 18:31:40 🤖 Step 2: Running 3 AI agents in parallel...
+2026-01-15 18:31:40    🔍 Sending to Groq:
+2026-01-15 18:31:40       - Document count: 1
+2026-01-15 18:31:40       - Doc 1: 2394 chars - "SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2..."
+2026-01-15 18:31:40    🔍 Sending to OpenRouter:
+2026-01-15 18:31:40       - Document count: 1
+2026-01-15 18:31:40       - Doc 1: 2394 chars - "SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2..."
+2026-01-15 18:31:40    🔍 Sending to Gemini:
+2026-01-15 18:31:40       - Document count: 1
+2026-01-15 18:31:40       - Doc 1: 2394 chars - "SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2..."
+2026-01-15 18:31:43    📋 Groq document analysis:
+2026-01-15 18:31:43       - Is land document: true
+2026-01-15 18:31:43       - Authenticity score: 80
+2026-01-15 18:31:43 ✅ Agent 1 - Groq (Llama 3.3 70B): $2,75,000 (80% confidence)
+2026-01-15 18:31:43 ✅ Agent 2 - OpenRouter (GPT-4o-mini): $4,27,42,919 (75% confidence)
+2026-01-15 18:31:43 ✅ Agent 3 - Gemini (Meta Llama 3.1): $4,50,70,965 (70% confidence)
+2026-01-15 18:31:43 
+2026-01-15 18:31:43 📋 Step 3.5: Extracting and validating document details...
+
+2026-01-15 18:31:43 📄 DOCUMENT SUMMARY:
+2026-01-15 18:31:43 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:31:43 👤 Seller/Owner: Murthi, Son of Late Ranganathan, aged about 52 years, Hindu, Occupation: Agriculture, Residing at
+2026-01-15 18:31:43 👤 Buyer/Purchaser: Sylesh, Son of Sai Kumar, aged about 27 years, Hindu, Occupation: Software Engineer, Residing at
+2026-01-15 18:31:43 📍 Survey/Plot Number: . 215
+2026-01-15 18:31:43 📏 Property Area: 31040.61 sqm
+2026-01-15 18:31:43 ═══════════════════════════════════════════════════════════════
+
+2026-01-15 18:31:43 ✅ Document contains required Seller and Buyer information
+
+2026-01-15 18:31:43 ⚠️  Document issues noted: Area mismatch >20% with satellite data
+2026-01-15 18:31:43 📊 Document authenticity score: 80.0%
+
+2026-01-15 18:31:43 🔮 Step 4: Calculating consensus...
+2026-01-15 18:31:43 ✅ Consensus reached: $2,83,67,495
+2026-01-15 18:31:43    Final confidence: 75%
+2026-01-15 18:31:43    Consensus score: 30/100
+2026-01-15 18:31:43    Standard deviation: ±$2,05,90,242
+
+2026-01-15 18:31:43 📊 INDIVIDUAL AGENT SCORES:
+2026-01-15 18:31:43 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:31:43    1. Groq (Llama 3.3 70B)
+2026-01-15 18:31:43       Valuation: $2,75,000
+2026-01-15 18:31:43       Confidence: 80%
+2026-01-15 18:31:43    2. OpenRouter (GPT-4o-mini)
+2026-01-15 18:31:43       Valuation: $4,27,42,919
+2026-01-15 18:31:43       Confidence: 75%
+2026-01-15 18:31:43    3. Gemini (Meta Llama 3.1)
+2026-01-15 18:31:43       Valuation: $4,50,70,965
+2026-01-15 18:31:43       Confidence: 70%
+2026-01-15 18:31:43 ═══════════════════════════════════════════════════════════════
+
+2026-01-15 18:31:43 ⛓️  Step 5: Submitting to blockchain...
+2026-01-15 18:31:43 ⚠️  Request #90 is no longer PENDING (status: VERIFIED)
+2026-01-15 18:31:43    Skipping submission - another oracle may have already processed this request
+
+2026-01-15 18:32:42 
+🛑 Stopping oracle listener...
+2026-01-15 18:35:37 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:35:37 🤖 RWA ORACLE STARTING
+2026-01-15 18:35:37 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:35:37 Oracle Address: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-15 18:35:37 Network: Testnet
+2026-01-15 18:35:37 ═══════════════════════════════════════════════════════════════
+
+2026-01-15 18:35:37 🚀 Starting Oracle Listener...
+2026-01-15 18:35:37 📡 Network: Mantle Sepolia Testnet
+2026-01-15 18:35:37 🔗 RPC URL: https://rpc.sepolia.mantle.xyz
+2026-01-15 18:35:37 📍 Oracle Router: 0xf4d1656069B739d652CdFC8Cc6ddE2Cd0b2d9A9C
+2026-01-15 18:35:39 📦 Current block: 33468831
+2026-01-15 18:35:39 🔍 Scanning for pending requests from recent blocks...
+2026-01-15 18:35:39    Scanning from block 33418831 to 33468831 in 10000 block chunks...
+2026-01-15 18:35:40    ✓ Blocks 33418831-33428831: Found 7 event(s)
+2026-01-15 18:35:41    ✓ Blocks 33428832-33438832: Found 8 event(s)
+2026-01-15 18:35:41    ✓ Blocks 33438833-33448833: Found 2 event(s)
+2026-01-15 18:35:42    ✓ Blocks 33448834-33458834: Found 4 event(s)
+2026-01-15 18:35:42    ✓ Blocks 33458835-33468831: Found 12 event(s)
+2026-01-15 18:35:42    Total events found: 33
+2026-01-15 18:35:42 📜 Filtering pending requests from 33 event(s)...
+2026-01-15 18:35:43    ⊘ Request #60: VERIFIED - skipping
+2026-01-15 18:35:43    ⊘ Request #61: VERIFIED - skipping
+2026-01-15 18:35:44    ⊘ Request #62: VERIFIED - skipping
+2026-01-15 18:35:44    ⊘ Request #63: VERIFIED - skipping
+2026-01-15 18:35:44    ⊘ Request #64: VERIFIED - skipping
+2026-01-15 18:35:45    ⊘ Request #65: VERIFIED - skipping
+2026-01-15 18:35:45    ⊘ Request #66: VERIFIED - skipping
+2026-01-15 18:35:46    ⊘ Request #67: VERIFIED - skipping
+2026-01-15 18:35:46    ⊘ Request #68: VERIFIED - skipping
+2026-01-15 18:35:46    ⊘ Request #69: VERIFIED - skipping
+2026-01-15 18:35:47    ⊘ Request #70: VERIFIED - skipping
+2026-01-15 18:35:47    ⊘ Request #71: VERIFIED - skipping
+2026-01-15 18:35:48    ⊘ Request #72: VERIFIED - skipping
+2026-01-15 18:35:48    ⊘ Request #73: VERIFIED - skipping
+2026-01-15 18:35:49    ⊘ Request #74: VERIFIED - skipping
+2026-01-15 18:35:49    ⊘ Request #75: VERIFIED - skipping
+2026-01-15 18:35:50    ⊘ Request #76: VERIFIED - skipping
+2026-01-15 18:35:50    ⊘ Request #77: VERIFIED - skipping
+2026-01-15 18:35:51    ⊘ Request #78: VERIFIED - skipping
+2026-01-15 18:35:51    ⊘ Request #79: VERIFIED - skipping
+2026-01-15 18:35:51    ⊘ Request #80: VERIFIED - skipping
+2026-01-15 18:35:52    ⊘ Request #81: VERIFIED - skipping
+2026-01-15 18:35:52    ⊘ Request #82: VERIFIED - skipping
+2026-01-15 18:35:52    ⊘ Request #83: VERIFIED - skipping
+2026-01-15 18:35:53    ⊘ Request #84: VERIFIED - skipping
+2026-01-15 18:35:53    ⊘ Request #85: VERIFIED - skipping
+2026-01-15 18:35:54    ⊘ Request #86: VERIFIED - skipping
+2026-01-15 18:35:54    ⊘ Request #87: VERIFIED - skipping
+2026-01-15 18:35:55    ⊘ Request #88: VERIFIED - skipping
+2026-01-15 18:35:56    ⊘ Request #89: VERIFIED - skipping
+2026-01-15 18:35:56    ⊘ Request #90: VERIFIED - skipping
+2026-01-15 18:35:56    ⊘ Request #91: VERIFIED - skipping
+2026-01-15 18:35:57    ✓ Request #92: PENDING - will process
+2026-01-15 18:35:57 
+📋 Found 1 pending request(s) to process
+
+2026-01-15 18:35:57 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:35:57 🚨 NEW VERIFICATION REQUEST DETECTED
+2026-01-15 18:35:57 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:35:57 📝 Request ID: 92
+2026-01-15 18:35:57 👤 Owner: 0xe01Add0c3640a8314132bAF491d101A38ffEF4f0
+2026-01-15 18:35:57 🏠 Asset Type: 0
+2026-01-15 18:35:57 📍 Location: Sai Baba Kovil Temple , Kaasi Kovil Kuppam , Ennore , Chennai - 600056 | 13.191204,440.313094
+2026-01-15 18:35:57    Parsed Coordinates: 13.191204, 440.313094
+2026-01-15 18:35:57 📄 Documents: 1 files
+2026-01-15 18:35:57 ⏰ Timestamp: 2026-01-15T13:05:31.000Z
+2026-01-15 18:35:57 📦 Block: 33468829
+2026-01-15 18:35:57 ═══════════════════════════════════════════════════════════════
+
+2026-01-15 18:35:57 🔄 Starting AI analysis pipeline...
+
+2026-01-15 18:35:57 📋 Step 0: Validating documents...
+2026-01-15 18:36:05 📄 Validating document: QmQDuHJFEHzoWvQ93zB6...
+2026-01-15 18:36:05 ✅ 1 document(s) validated
+
+2026-01-15 18:36:05 📄 Step 0.5: Fetching document content for AI analysis...
+2026-01-15 18:36:05    📥 Attempting to fetch from: gateway.pinata.cloud/ipfs/
+2026-01-15 18:36:12    📄 Found frontend metadata JSON with 1 document(s)
+2026-01-15 18:36:12    🔄 Fetching first document CID for processing...
+2026-01-15 18:36:12    📥 Attempting to fetch from: gateway.pinata.cloud/ipfs/
+2026-01-15 18:36:19    📄 Found structured document JSON: Tamil_Nadu_Sale_Deed_Mock_Filled_Sylesh_Murthi.pdf
+2026-01-15 18:36:19    🔄 Fetching original file for OCR processing...
+2026-01-15 18:36:19    📥 Fetching original file: QmVYvoyR9TRo5AzBFMff...
+2026-01-15 18:36:26    📄 Processing original PDF with OCR.space API...
+2026-01-15 18:36:26    ⚠️  PDF parsing failed, using OCR: TypeError: pdfParse is not a function
+2026-01-15 18:36:26 🔍 Converting document to JSON via OCR.space: Tamil_Nadu_Sale_Deed_Mock_Filled_Sylesh_Murthi.pdf
+2026-01-15 18:36:31 ✅ Page 1 parsed successfully (2164 chars)
+2026-01-15 18:36:31 ✅ Page 2 parsed successfully (228 chars)
+2026-01-15 18:36:31 ✅ OCR complete: 2394 total characters extracted
+2026-01-15 18:36:31    Pages: 2
+2026-01-15 18:36:31    Processing time: 1875ms
+2026-01-15 18:36:31 📄 Extracted 2394 characters from Tamil_Nadu_Sale_Deed_Mock_Filled_Sylesh_Murthi.pdf via OCR
+2026-01-15 18:36:31    ✅ OCR extracted 2394 characters
+2026-01-15 18:36:31    📄 Document 1: 2394 characters
+2026-01-15 18:36:31    Preview: SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2026.	
+VENDOR / SELLER	
+Murthi, Son of Late Ranganathan, aged about 52 years, Hindu, Occupation: Ag...
+
+2026-01-15 18:36:31 ✅ Fetched 1 document(s) for analysis
+
+2026-01-15 18:36:31 📡 Step 1: Fetching satellite imagery...
+2026-01-15 18:37:28 ✅ Satellite data: 31040.61 sqm, NDVI 0.3141
+2026-01-15 18:37:28    Cloud coverage: 0.85%, Resolution: 10m
+
+2026-01-15 18:37:28 📸 Step 1.5: Uploading satellite images to IPFS (Ultra High Resolution - 2048x2048)...
+2026-01-15 18:38:00    ✅ RGB image uploaded: QmWYKZBUDNWZBNACao4QY9iBWz3VDPbppyDPHSLm7RMx6M
+2026-01-15 18:38:00    🔗 RGB Image URL: https://gateway.pinata.cloud/ipfs/QmWYKZBUDNWZBNACao4QY9iBWz3VDPbppyDPHSLm7RMx6M
+2026-01-15 18:38:08    ✅ NDVI image uploaded: QmNTJid4avB7LBtzqLCAYsEMFwJQFKxXhURQv2TaPUVx24
+2026-01-15 18:38:08    🔗 NDVI Image URL: https://gateway.pinata.cloud/ipfs/QmNTJid4avB7LBtzqLCAYsEMFwJQFKxXhURQv2TaPUVx24
+2026-01-15 18:38:44    ✅ CIR (Color Infrared) image uploaded: QmWeWEhMtBPiZCkRTg6v9VG6dsHBb2ARGaqQBMk3E1dhWH
+2026-01-15 18:38:44    🔗 CIR Image URL: https://gateway.pinata.cloud/ipfs/QmWeWEhMtBPiZCkRTg6v9VG6dsHBb2ARGaqQBMk3E1dhWH
+2026-01-15 18:39:18    ✅ True Color image uploaded: QmTLVKfo5FDZ4x3G6Mrc1CffmeoJDWhTcaLRuKwhHY9J6r
+2026-01-15 18:39:18    🔗 True Color Image URL: https://gateway.pinata.cloud/ipfs/QmTLVKfo5FDZ4x3G6Mrc1CffmeoJDWhTcaLRuKwhHY9J6r
+2026-01-15 18:39:18 ✅ All satellite images uploaded to IPFS (2048x2048 resolution)
+
+2026-01-15 18:39:19    🗑️  Cleaned up temp RGB file
+2026-01-15 18:39:19    🗑️  Cleaned up temp NDVI file
+2026-01-15 18:39:19    🗑️  Cleaned up temp CIR file
+2026-01-15 18:39:19    🗑️  Cleaned up temp True Color file
+2026-01-15 18:39:19 🤖 Step 2: Running 3 AI agents in parallel...
+2026-01-15 18:39:19    🔍 Sending to Groq:
+2026-01-15 18:39:19       - Document count: 1
+2026-01-15 18:39:19       - Doc 1: 2394 chars - "SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2..."
+2026-01-15 18:39:19    🔍 Sending to OpenRouter:
+2026-01-15 18:39:19       - Document count: 1
+2026-01-15 18:39:19       - Doc 1: 2394 chars - "SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2..."
+2026-01-15 18:39:19    🔍 Sending to Gemini:
+2026-01-15 18:39:19       - Document count: 1
+2026-01-15 18:39:19       - Doc 1: 2394 chars - "SALE DEED	
+This Deed of Absolute Sale is made and executed at Vellore on this 15th day of January 2..."
+2026-01-15 18:39:22    📋 Groq document analysis:
+2026-01-15 18:39:22       - Is land document: true
+2026-01-15 18:39:22       - Authenticity score: 0
+2026-01-15 18:39:22       - Missing fields: Detailed legal description, Clear registration details
+2026-01-15 18:39:22 ✅ Agent 1 - Groq (Llama 3.3 70B): $0 (0% confidence)
+2026-01-15 18:39:22 ✅ Agent 2 - OpenRouter (GPT-4o-mini): $4,27,42,919 (75% confidence)
+2026-01-15 18:39:22 ✅ Agent 3 - Gemini (Meta Llama 3.1): $4,50,70,965 (70% confidence)
+2026-01-15 18:39:22 
+2026-01-15 18:39:22 📋 Step 3.5: Extracting and validating document details...
+
+2026-01-15 18:39:22 📄 DOCUMENT SUMMARY:
+2026-01-15 18:39:22 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:39:22 👤 Seller/Owner: Murthi, Son of Late Ranganathan, aged about 52 years, Hindu, Occupation: Agriculture, Residing at
+2026-01-15 18:39:22 👤 Buyer/Purchaser: Sylesh, Son of Sai Kumar, aged about 27 years, Hindu, Occupation: Software Engineer, Residing at
+2026-01-15 18:39:22 📍 Survey/Plot Number: . 215
+2026-01-15 18:39:22 📏 Property Area: 31040.61 sqm
+2026-01-15 18:39:22 ═══════════════════════════════════════════════════════════════
+
+2026-01-15 18:39:22 ✅ Document contains required Seller and Buyer information
+
+2026-01-15 18:39:22 ⚠️  Document issues noted: Contains geographical coordinates mismatch, Area mismatch >20% with satellite data, Potential forgery or alteration, Missing: Detailed legal description, Missing: Clear registration details
+2026-01-15 18:39:22 ✅ Proceeding with verification
+
+2026-01-15 18:39:22 🔮 Step 4: Calculating consensus...
+2026-01-15 18:39:22 ✅ Consensus reached: $4,38,66,803
+2026-01-15 18:39:22    Final confidence: 48%
+2026-01-15 18:39:22    Consensus score: 29/100
+2026-01-15 18:39:22    Standard deviation: ±$2,07,19,740
+
+2026-01-15 18:39:22 📊 INDIVIDUAL AGENT SCORES:
+2026-01-15 18:39:22 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:39:22    1. Groq (Llama 3.3 70B)
+2026-01-15 18:39:22       Valuation: $0
+2026-01-15 18:39:22       Confidence: 0%
+2026-01-15 18:39:22    2. OpenRouter (GPT-4o-mini)
+2026-01-15 18:39:22       Valuation: $4,27,42,919
+2026-01-15 18:39:22       Confidence: 75%
+2026-01-15 18:39:22    3. Gemini (Meta Llama 3.1)
+2026-01-15 18:39:22       Valuation: $4,50,70,965
+2026-01-15 18:39:22       Confidence: 70%
+2026-01-15 18:39:22 ═══════════════════════════════════════════════════════════════
+
+2026-01-15 18:39:22 ⛓️  Step 5: Submitting to blockchain...
+2026-01-15 18:39:23 ✅ Request #92 confirmed PENDING - proceeding with submission
+
+2026-01-15 18:39:23 📦 Uploading evidence to IPFS...
+2026-01-15 18:39:24 ✅ Evidence uploaded: QmeXJ6fzr23gZndvfTBD4vQzTexiphCtNC52pSao83CvMX
+2026-01-15 18:39:24 📝 Evidence mapping stored: Request 92 -> QmeXJ6fzr23gZndvfTBD4vQzTexiphCtNC52pSao83CvMX
+2026-01-15 18:39:24 📤 Submitting transaction to Mantle Sepolia...
+2026-01-15 18:39:24    🔢 Using nonce: 101
+2026-01-15 18:39:26 ⏳ Waiting for confirmation...
+2026-01-15 18:39:26 ✅ OracleRouter submission: 0xe8ae8ef0393e7f05f1d5e2658a577b693625a0a0061170c2fddaf05fda902769
+2026-01-15 18:39:26 
+⚠️  Confidence 48% below 70% threshold
+2026-01-15 18:39:26    Skipping ConsensusEngine submission (requires ≥70% confidence)
+
+2026-01-15 18:39:26 
+⚠️  Step 6: Skipping tokenization (confidence 48% < 70% threshold)
+
+2026-01-15 18:39:26 
+✅ All blockchain submissions and tokenization completed
+
+2026-01-15 18:39:26 ═══════════════════════════════════════════════════════════════
+2026-01-15 18:39:26 ✅ REQUEST COMPLETED IN 208.70s
+2026-01-15 18:39:26 ═══════════════════════════════════════════════════════════════
+
+2026-01-15 18:39:26 👂 Now listening for new VerificationRequested events...
+2026-01-15 18:39:26 Press Ctrl+C to stop
+
+2026-01-15 18:39:52 
+🛑 Stopping oracle listener...

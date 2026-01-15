@@ -1,12 +1,12 @@
 "use client"
 
-import { useAccount } from 'wagmi'
+import { useAccount, useWalletClient } from 'wagmi'
 import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import Navigation from '../../components/Navigation'
 import { routerConfig } from '../../../config/onchain'
 import { usePublicClient } from 'wagmi'
-import { Search, Filter, TrendingUp, Heart, Building2, FileText, Car, Palette, Package } from 'lucide-react'
+import { Search, Filter, TrendingUp, Heart, Building2, FileText, Car, Palette, Package, ShoppingCart } from 'lucide-react'
 
 interface RWAAsset {
   id: string
@@ -20,14 +20,40 @@ interface RWAAsset {
   status?: string
 }
 
+// AssetRegistry ABI (only the transferAsset function)
+const ASSET_REGISTRY_ABI = [
+  {
+    inputs: [
+      { name: '_assetId', type: 'uint256' },
+      { name: '_newOwner', type: 'address' }
+    ],
+    name: 'transferAsset',
+    outputs: [],
+    stateMutability: 'nonpayable',
+    type: 'function'
+  }
+] as const
+
 export default function ConsumerDashboard() {
   const { isConnected, address } = useAccount()
+  const { data: walletClient } = useWalletClient()
   const router = useRouter()
   const publicClient = usePublicClient()
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedFilter, setSelectedFilter] = useState('all')
   const [assets, setAssets] = useState<RWAAsset[]>([])
   const [isLoading, setIsLoading] = useState(true)
+  const [buyingAssetId, setBuyingAssetId] = useState<string | null>(null)
+  const [message, setMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null)
+  const [purchasedAssets, setPurchasedAssets] = useState<Set<string>>(new Set())
+
+  // Load purchased assets from localStorage on mount
+  useEffect(() => {
+    const stored = localStorage.getItem('purchasedAssets')
+    if (stored) {
+      setPurchasedAssets(new Set(JSON.parse(stored)))
+    }
+  }, [])
 
   useEffect(() => {
     if (!isConnected) {
@@ -97,6 +123,86 @@ export default function ConsumerDashboard() {
     fetchRequests()
   }, [publicClient])
 
+  // Handle buying asset (transferring ownership)
+  const handleBuyAsset = async (assetId: string) => {
+    if (!address) {
+      setMessage({ type: 'error', text: 'Please connect your wallet first' })
+      setTimeout(() => setMessage(null), 4000)
+      return
+    }
+
+    if (!walletClient) {
+      setMessage({ type: 'error', text: 'Wallet client not available' })
+      setTimeout(() => setMessage(null), 4000)
+      return
+    }
+
+    setBuyingAssetId(assetId)
+    setMessage(null)
+
+    try {
+      const ASSET_REGISTRY_ADDRESS = process.env.NEXT_PUBLIC_ASSET_REGISTRY_ADDRESS as `0x${string}`
+
+      if (!ASSET_REGISTRY_ADDRESS) {
+        throw new Error('Contract address not configured')
+      }
+
+      console.log('Transferring asset:', assetId)
+      console.log('From wallet:', address)
+      console.log('Buyer:', address)
+
+      // Call transferAsset function using the connected wallet (will trigger MetaMask)
+      const hash = await walletClient.writeContract({
+        address: ASSET_REGISTRY_ADDRESS,
+        abi: ASSET_REGISTRY_ABI,
+        functionName: 'transferAsset',
+        args: [BigInt(assetId), address],
+      })
+
+      console.log('Transaction sent:', hash)
+
+      // Mark asset as purchased immediately after transaction is sent
+      const newPurchased = new Set(purchasedAssets)
+      newPurchased.add(assetId)
+      setPurchasedAssets(newPurchased)
+      localStorage.setItem('purchasedAssets', JSON.stringify([...newPurchased]))
+
+      setMessage({
+        type: 'success',
+        text: `Purchase transaction submitted! Hash: ${hash.slice(0, 10)}...`
+      })
+      setTimeout(() => setMessage(null), 5000)
+
+      // Try to wait for confirmation but don't fail if receipt not found
+      if (publicClient) {
+        try {
+          const receipt = await publicClient.waitForTransactionReceipt({
+            hash,
+            timeout: 30_000, // Reduced timeout to 30 seconds
+          })
+
+          if (receipt.status === 'success') {
+            console.log('Transaction confirmed:', receipt)
+          } else {
+            console.warn('Transaction may have failed')
+          }
+        } catch (receiptError) {
+          // Transaction sent but receipt not found yet - that's ok
+          console.log('Receipt not found yet, transaction may still be processing')
+        }
+      }
+    } catch (error: any) {
+      console.error('Buy asset error:', error)
+      setMessage({
+        type: 'error',
+        text: `Failed to purchase asset: ${error.shortMessage || error.message || 'Unknown error'}`
+      })
+      setTimeout(() => setMessage(null), 5000)
+    } finally {
+      setBuyingAssetId(null)
+    }
+  }
+
   if (!isConnected) {
     return null
   }
@@ -135,6 +241,17 @@ export default function ConsumerDashboard() {
 
       {/* Dashboard Content */}
       <div className="relative z-10 pt-24 px-6 max-w-7xl mx-auto">
+        {/* Success/Error Message */}
+        {message && (
+          <div className={`mb-6 p-4 rounded-lg border-2 font-mono ${
+            message.type === 'success' 
+              ? 'bg-green-50 border-green-500 text-green-800' 
+              : 'bg-red-50 border-red-500 text-red-800'
+          }`}>
+            {message.text}
+          </div>
+        )}
+
         <div className="mb-12">
           <h1 className="text-6xl font-light tracking-wider mb-4 font-mono">
             RWA <span className="font-bold">MARKETPLACE</span>
@@ -263,15 +380,38 @@ export default function ConsumerDashboard() {
                         <div className="text-xs text-gray-500 font-mono">{asset.tokens_available.toLocaleString()} tokens available</div>
                       </div>
 
-                      {/* CTA Button */}
-                      <button 
-                        onClick={(e) => {
-                          e.stopPropagation()
-                          router.push(`/consumer/asset/${asset.id}`)
-                        }}
-                        className="w-full py-3 bg-black text-white font-mono font-bold rounded-lg border-2 border-black hover:bg-white hover:text-black transition-all duration-200">
-                        VIEW DETAILS
-                      </button>
+                      {/* CTA Buttons */}
+                      <div className="space-y-2">
+                        {purchasedAssets.has(asset.id) ? (
+                          <div className="w-full py-3 bg-green-50 text-green-700 font-mono font-bold rounded-lg border-2 border-green-500 text-center">
+                            ✓ PURCHASED
+                          </div>
+                        ) : (
+                          <button 
+                            onClick={(e) => {
+                              e.stopPropagation()
+                              handleBuyAsset(asset.id)
+                            }}
+                            disabled={buyingAssetId === asset.id}
+                            className={`w-full py-3 font-mono font-bold rounded-lg border-2 transition-all duration-200 flex items-center justify-center gap-2 ${
+                              buyingAssetId === asset.id
+                                ? 'bg-gray-300 text-gray-600 border-gray-400 cursor-not-allowed'
+                                : 'bg-black text-white border-black hover:bg-white hover:text-black'
+                            }`}
+                          >
+                            <ShoppingCart size={20} />
+                            {buyingAssetId === asset.id ? 'PROCESSING...' : 'BUY ASSET'}
+                          </button>
+                        )}
+                        <button 
+                          onClick={(e) => {
+                            e.stopPropagation()
+                            router.push(`/consumer/asset/${asset.id}`)
+                          }}
+                          className="w-full py-3 bg-white text-black font-mono font-bold rounded-lg border-2 border-black hover:bg-gray-50 transition-all duration-200">
+                          VIEW DETAILS
+                        </button>
+                      </div>
                     </div>
                   </div>
                 )
