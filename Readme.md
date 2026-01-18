@@ -1,7 +1,7 @@
 <img width="941" height="218" alt="Full view" src="https://github.com/user-attachments/assets/52980684-1359-4f50-b84e-871f5c735cc6" />
 
 
-## AI-DRIVEN RWA VERIFICATION & TOKENIZATION ON MANTLE L2 Network
+## AI-DRIVEN RWA VERIFICATION & TOKENIZATION ON MANTLE L2 NETWORK
 
 Prop99 is a **rollup-native Real World Asset (RWA) and RealFi protocol** built on **Mantle L2**.
 It enables **AI-based verification, on-chain consensus, Ethereum-anchored trust, and scalable tokenization** of real-world assets such as real estate, invoices, and cash-flow assets.
